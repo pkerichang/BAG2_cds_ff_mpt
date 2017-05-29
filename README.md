@@ -1,7 +1,7 @@
-## BAG2_cds_ff_mpt
+# BAG2_cds_ff_mpt
 BAG2 setup for cds_ff_mpt (cadence generic PDK for finfet and multi-patterned technology)
 
-# Installation
+## Installation
 1. Download cds_ff_mpt PDK from [Cadence Support](https://support.cadence.com) 
 and install it.
 
