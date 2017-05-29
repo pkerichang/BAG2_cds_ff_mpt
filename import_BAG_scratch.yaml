@@ -1,15 +1,15 @@
 lib_name: cds_ff_mpt_microtemplates_dense
-cell_name: via_M1_M2_0
+cell_name: _gate_base_nf1_left
 rects:
   1:
-    layer: M1 drawing
-    bBox: [[-0.016000, -0.056000], [0.016000, 0.056000]]
+    layer: LiPo drawing
+    bBox: [[-0.004000, 0.369000], [0.064000, 0.399000]]
   2:
-    layer: V1 drawing
-    bBox: [[-0.016000, -0.016000], [0.016000, 0.016000]]
+    layer: V0 drawing
+    bBox: [[0.014000, 0.368000], [0.046000, 0.400000]]
   3:
-    layer: M2 drawing
-    bBox: [[-0.056000, -0.016000], [0.056000, 0.016000]]
+    layer: M1 drawing
+    bBox: [[-0.010000, 0.344000], [0.070000, 0.424000]]
 labels:
   {}
 instances: {}

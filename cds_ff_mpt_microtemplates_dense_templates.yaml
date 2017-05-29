@@ -21,8 +21,8 @@ cds_ff_mpt_microtemplates_dense:
     xy1: [0.086, 0.48]
   _nmos4_fast_base_tap_base:
     pins: {}
-    xy0: [0.172, 0.0]
-    xy1: [0.258, 0.48]
+    xy0: [0.344, 0.0]
+    xy1: [0.43, 0.48]
   _nmos4_fast_boundary_base:
     pins: {}
     xy0: [0.0, 0.0]
@@ -185,8 +185,8 @@ cds_ff_mpt_microtemplates_dense:
       VSS:
         layer: [M1, pin]
         netname: VSS
-        xy0: [0.242, 0.103]
-        xy1: [0.274, 0.281]
+        xy0: [0.328, 0.103]
+        xy1: [0.36, 0.281]
     xy0: [0.0, 0.0]
     xy1: [0.602, 0.48]
   pmos4_fast_boundary:
@@ -323,8 +323,8 @@ cds_ff_mpt_microtemplates_dense:
       VSS:
         layer: [M1, pin]
         netname: VSS
-        xy0: [0.242, 0.103]
-        xy1: [0.274, 0.281]
+        xy0: [0.328, 0.103]
+        xy1: [0.36, 0.281]
     xy0: [0.0, 0.0]
     xy1: [0.602, 0.48]
   via_M1_M2_0:
