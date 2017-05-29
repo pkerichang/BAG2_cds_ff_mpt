@@ -1,0 +1,6 @@
+[submodule "BAG_framework"]
+	path = BAG_framework
+	url = git@github.com:pkerichang/BAG_framework.git
+[submodule "laygo"]
+	path = laygo
+	url = git@github.com:ucb-art/laygo.git
