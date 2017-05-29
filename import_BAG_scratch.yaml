@@ -1,0 +1,15 @@
+lib_name: cds_ff_mpt_microtemplates_dense
+cell_name: via_M1_M2_0
+rects:
+  1:
+    layer: M1 drawing
+    bBox: [[-0.016000, -0.056000], [0.016000, 0.056000]]
+  2:
+    layer: V1 drawing
+    bBox: [[-0.016000, -0.016000], [0.016000, 0.016000]]
+  3:
+    layer: M2 drawing
+    bBox: [[-0.056000, -0.016000], [0.056000, 0.016000]]
+labels:
+  {}
+instances: {}

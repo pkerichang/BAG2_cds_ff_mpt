@@ -1,0 +1,47 @@
+//  Runset file generated on Tue Dec 20 01:21:58 2016
+//  by Calibre Interactive v2016.4_15.11    Thu Nov 3 15:15:38 PDT 2016
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+pex.rulesFile.value = "/tools/tstech16/CLN16FFC/packages/T-N16-CL-LS-007-C1/MAIN_DECK/CALIBRE_FLOW/DFM_PEX_RC_CALIBRE_N16FFC_1p9M_2Xa1Xd3Xe2Z_ALRDL.v1.0c"
+pex.runDir.value = "./calibre_run/rcx_run_dir"
+pex.layout.exportFromLayoutViewer.value = false
+pex.layout.layoutFile.value = "nch_test.calibre.db"
+pex.layout.topCellLibrary.value = "mos_char_test"
+pex.layout.topCell.value = "nch_test"
+pex.layout.topCellView.value = "layout"
+pex.source.exportFromSourceViewer.value = false
+pex.source.sourceFile.value = "nch_test.src.net"
+pex.source.topCellLibrary.value = "mos_char_test"
+pex.source.topCell.value = "nch_test"
+pex.source.topCellView.value = "schematic"
+pex.xactMode.mode.value = "xACT 3D"
+pex.pexNetlist.netlistFile.value = "nch_test.pex.netlist"
+pex.pexNetlist.netlistFormat.value = "CALIBREVIEW"
+pex.pexNetlist.netgeometry.value = false
+pex.pexNetlist.ground.value = "VSS"
+pex.pexNetlist.ground.specified = true
+pex.pexNetlist.location.value = true
+pex.pexNetlist.rlayer.value = true
+pex.pexNetlist.rlength.value = true
+pex.pexNetlist.rlocation.value = true
+pex.pexNetlist.rwidth.value = true
+pex.svdb.cci.value = true
+pex.svdb.genParasiticData.value = true
+pex.reports.lvsReport.value = "nch_test.lvs.report"
+pex.reports.pexReport.value = "nch_test.pex.report"
+pex.pexReduceAnalog.yesNo.value = "NO"
+pex.pexReduceDigital.yesNo.value = "NO"
+pex.pexReduceTicer.specified = true
+pex.pexReduceTicer.frequency.value = 1e+12
+pex.layoutCase.caseSensitive.value = "YES"
+pex.layoutCase.caseSensitive.specified = true
+pex.sourceCase.caseSensitive.value = "YES"
+pex.sourceCase.caseSensitive.specified = true
+pex.supply.powerNames.value = [ "VDD" ]
+pex.supply.powerNames.specified = true
+pex.supply.groundNames.value = [ "VSS" ]
+pex.supply.groundNames.specified = true
+pex.turboCommand.numProcessors.value = 2
+pex.rve.autoStart.value = false

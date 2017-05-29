@@ -1,0 +1,5 @@
+lib_name: BAG_prim
+cell_name: nmos4_ulvt
+pins: [ "G", "D", "S", "B" ]
+instances:
+  {}

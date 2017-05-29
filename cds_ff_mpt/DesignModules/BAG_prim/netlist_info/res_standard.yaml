@@ -1,0 +1,5 @@
+lib_name: BAG_prim
+cell_name: res_standard
+pins: [ "PLUS", "MINUS", "BULK" ]
+instances:
+  {}

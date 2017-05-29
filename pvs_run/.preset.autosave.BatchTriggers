@@ -1,0 +1,9 @@
+# This PVS GUI file with batch triggers settings is created automatically to be used in internal flow.
+# Do not edit it unless you 100% sure what you do!
+
+# PVS Version 15.17-s604
+
+[ virtuoso6.BatchTriggers.RunLVS ]
+BatchPostTrigger ""
+BatchPreTrigger  ""
+EnableTriggers   "FALSE"

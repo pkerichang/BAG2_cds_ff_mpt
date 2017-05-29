@@ -1,0 +1,32 @@
+
+# layout related parameters
+layout:
+  # default EM spec calculation settings
+  em:
+    # DC current temperature
+    dc_temp: !!int 70
+    # RMS current allowable temperature increase
+    rms_dt: !!int 10
+  # AnalogBase technology parameters.
+  analog_base:
+    # minimum number of separator fingers required.
+    min_fg_sep: 2
+    # True if floating dummy transistors in AnalogBase is allowed.
+    floating_dummy: False
+    # True if AnalogMosConn supports diffpair mode.
+    mconn_diff_mode: True
+    # True if dummy transistor exists
+    dummy_exist: True
+  # AnalogRes technology parameters
+  analog_res:
+    # resistor array routing grid
+    grid_layers:
+      - [2, 0.094, 0.146, "x"]
+      - [3, 0.080, 0.100, "y"]
+
+# transistor technology parameters
+mos:
+  # the transistor width minimum resolution.
+  width_resolution: !!float 1
+  # the transistor length minimum resolution.
+  length_resolution: !!float 1e-9

@@ -1,0 +1,39 @@
+*lvsRulesFile: /tools/tstech16/CLN16FFC/packages/T-N16-CL-LS-007-C1/MAIN_DECK/CALIBRE_FLOW/DFM_LVS_RC_CALIBRE_N16FFC_1p9M_2Xa1Xd3Xe2Z_ALRDL.v1.0c
+*lvsRunDir: /tools/projects/jdhan/BAG/tsmc16_craft/./calibre_run/lvs_run_dir
+*lvsLayoutPaths: tisaradc_top_routefix.calibre.db
+*lvsLayoutPrimary: tisaradc_top_routefix
+*lvsLayoutLibrary: adc_sar_generated
+*lvsLayoutView: layout
+*lvsLayoutGetFromViewer: 1
+*lvsSourcePath: tisaradc_top_routefix.src.net
+*lvsSourcePrimary: tisaradc_top_routefix
+*lvsSourceLibrary: adc_sar_generated
+*lvsSourceView: schematic
+*lvsSourceGetFromViewer: 1
+*lvsSpiceFile: tisaradc_top_routefix.sp
+*lvsPowerNames: VDD
+*lvsGroundNames: VSS
+*lvsRecognizeGates: NONE
+*lvsERCDatabase: tisaradc_top_routefix.erc.results
+*lvsERCSummaryFile: tisaradc_top_routefix.erc.summary
+*lvsIncludeCmdsType: SVRF
+*lvsSVRFCmds: {SOURCE CASE YES} {LAYOUT CASE YES} {} {} {}
+*lvsReportFile: tisaradc_top_routefix.lvs.report
+*lvsMaskDBFile: CK_25PNAND2.maskdb
+*lvsReportOptions: S
+*lvsAbortOnSupplyError: 0
+*cmnWarnLayoutOverwrite: 0
+*cmnWarnSourceOverwrite: 0
+*cmnPromptSaveRunset: 0
+*cmnShowOptions: 1
+*cmnSaveRunsetChanges: 0
+*cmnVConnectColon: 1
+*cmnVConnectReport: 1
+*cmnRunMT: 1
+*cmnRunHyper: 1
+*cmnSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
+*cmnLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnFDILayoutLibrary: adc_sar_generated
+*cmnFDILayoutView: layout
+*cmnFDIDEFLayoutPath: tisaradc_top_routefix.def

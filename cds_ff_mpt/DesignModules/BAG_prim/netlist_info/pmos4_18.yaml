@@ -1,0 +1,5 @@
+lib_name: BAG_prim
+cell_name: pmos4_18
+pins: [ "G", "D", "S", "B" ]
+instances:
+  {}
