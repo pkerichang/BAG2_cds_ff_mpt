@@ -5,12 +5,12 @@
 			*****************************************************
 
 
-Report File Name         : inv_2x.rep
-ERC Summary File         : inv_2x.sum
-LVS Comparison Report    : inv_2x.rep.cls
-Layout Name              : /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/inv_2x.gds ("inv_2x")
+Report File Name         : latch_2ck_2x.rep
+ERC Summary File         : latch_2ck_2x.sum
+LVS Comparison Report    : latch_2ck_2x.rep.cls
+Layout Name              : /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/latch_2ck_2x.gds ("latch_2ck_2x")
 User Name                : jdhan
-Creation Time            : Sun May 28 19:17:14 2017
+Creation Time            : Thu Jun  1 20:55:23 2017
 Current directory        : /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run
 PVS Version              : 15.17-s604 Fri Jun 24 15:14:35 PDT 2016
 
@@ -24,22 +24,24 @@ PVS Version              : 15.17-s604 Fri Jun 24 15:14:35 PDT 2016
 
 
 Clean cell list (added by extraction report parser )
+ for cell "_gate_base_nf1_left"
+ for cell "_gate_base_nf1_right"
  for cell "_gate_base_nf2"
  for cell "_nmos4_fast_base_nf1"
- for cell "_nmos4_fast_base_tap_base"
- for cell "_nmos4_fast_space_base_nf1"
  for cell "_pmos4_fast_base_nf1"
- for cell "_pmos4_fast_base_tap_base"
- for cell "_pmos4_fast_space_base_nf1"
  for cell "_sd_base"
  for cell "inv_2x"
+ for cell "latch_2ck_2x"
  for cell "nmos4_fast_boundary"
  for cell "nmos4_fast_center_nf2"
- for cell "nmos4_fast_tap"
+ for cell "nmos4_fast_space"
  for cell "pmos4_fast_boundary"
  for cell "pmos4_fast_center_nf2"
- for cell "pmos4_fast_tap"
+ for cell "pmos4_fast_space"
+ for cell "tinv_2x"
+ for cell "tinv_small_1x"
  for cell "via_M1_M2_0"
  for cell "via_M1_M2_1"
  for cell "via_M1_M2_2"
  for cell "via_M2_M3_0"
+ for cell "via_M3_M4_0"

@@ -1,0 +1,24 @@
+			*****************************************************
+			**                                                 **
+			**                L V S  R E P O R T               **
+			**                                                 **
+			*****************************************************
+
+
+Report File Name         : latch_2ck_2x.rep
+ERC Summary File         : latch_2ck_2x.sum
+LVS Comparison Report    : latch_2ck_2x.rep.cls
+Layout Name              : /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/latch_2ck_2x.gds ("latch_2ck_2x")
+User Name                : jdhan
+Creation Time            : Thu Jun  1 20:55:23 2017
+Current directory        : /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run
+PVS Version              : 15.17-s604 Fri Jun 24 15:14:35 PDT 2016
+
+
+			*****************************************************
+			**                                                 **
+			**            D E V E X T  R E P O R T             **
+			**                                                 **
+			*****************************************************
+
+

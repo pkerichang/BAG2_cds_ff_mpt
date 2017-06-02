@@ -1,0 +1,23 @@
+** Layout Netlist, pvs precompare
+** 
+
+.subckt latch_2ck_2x CLK CLKB I O VDD VSS 
+MX9/X15/X4/M0 X9/11 I VSS 5 N1LVT L=1.8e-08 nf=1 nfin=4 m=1 
+MX9/X15/X5/M0 VSS I X9/11 5 N1LVT L=1.8e-08 nf=1 nfin=4 m=1 
+MX9/X16/X4/M0 2 CLK X9/11 5 N1LVT L=1.8e-08 nf=1 nfin=4 m=1 
+MX9/X16/X5/M0 X9/11 CLK 2 5 N1LVT L=1.8e-08 nf=1 nfin=4 m=1 
+MX9/X22/X4/M0 X9/12 I VDD 11 P1LVT L=1.8e-08 nf=1 nfin=4 m=1 
+MX9/X22/X5/M0 VDD I X9/12 11 P1LVT L=1.8e-08 nf=1 nfin=4 m=1 
+MX9/X23/X4/M0 2 CLKB X9/12 11 P1LVT L=1.8e-08 nf=1 nfin=4 m=1 
+MX9/X23/X5/M0 X9/12 CLKB 2 11 P1LVT L=1.8e-08 nf=1 nfin=4 m=1 
+MX10/X15/M0 O 2 VSS 5 N1LVT L=1.8e-08 nf=1 nfin=4 m=1 
+MX10/X16/M0 VSS 2 O 5 N1LVT L=1.8e-08 nf=1 nfin=4 m=1 
+MX10/X24/M0 O 2 VDD 11 P1LVT L=1.8e-08 nf=1 nfin=4 m=1 
+MX10/X25/M0 VDD 2 O 11 P1LVT L=1.8e-08 nf=1 nfin=4 m=1 
+MX11/X11/M0 X11/13 O VSS 5 N1LVT L=1.8e-08 nf=1 nfin=4 m=1 
+MX11/X12/M0 2 CLKB X11/13 5 N1LVT L=1.8e-08 nf=1 nfin=4 m=1 
+MX11/X22/M0 X11/16 O VDD 11 P1LVT L=1.8e-08 nf=1 nfin=4 m=1 
+MX11/X23/M0 2 CLK X11/16 11 P1LVT L=1.8e-08 nf=1 nfin=4 m=1 
+.ends
+
+

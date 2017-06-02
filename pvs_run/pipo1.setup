@@ -1,0 +1,17 @@
+case	"preserve"
+convertDot	"node"
+convertPin	"geometry"
+hierDepth	32
+labelCase	"preserve"
+labelDepth	32
+library	"cds_ff_mpt_logic_templates"
+logFile	"/tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/PIPO1.LOG"
+maxVertices	2048
+pinAttNum	0
+runDir	"/tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run"
+strmFile	"/tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/latch_2ck_2x.gds"
+strmVersion	5
+techLib	"cds_ff_mpt"
+topCell	"latch_2ck_2x"
+view	"layout"
+enableColoring

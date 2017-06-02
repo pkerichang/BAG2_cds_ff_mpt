@@ -2,3 +2,4 @@ BAG_prim $BAG_TECH_CONFIG_DIR/DesignModules
 #serdes_bm_templates $BAG_WORK_DIR/bag_serdes_burst_mode/BagModules
 #invamp_templates $BAG_WORK_DIR/example_repo/BagModules
 demo_templates /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/BagModules
+logic_templates laygo/generators/logic/BagModules

@@ -1,0 +1,35 @@
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* CDL Netlist:                                          *
+*                                                       *
+* Cell Name  : inv_2x                                   *
+* Netlisted  : Thu Jun  1 20:54:11 2017                 *
+* PVS Version: 15.17-s604 Fri Jun 24 15:14:35 PDT 2016 *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+*.LDD
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: _pmos4_fast_base_nf1                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt _pmos4_fast_base_nf1 1 3 4 5
+** N=5 EP=4 FDC=1
+M0 4 5 3 1 p1lvt L=1.8e-08 nf=1 nfin=4 $X=68 $Y=226
+.ends _pmos4_fast_base_nf1
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: _nmos4_fast_base_nf1                        *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt _nmos4_fast_base_nf1 1 2 3 4
+** N=4 EP=4 FDC=1
+M0 3 4 2 1 n1lvt L=1.8e-08 nf=1 nfin=4 $X=68 $Y=226
+.ends _nmos4_fast_base_nf1
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: inv_2x                                      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt inv_2x I O VDD VSS
+** N=10 EP=4 FDC=4
+X8 5 VDD O I _pmos4_fast_base_nf1 $T=172 1920 1 0 $X=-62 $Y=928
+X9 5 O VDD I _pmos4_fast_base_nf1 $T=344 1920 1 0 $X=110 $Y=928
+X19 6 VSS O I _nmos4_fast_base_nf1 $T=172 0 0 0 $X=-62 $Y=-32
+X20 6 O VSS I _nmos4_fast_base_nf1 $T=344 0 0 0 $X=110 $Y=-32
+.ends inv_2x

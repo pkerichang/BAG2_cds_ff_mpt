@@ -1,0 +1,17 @@
+** Schematic Netlist, pvs precompare
+** 
+
+.subckt latch_2ck_2x CLK CLKB I O VDD VSS 
+MXI2/XIP0/MM0 XI2/N1 O VDD VDD P1LVT m=1 l=1.8e-08 nfin=4 nf=1 
+MXI2/XIP1/MM0 MEM CLK XI2/N1 VDD P1LVT m=1 l=1.8e-08 nfin=4 nf=1 
+MXI2/XIN0/MM0 MEM CLKB XI2/N0 VSS N1LVT m=1 l=1.8e-08 nfin=4 nf=1 
+MXI2/XIN1/MM0 XI2/N0 O VSS VSS N1LVT m=1 l=1.8e-08 nfin=4 nf=1 
+MXI1/XIP0/MM0 O MEM VDD VDD P1LVT m=1 l=1.8e-08 nfin=4 nf=8 
+MXI1/XIN0/MM0 O MEM VSS VSS N1LVT m=1 l=1.8e-08 nfin=4 nf=8 
+MXI0/XIP0/MM0 XI0/N1 I VDD VDD P1LVT m=1 l=1.8e-08 nfin=4 nf=4 
+MXI0/XIP1/MM0 MEM CLKB XI0/N1 VDD P1LVT m=1 l=1.8e-08 nfin=4 nf=4 
+MXI0/XIN0/MM0 MEM CLK XI0/N0 VSS N1LVT m=1 l=1.8e-08 nfin=4 nf=4 
+MXI0/XIN1/MM0 XI0/N0 I VSS VSS N1LVT m=1 l=1.8e-08 nfin=4 nf=4 
+.ends
+
+

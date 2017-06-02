@@ -180,13 +180,30 @@ cds_ff_mpt_microtemplates_dense:
     pins: {}
     xy0: [0.0, 0.0]
     xy1: [0.172, 0.48]
+  nmos4_fast_space_4x:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [0.172, 0.48]
+  nmos4_fast_space_nf2:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [0.172, 0.48]
+  nmos4_fast_space_nf4:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [0.172, 0.48]
   nmos4_fast_tap:
     pins:
-      VSS:
+      TAP0:
         layer: [M1, pin]
         netname: VSS
         xy0: [0.242, 0.103]
         xy1: [0.274, 0.281]
+      TAP1:
+        layer: [M1, pin]
+        netname: VSS
+        xy0: [0.328, 0.103]
+        xy1: [0.36, 0.281]
     xy0: [0.0, 0.0]
     xy1: [0.602, 0.48]
   pmos4_fast_boundary:
@@ -318,13 +335,30 @@ cds_ff_mpt_microtemplates_dense:
     pins: {}
     xy0: [0.0, 0.0]
     xy1: [0.172, 0.48]
+  pmos4_fast_space_4x:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [0.172, 0.48]
+  pmos4_fast_space_nf2:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [0.172, 0.48]
+  pmos4_fast_space_nf4:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [0.172, 0.48]
   pmos4_fast_tap:
     pins:
-      VSS:
+      TAP0:
         layer: [M1, pin]
         netname: VSS
         xy0: [0.242, 0.103]
         xy1: [0.274, 0.281]
+      TAP1:
+        layer: [M1, pin]
+        netname: VSS
+        xy0: [0.328, 0.103]
+        xy1: [0.36, 0.281]
     xy0: [0.0, 0.0]
     xy1: [0.602, 0.48]
   via_M1_M2_0:

@@ -1,0 +1,91 @@
+"Cadence Directory" internal none /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/.cadence/
+"Current Directory" internal none /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt
+"GUI Flow" internal none virtuoso6
+"GUI Preset" internal none /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/.preset.autosave
+"Job Signature" internal none IPVS_1496375716_36375
+"PVS Job Mode" internal none lvs
+"Run Directory" internal none /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run
+"Technology Mapping File" internal none /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvtech.lib
+"Technology Name" internal none "cds_ff_mpt_pvs"
+"Technology Rule File" internal none /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/.technology.rul
+"Technology RuleSet" internal none "default"
+"PVS Version" internal none 15.17-s604
+"Binary Name" internal none ipvs
+"PVS Build Date" internal none "Fri Jun 24 15:14:35 PDT 2016"
+"PVS Job Time" internal none 1496375718
+"CDL Out Display Pin Information" internal none ENABLED
+"CDL Out Stop List" internal text auCdl
+"CDL Out View List" internal text auCdl schematic
+"Control File" input text /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/pvslvsctl
+"DFII version" internal none ICADV12.3.0
+"Do not check rules files before run" internal none ENABLED
+"Enable Coloring" input none yes
+"Extracted Spice File" output text /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/latch_2ck_2x.spi
+"Input Layout" input none OA: cds_ff_mpt_logic_templates latch_2ck_2x layout
+"Input Schematic" input none OA: cds_ff_mpt_logic_templates latch_2ck_2x schematic
+"Intermediate GDSII File" output none /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/latch_2ck_2x.gds
+"Intermediate GDSII File creation Errors" output none /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/PIPO1.LOG
+"Intermediate OASIS File creation Errors" output none /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/PIPO1.LOG
+"Layout Cell Name" internal none latch_2ck_2x
+"Layout ConvertPin" internal text geometry
+"Layout GDSII" input none /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/latch_2ck_2x.gds
+"Layout HierDepth" internal none 32
+"Layout Library Name" internal none cds_ff_mpt_logic_templates
+"Layout MaxVertices" internal none 2048
+"Layout NoConvertHalfWidthPath" input none nil
+"Layout ReplaceBusBitChar" input none nil
+"Layout Scale" internal none 0.0005
+"Layout TechLib" internal none cds_ff_mpt
+"Layout Top Cell" internal none latch_2ck_2x
+"Layout View Name" internal none layout
+"Map All Colored To Locked" input none no
+"Output Layout Cellmap I" internal text /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/lay_cellMap.txt
+"PIPO Log I" log text  /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/PIPO1.LOG
+"PIPO Output I" internal text  /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/PIPO1.OUT
+"PIPO Setup File I" internal text  /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/pipo1.setup
+"PVS Job Log" log text /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/pvsuilvs.log
+"PVS Job Mode" internal none lvs
+"Rule File" input text /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/.technology.rul
+"Run Directory" internal none /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run
+"SI Log" log text  /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/SI.LOG
+"SI OSS Directory" internal none /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/
+"SI Output" log text  /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/SI.OUT
+"SI Setup File" internal text  /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/si.env
+"Schematic Cell Name" internal none latch_2ck_2x
+"Schematic Library Name" internal none cds_ff_mpt_logic_templates
+"Schematic Netlist" output text /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/latch_2ck_2x.cdl
+"Schematic Top Cell" internal none latch_2ck_2x
+"Schematic View Name" internal none schematic
+"Simulator Mode" internal none auCdl
+"PVS Version" internal none 15.17-s604
+"Binary Name" internal none pvsvirt
+"PVS Build Date" internal none "Fri Jun 24 15:14:35 PDT 2016"
+"PVS Job Time" internal none 1496375723
+"Comparison Report" output cls /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/latch_2ck_2x.rep.cls
+"ERC Result" internal none EMPTY
+"ERC Summary" output text /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/latch_2ck_2x.sum
+"Extracted Spice File" output text /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/latch_2ck_2x.spi
+"Extraction Report" output erc /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/latch_2ck_2x.rep
+"Extraction Result" internal none CLEAN
+"LVS Report Options" internal none -none
+"Layout GDSII" input none /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/latch_2ck_2x.gds
+"Layout Top Cell" internal none latch_2ck_2x
+"PVS Job Mode" internal none lvs
+"Report MaxResults" internal none 1000
+"Rule File" input text /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/.technology.rul
+"Run Directory" internal none /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/
+"Schematic Top Cell" internal none latch_2ck_2x
+"UI Data" internal none ENABLED
+"PVS Version" internal none 15.17-s604
+"Binary Name" internal none pvs
+"PVS Build Date" internal none "Fri Jun 24 15:14:35 PDT 2016"
+"PVS Job Time" internal none 1496375723
+"Comparison Result" internal none MISMATCH
+"LVS Run Name" internal none latch_2ck_2x.rep
+"Run Directory" internal none /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/
+"Schematic Netlist" input text /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/netlist
+"UI Data" internal none ENABLED
+"PVS Version" internal none 15.17-s604
+"Binary Name" internal none pvsnvn
+"PVS Build Date" internal none "Fri Jun 24 15:14:35 PDT 2016"
+"PVS Job Time" internal none 1496375724

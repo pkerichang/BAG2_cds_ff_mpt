@@ -1,0 +1,1969 @@
+cds_ff_mpt_logic_templates:
+  bcap2_8x:
+    pins:
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.328, 0.352]
+        xy1: [0.36, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [0.86, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.86, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [0.86, 0.96]
+  bcap_4x:
+    pins:
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [0.516, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.516, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [0.516, 0.96]
+  bcap_8x:
+    pins:
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [0.86, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.86, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [0.86, 0.96]
+  dcap2_4x:
+    pins:
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [0.516, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.516, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [0.516, 0.96]
+  dcap2_8x:
+    pins:
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [0.86, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.86, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [0.86, 0.96]
+  dcap3_8x:
+    pins:
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [0.86, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.86, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [0.86, 0.96]
+  dcap_2x:
+    pins:
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [0.344, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.344, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [0.344, 0.96]
+  dcap_4x:
+    pins:
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [0.516, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.516, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [0.516, 0.96]
+  dcap_8x:
+    pins:
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [0.86, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.86, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [0.86, 0.96]
+  dff_1x:
+    pins:
+      CLK:
+        layer: [M3, pin]
+        netname: CLK
+        xy0: [0.07, 0.384]
+        xy1: [0.102, 0.576]
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.758, 0.384]
+        xy1: [0.79, 0.576]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [3.252, 0.384]
+        xy1: [3.284, 0.576]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [3.44, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [3.44, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [3.44, 0.96]
+  dff_2x:
+    pins:
+      CLK:
+        layer: [M3, pin]
+        netname: CLK
+        xy0: [0.07, 0.384]
+        xy1: [0.102, 0.576]
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.758, 0.384]
+        xy1: [0.79, 0.576]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [3.596, 0.384]
+        xy1: [3.628, 0.576]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [3.784, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [3.784, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [3.784, 0.96]
+  dff_4x:
+    pins:
+      CLK:
+        layer: [M3, pin]
+        netname: CLK
+        xy0: [0.156, 0.384]
+        xy1: [0.188, 0.576]
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [1.188, 0.384]
+        xy1: [1.22, 0.576]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [4.972, 0.384]
+        xy1: [5.004, 0.576]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [5.16, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [5.16, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [5.16, 0.96]
+  dff_rsth_1x:
+    pins:
+      CLK:
+        layer: [M3, pin]
+        netname: CLK
+        xy0: [0.07, 0.384]
+        xy1: [0.102, 0.576]
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [1.102, 0.384]
+        xy1: [1.134, 0.576]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [3.682, 0.384]
+        xy1: [3.714, 0.576]
+      RST:
+        layer: [M3, pin]
+        netname: RST
+        xy0: [0.758, 0.384]
+        xy1: [0.79, 0.576]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [3.784, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [3.784, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [3.784, 0.96]
+  dff_rsth_2x:
+    pins:
+      CLK:
+        layer: [M3, pin]
+        netname: CLK
+        xy0: [0.07, 0.384]
+        xy1: [0.102, 0.576]
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [1.102, 0.384]
+        xy1: [1.134, 0.576]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [4.628, 0.384]
+        xy1: [4.66, 0.576]
+      RST:
+        layer: [M3, pin]
+        netname: RST
+        xy0: [0.758, 0.384]
+        xy1: [0.79, 0.576]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [4.816, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [4.816, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [4.816, 0.96]
+  dff_rsth_4x:
+    pins:
+      CLK:
+        layer: [M3, pin]
+        netname: CLK
+        xy0: [0.156, 0.384]
+        xy1: [0.188, 0.576]
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [1.704, 0.384]
+        xy1: [1.736, 0.576]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [6.52, 0.384]
+        xy1: [6.552, 0.576]
+      RST:
+        layer: [M3, pin]
+        netname: RST
+        xy0: [1.188, 0.384]
+        xy1: [1.22, 0.576]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [6.708, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [6.708, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [6.708, 0.96]
+  inv_16x:
+    pins:
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [1.36, 0.352]
+        xy1: [1.392, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [1.548, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [1.548, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [1.548, 0.96]
+  inv_1x:
+    pins:
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.07, 0.352]
+        xy1: [0.102, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [0.344, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.344, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [0.344, 0.96]
+  inv_24x:
+    pins:
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [2.048, 0.352]
+        xy1: [2.08, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [2.236, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [2.236, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [2.236, 0.96]
+  inv_2x:
+    pins:
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.07, 0.352]
+        xy1: [0.102, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [0.344, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.344, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [0.344, 0.96]
+  inv_32x:
+    pins:
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [2.736, 0.352]
+        xy1: [2.768, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [2.924, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [2.924, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [2.924, 0.96]
+  inv_4x:
+    pins:
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [0.328, 0.352]
+        xy1: [0.36, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [0.516, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.516, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [0.516, 0.96]
+  inv_8x:
+    pins:
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [0.672, 0.352]
+        xy1: [0.704, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [0.86, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.86, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [0.86, 0.96]
+  latch_2ck_1x:
+    pins:
+      CLK:
+        layer: [M4, pin]
+        netname: CLK
+        xy0: [0.344, 0.176]
+        xy1: [0.688, 0.208]
+      CLKB:
+        layer: [M4, pin]
+        netname: CLKB
+        xy0: [0.172, 0.112]
+        xy1: [0.86, 0.144]
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.07, 0.384]
+        xy1: [0.102, 0.576]
+      O:
+        layer: [M4, pin]
+        netname: O
+        xy0: [0.602, 0.304]
+        xy1: [1.204, 0.336]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [1.376, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [1.376, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [1.376, 0.96]
+  latch_2ck_2x:
+    pins:
+      CLK:
+        layer: [M4, pin]
+        netname: CLK
+        xy0: [0.602, 0.176]
+        xy1: [0.86, 0.208]
+      CLKB:
+        layer: [M4, pin]
+        netname: CLKB
+        xy0: [0.43, 0.112]
+        xy1: [1.032, 0.144]
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.07, 0.384]
+        xy1: [0.102, 0.576]
+      O:
+        layer: [M4, pin]
+        netname: O
+        xy0: [0.774, 0.304]
+        xy1: [1.376, 0.336]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [1.548, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [1.548, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [1.548, 0.96]
+  latch_2ck_4x:
+    pins:
+      CLK:
+        layer: [M4, pin]
+        netname: CLK
+        xy0: [0.946, 0.176]
+        xy1: [1.204, 0.208]
+      CLKB:
+        layer: [M4, pin]
+        netname: CLKB
+        xy0: [0.774, 0.112]
+        xy1: [1.376, 0.144]
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.156, 0.384]
+        xy1: [0.188, 0.576]
+      O:
+        layer: [M4, pin]
+        netname: O
+        xy0: [1.118, 0.304]
+        xy1: [1.892, 0.336]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [2.064, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [2.064, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [2.064, 0.96]
+  latch_2ck_8x:
+    pins:
+      CLK:
+        layer: [M4, pin]
+        netname: CLK
+        xy0: [1.634, 0.176]
+        xy1: [1.892, 0.208]
+      CLKB:
+        layer: [M4, pin]
+        netname: CLKB
+        xy0: [1.462, 0.112]
+        xy1: [2.064, 0.144]
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.156, 0.384]
+        xy1: [0.188, 0.576]
+      O:
+        layer: [M4, pin]
+        netname: O
+        xy0: [1.806, 0.304]
+        xy1: [2.924, 0.336]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [3.096, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [3.096, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [3.096, 0.96]
+  latch_2ck_rstbh_2x:
+    pins:
+      CLK:
+        layer: [M4, pin]
+        netname: CLK
+        xy0: [0.602, 0.176]
+        xy1: [0.86, 0.208]
+      CLKB:
+        layer: [M4, pin]
+        netname: CLKB
+        xy0: [0.43, 0.112]
+        xy1: [1.032, 0.144]
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.07, 0.384]
+        xy1: [0.102, 0.576]
+      O:
+        layer: [M4, pin]
+        netname: O
+        xy0: [0.774, 0.304]
+        xy1: [1.72, 0.336]
+      RSTB:
+        layer: [M3, pin]
+        netname: RSTB
+        xy0: [1.274, 0.384]
+        xy1: [1.306, 0.576]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [1.892, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [1.892, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [1.892, 0.96]
+  latch_2ck_rstbh_4x:
+    pins:
+      CLK:
+        layer: [M4, pin]
+        netname: CLK
+        xy0: [0.946, 0.176]
+        xy1: [1.204, 0.208]
+      CLKB:
+        layer: [M4, pin]
+        netname: CLKB
+        xy0: [0.774, 0.112]
+        xy1: [1.376, 0.144]
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.156, 0.384]
+        xy1: [0.188, 0.576]
+      O:
+        layer: [M4, pin]
+        netname: O
+        xy0: [1.118, 0.304]
+        xy1: [2.408, 0.336]
+      RSTB:
+        layer: [M3, pin]
+        netname: RSTB
+        xy0: [1.704, 0.384]
+        xy1: [1.736, 0.576]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [2.58, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [2.58, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [2.58, 0.96]
+  mux2to1_1x:
+    pins:
+      EN0:
+        layer: [M3, pin]
+        netname: EN0
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      EN1:
+        layer: [M3, pin]
+        netname: EN1
+        xy0: [0.242, 0.352]
+        xy1: [0.274, 0.608]
+      I0:
+        layer: [M3, pin]
+        netname: I0
+        xy0: [0.07, 0.352]
+        xy1: [0.102, 0.608]
+      I1:
+        layer: [M3, pin]
+        netname: I1
+        xy0: [0.586, 0.352]
+        xy1: [0.618, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [0.844, 0.352]
+        xy1: [0.876, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [1.032, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [1.032, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [1.032, 0.96]
+  mux2to1_2x:
+    pins:
+      EN0:
+        layer: [M3, pin]
+        netname: EN0
+        xy0: [0.844, 0.352]
+        xy1: [0.876, 0.608]
+      EN1:
+        layer: [M3, pin]
+        netname: EN1
+        xy0: [1.016, 0.352]
+        xy1: [1.048, 0.608]
+      I0:
+        layer: [M3, pin]
+        netname: I0
+        xy0: [0.07, 0.352]
+        xy1: [0.102, 0.608]
+      I1:
+        layer: [M3, pin]
+        netname: I1
+        xy0: [1.618, 0.352]
+        xy1: [1.65, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [1.876, 0.352]
+        xy1: [1.908, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [2.064, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [2.064, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [2.064, 0.96]
+  mux2to1_4x:
+    pins:
+      EN0:
+        layer: [M3, pin]
+        netname: EN0
+        xy0: [1.188, 0.352]
+        xy1: [1.22, 0.608]
+      EN1:
+        layer: [M3, pin]
+        netname: EN1
+        xy0: [1.36, 0.352]
+        xy1: [1.392, 0.608]
+      I0:
+        layer: [M3, pin]
+        netname: I0
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      I1:
+        layer: [M3, pin]
+        netname: I1
+        xy0: [2.22, 0.352]
+        xy1: [2.252, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [2.736, 0.352]
+        xy1: [2.768, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [2.924, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [2.924, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [2.924, 0.96]
+  mux2to1_8x:
+    pins:
+      EN0:
+        layer: [M3, pin]
+        netname: EN0
+        xy0: [1.876, 0.352]
+        xy1: [1.908, 0.608]
+      EN1:
+        layer: [M3, pin]
+        netname: EN1
+        xy0: [2.048, 0.352]
+        xy1: [2.08, 0.608]
+      I0:
+        layer: [M3, pin]
+        netname: I0
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      I1:
+        layer: [M3, pin]
+        netname: I1
+        xy0: [3.596, 0.352]
+        xy1: [3.628, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [4.456, 0.352]
+        xy1: [4.488, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [4.644, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [4.644, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [4.644, 0.96]
+  nand_16x:
+    pins:
+      A:
+        layer: [M3, pin]
+        netname: A
+        xy0: [1.704, 0.352]
+        xy1: [1.736, 0.608]
+      B:
+        layer: [M3, pin]
+        netname: B
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [2.908, 0.352]
+        xy1: [2.94, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [3.096, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [3.096, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [3.096, 0.96]
+  nand_1x:
+    pins:
+      A:
+        layer: [M3, pin]
+        netname: A
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      B:
+        layer: [M3, pin]
+        netname: B
+        xy0: [0.07, 0.352]
+        xy1: [0.102, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [0.242, 0.352]
+        xy1: [0.274, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [0.344, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.344, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [0.344, 0.96]
+  nand_2x:
+    pins:
+      A:
+        layer: [M3, pin]
+        netname: A
+        xy0: [0.414, 0.352]
+        xy1: [0.446, 0.608]
+      B:
+        layer: [M3, pin]
+        netname: B
+        xy0: [0.07, 0.352]
+        xy1: [0.102, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [0.5, 0.352]
+        xy1: [0.532, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [0.688, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.688, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [0.688, 0.96]
+  nand_4x:
+    pins:
+      A:
+        layer: [M3, pin]
+        netname: A
+        xy0: [0.672, 0.352]
+        xy1: [0.704, 0.608]
+      B:
+        layer: [M3, pin]
+        netname: B
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [0.844, 0.352]
+        xy1: [0.876, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [1.032, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [1.032, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [1.032, 0.96]
+  nand_8x:
+    pins:
+      A:
+        layer: [M3, pin]
+        netname: A
+        xy0: [1.016, 0.352]
+        xy1: [1.048, 0.608]
+      B:
+        layer: [M3, pin]
+        netname: B
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [1.532, 0.352]
+        xy1: [1.564, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [1.72, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [1.72, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [1.72, 0.96]
+  ndsr_1x:
+    pins:
+      Q:
+        layer: [M3, pin]
+        netname: Q
+        xy0: [0.844, 0.384]
+        xy1: [0.876, 0.576]
+      QB:
+        layer: [M3, pin]
+        netname: QB
+        xy0: [1.188, 0.384]
+        xy1: [1.22, 0.576]
+      R:
+        layer: [M3, pin]
+        netname: R
+        xy0: [0.5, 0.384]
+        xy1: [0.532, 0.576]
+      S:
+        layer: [M3, pin]
+        netname: S
+        xy0: [0.156, 0.384]
+        xy1: [0.188, 0.576]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [1.376, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [1.376, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [1.376, 0.96]
+  ndsr_2x:
+    pins:
+      Q:
+        layer: [M3, pin]
+        netname: Q
+        xy0: [1.532, 0.384]
+        xy1: [1.564, 0.576]
+      QB:
+        layer: [M3, pin]
+        netname: QB
+        xy0: [1.876, 0.384]
+        xy1: [1.908, 0.576]
+      R:
+        layer: [M3, pin]
+        netname: R
+        xy0: [1.102, 0.384]
+        xy1: [1.134, 0.576]
+      S:
+        layer: [M3, pin]
+        netname: S
+        xy0: [0.414, 0.384]
+        xy1: [0.446, 0.576]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [2.064, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [2.064, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [2.064, 0.96]
+  nor_2x:
+    pins:
+      A:
+        layer: [M3, pin]
+        netname: A
+        xy0: [0.414, 0.352]
+        xy1: [0.446, 0.608]
+      B:
+        layer: [M3, pin]
+        netname: B
+        xy0: [0.07, 0.352]
+        xy1: [0.102, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [0.5, 0.352]
+        xy1: [0.532, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [0.688, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.688, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [0.688, 0.96]
+  nor_4x:
+    pins:
+      A:
+        layer: [M3, pin]
+        netname: A
+        xy0: [0.672, 0.352]
+        xy1: [0.704, 0.608]
+      B:
+        layer: [M3, pin]
+        netname: B
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [0.844, 0.352]
+        xy1: [0.876, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [1.032, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [1.032, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [1.032, 0.96]
+  nor_8x:
+    pins:
+      A:
+        layer: [M3, pin]
+        netname: A
+        xy0: [1.016, 0.352]
+        xy1: [1.048, 0.608]
+      B:
+        layer: [M3, pin]
+        netname: B
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [1.532, 0.352]
+        xy1: [1.564, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [1.72, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [1.72, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [1.72, 0.96]
+  nsw_12x:
+    pins:
+      EN:
+        layer: [M3, pin]
+        netname: EN
+        xy0: [0.07, 0.352]
+        xy1: [0.102, 0.608]
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.242, 0.352]
+        xy1: [0.274, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [1.204, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [1.204, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [1.204, 0.96]
+  nsw_16x:
+    pins:
+      EN:
+        layer: [M3, pin]
+        netname: EN
+        xy0: [0.07, 0.352]
+        xy1: [0.102, 0.608]
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.242, 0.352]
+        xy1: [0.274, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [1.548, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [1.548, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [1.548, 0.96]
+  nsw_2x:
+    pins:
+      EN:
+        layer: [M3, pin]
+        netname: EN
+        xy0: [0.07, 0.352]
+        xy1: [0.102, 0.608]
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.242, 0.352]
+        xy1: [0.274, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [0.344, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.344, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [0.344, 0.96]
+  nsw_4x:
+    pins:
+      EN:
+        layer: [M3, pin]
+        netname: EN
+        xy0: [0.07, 0.352]
+        xy1: [0.102, 0.608]
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.242, 0.352]
+        xy1: [0.274, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [0.516, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.516, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [0.516, 0.96]
+  nsw_8x:
+    pins:
+      EN:
+        layer: [M3, pin]
+        netname: EN
+        xy0: [0.07, 0.352]
+        xy1: [0.102, 0.608]
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.242, 0.352]
+        xy1: [0.274, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [0.86, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.86, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [0.86, 0.96]
+  nsw_wovdd_12x:
+    pins:
+      EN:
+        layer: [M3, pin]
+        netname: EN
+        xy0: [0.07, 0.352]
+        xy1: [0.102, 0.608]
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.242, 0.352]
+        xy1: [0.274, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      VSS0:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [1.204, 0.048]
+      VSS1:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, 0.912]
+        xy1: [1.204, 1.008]
+    xy0: [0.0, 0.0]
+    xy1: [1.204, 0.96]
+  nsw_wovdd_16x:
+    pins:
+      EN:
+        layer: [M3, pin]
+        netname: EN
+        xy0: [0.07, 0.352]
+        xy1: [0.102, 0.608]
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.242, 0.352]
+        xy1: [0.274, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      VSS0:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [1.548, 0.048]
+      VSS1:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, 0.912]
+        xy1: [1.548, 1.008]
+    xy0: [0.0, 0.0]
+    xy1: [1.548, 0.96]
+  nsw_wovdd_2x:
+    pins:
+      EN:
+        layer: [M3, pin]
+        netname: EN
+        xy0: [0.07, 0.352]
+        xy1: [0.102, 0.608]
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.242, 0.352]
+        xy1: [0.274, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      VSS0:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.344, 0.048]
+      VSS1:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, 0.912]
+        xy1: [0.344, 1.008]
+    xy0: [0.0, 0.0]
+    xy1: [0.344, 0.96]
+  nsw_wovdd_4x:
+    pins:
+      EN:
+        layer: [M3, pin]
+        netname: EN
+        xy0: [0.07, 0.352]
+        xy1: [0.102, 0.608]
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.242, 0.352]
+        xy1: [0.274, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      VSS0:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.516, 0.048]
+      VSS1:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, 0.912]
+        xy1: [0.516, 1.008]
+    xy0: [0.0, 0.0]
+    xy1: [0.516, 0.96]
+  nsw_wovdd_8x:
+    pins:
+      EN:
+        layer: [M3, pin]
+        netname: EN
+        xy0: [0.07, 0.352]
+        xy1: [0.102, 0.608]
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.242, 0.352]
+        xy1: [0.274, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      VSS0:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.86, 0.048]
+      VSS1:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, 0.912]
+        xy1: [0.86, 1.008]
+    xy0: [0.0, 0.0]
+    xy1: [0.86, 0.96]
+  oai22_1x:
+    pins:
+      A:
+        layer: [M3, pin]
+        netname: A
+        xy0: [0.07, 0.352]
+        xy1: [0.102, 0.608]
+      B:
+        layer: [M3, pin]
+        netname: B
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      C:
+        layer: [M3, pin]
+        netname: C
+        xy0: [0.414, 0.352]
+        xy1: [0.446, 0.608]
+      D:
+        layer: [M3, pin]
+        netname: D
+        xy0: [0.5, 0.352]
+        xy1: [0.532, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [0.586, 0.352]
+        xy1: [0.618, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [0.688, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.688, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [0.688, 0.96]
+  oai22_skewed_1x:
+    pins:
+      A:
+        layer: [M3, pin]
+        netname: A
+        xy0: [0.07, 0.352]
+        xy1: [0.102, 0.608]
+      B:
+        layer: [M3, pin]
+        netname: B
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      C:
+        layer: [M3, pin]
+        netname: C
+        xy0: [0.414, 0.352]
+        xy1: [0.446, 0.608]
+      D:
+        layer: [M3, pin]
+        netname: D
+        xy0: [0.5, 0.352]
+        xy1: [0.532, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [0.586, 0.352]
+        xy1: [0.618, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [1.032, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.688, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [1.032, 0.96]
+  space_1x:
+    pins:
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [0.086, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.086, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [0.086, 0.96]
+  space_2x:
+    pins:
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [0.172, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.172, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [0.172, 0.96]
+  space_4x:
+    pins:
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [0.172, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.172, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [0.172, 0.96]
+  space_wovdd_1x:
+    pins:
+      VSS0:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.086, 0.048]
+      VSS1:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, 0.912]
+        xy1: [0.086, 1.008]
+    xy0: [0.0, 0.0]
+    xy1: [0.086, 0.96]
+  space_wovdd_2x:
+    pins:
+      VSS0:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.172, 0.048]
+      VSS1:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, 0.912]
+        xy1: [0.172, 1.008]
+    xy0: [0.0, 0.0]
+    xy1: [0.172, 0.96]
+  space_wovdd_4x:
+    pins:
+      VSS0:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.172, 0.048]
+      VSS1:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, 0.912]
+        xy1: [0.172, 1.008]
+    xy0: [0.0, 0.0]
+    xy1: [0.172, 0.96]
+  tap:
+    pins:
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [0.602, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.602, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [0.602, 0.96]
+  tap_wovdd:
+    pins:
+      VSS0:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.602, 0.048]
+      VSS1:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, 0.912]
+        xy1: [0.602, 1.008]
+    xy0: [0.0, 0.0]
+    xy1: [0.602, 0.96]
+  tgate_2x:
+    pins:
+      EN:
+        layer: [M3, pin]
+        netname: EN
+        xy0: [0.07, 0.352]
+        xy1: [0.102, 0.608]
+      ENB:
+        layer: [M3, pin]
+        netname: ENB
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.242, 0.352]
+        xy1: [0.274, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [0.328, 0.352]
+        xy1: [0.36, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.172, 0.912]
+        xy1: [0.516, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.172, -0.048]
+        xy1: [0.516, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [0.516, 0.96]
+  tgate_4x:
+    pins:
+      EN:
+        layer: [M3, pin]
+        netname: EN
+        xy0: [0.07, 0.352]
+        xy1: [0.102, 0.608]
+      ENB:
+        layer: [M3, pin]
+        netname: ENB
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.242, 0.352]
+        xy1: [0.274, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [0.5, 0.352]
+        xy1: [0.532, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.172, 0.912]
+        xy1: [0.688, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.172, -0.048]
+        xy1: [0.688, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [0.688, 0.96]
+  tgate_8x:
+    pins:
+      EN:
+        layer: [M3, pin]
+        netname: EN
+        xy0: [0.07, 0.352]
+        xy1: [0.102, 0.608]
+      ENB:
+        layer: [M3, pin]
+        netname: ENB
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.242, 0.352]
+        xy1: [0.274, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [0.844, 0.352]
+        xy1: [0.876, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.172, 0.912]
+        xy1: [1.032, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.172, -0.048]
+        xy1: [1.032, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [1.032, 0.96]
+  tie_2x:
+    pins:
+      TIEVDD:
+        layer: [M3, pin]
+        netname: TIEVDD
+        xy0: [0.242, 0.128]
+        xy1: [0.274, 0.832]
+      TIEVSS:
+        layer: [M3, pin]
+        netname: TIEVSS
+        xy0: [0.07, 0.128]
+        xy1: [0.102, 0.832]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [0.344, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.344, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [0.344, 0.96]
+  tie_wovdd_2x:
+    pins:
+      TIEVSS:
+        layer: [M3, pin]
+        netname: TIEVSS
+        xy0: [0.07, 0.128]
+        xy1: [0.102, 0.832]
+      TIEVSS2:
+        layer: [M3, pin]
+        netname: TIEVSS2
+        xy0: [0.242, 0.128]
+        xy1: [0.274, 0.832]
+      VSS0:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.344, 0.048]
+      VSS1:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, 0.912]
+        xy1: [0.344, 1.008]
+    xy0: [0.0, 0.0]
+    xy1: [0.344, 0.96]
+  tinv_1x:
+    pins:
+      EN:
+        layer: [M3, pin]
+        netname: EN
+        xy0: [0.328, 0.352]
+        xy1: [0.36, 0.608]
+      ENB:
+        layer: [M3, pin]
+        netname: ENB
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.07, 0.352]
+        xy1: [0.102, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [0.242, 0.352]
+        xy1: [0.274, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [0.516, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.516, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [0.516, 0.96]
+  tinv_2x:
+    pins:
+      EN:
+        layer: [M3, pin]
+        netname: EN
+        xy0: [0.586, 0.352]
+        xy1: [0.618, 0.608]
+      ENB:
+        layer: [M3, pin]
+        netname: ENB
+        xy0: [0.414, 0.352]
+        xy1: [0.446, 0.608]
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.07, 0.352]
+        xy1: [0.102, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [0.5, 0.352]
+        xy1: [0.532, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [0.688, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.688, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [0.688, 0.96]
+  tinv_4x:
+    pins:
+      EN:
+        layer: [M3, pin]
+        netname: EN
+        xy0: [0.93, 0.352]
+        xy1: [0.962, 0.608]
+      ENB:
+        layer: [M3, pin]
+        netname: ENB
+        xy0: [0.758, 0.352]
+        xy1: [0.79, 0.608]
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [0.844, 0.352]
+        xy1: [0.876, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [1.032, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [1.032, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [1.032, 0.96]
+  tinv_8x:
+    pins:
+      EN:
+        layer: [M3, pin]
+        netname: EN
+        xy0: [1.618, 0.352]
+        xy1: [1.65, 0.608]
+      ENB:
+        layer: [M3, pin]
+        netname: ENB
+        xy0: [1.446, 0.352]
+        xy1: [1.478, 0.608]
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [1.532, 0.352]
+        xy1: [1.564, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [1.72, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [1.72, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [1.72, 0.96]
+  tinv_small_1x:
+    pins:
+      EN:
+        layer: [M3, pin]
+        netname: EN
+        xy0: [0.328, 0.352]
+        xy1: [0.36, 0.608]
+      ENB:
+        layer: [M3, pin]
+        netname: ENB
+        xy0: [0.156, 0.352]
+        xy1: [0.188, 0.608]
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [0.07, 0.352]
+        xy1: [0.102, 0.608]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [0.242, 0.352]
+        xy1: [0.274, 0.608]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [0.516, 1.008]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [0.516, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [0.516, 0.96]

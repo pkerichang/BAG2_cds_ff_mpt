@@ -18,7 +18,13 @@ DEFINE demo_testbenches $BAG_FRAMEWORK/tutorial/demo_testbenches
 #DEFINE invamp_templates $BAG_WORK_DIR/example_repo/invamp_templates
 #DEFINE invamp_testbenches $BAG_WORK_DIR/example_repo/invamp_testbenches
 
-#working libraries
+#primitive templates
 DEFINE cds_ff_mpt_microtemplates_dense ./gen_libs/cds_ff_mpt_microtemplates_dense
-DEFINE cds_ff_mpt_templates_logic ./gen_libs/cds_ff_mpt_templates_logic
+
+#logic family
+DEFINE logic_templates laygo/generators/logic/logic_templates
+DEFINE cds_ff_mpt_logic_templates /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/cds_ff_mpt_logic_templates
+
+#working libraries
 DEFINE laygo_working ./laygo_working
+DEFINE cds_ff_mpt_templates_logic ./gen_libs/cds_ff_mpt_templates_logic
