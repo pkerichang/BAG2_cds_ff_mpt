@@ -29,3 +29,4 @@ DEFINE logic_templates laygo/generators/logic/logic_templates
 DEFINE laygo_working ./laygo_working
 DEFINE cds_ff_mpt_templates_logic ./gen_libs/cds_ff_mpt_templates_logic
 DEFINE cds_ff_mpt_logic_templates /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/cds_ff_mpt_logic_templates
+DEFINE serdes_generated /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/gen_libs/serdes_generated
