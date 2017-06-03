@@ -21,8 +21,8 @@ cds_ff_mpt_microtemplates_dense:
     xy1: [0.086, 0.48]
   _nmos4_fast_base_tap_base:
     pins: {}
-    xy0: [0.172, 0.0]
-    xy1: [0.258, 0.48]
+    xy0: [0.344, 0.0]
+    xy1: [0.43, 0.48]
   _nmos4_fast_boundary_base:
     pins: {}
     xy0: [0.0, 0.0]
@@ -183,7 +183,7 @@ cds_ff_mpt_microtemplates_dense:
   nmos4_fast_space_4x:
     pins: {}
     xy0: [0.0, 0.0]
-    xy1: [0.172, 0.48]
+    xy1: [0.344, 0.48]
   nmos4_fast_space_nf2:
     pins: {}
     xy0: [0.0, 0.0]
@@ -191,7 +191,7 @@ cds_ff_mpt_microtemplates_dense:
   nmos4_fast_space_nf4:
     pins: {}
     xy0: [0.0, 0.0]
-    xy1: [0.172, 0.48]
+    xy1: [0.344, 0.48]
   nmos4_fast_tap:
     pins:
       TAP0:
@@ -338,7 +338,7 @@ cds_ff_mpt_microtemplates_dense:
   pmos4_fast_space_4x:
     pins: {}
     xy0: [0.0, 0.0]
-    xy1: [0.172, 0.48]
+    xy1: [0.344, 0.48]
   pmos4_fast_space_nf2:
     pins: {}
     xy0: [0.0, 0.0]
@@ -346,7 +346,7 @@ cds_ff_mpt_microtemplates_dense:
   pmos4_fast_space_nf4:
     pins: {}
     xy0: [0.0, 0.0]
-    xy1: [0.172, 0.48]
+    xy1: [0.344, 0.48]
   pmos4_fast_tap:
     pins:
       TAP0:

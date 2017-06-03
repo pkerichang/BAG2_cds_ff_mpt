@@ -1569,14 +1569,14 @@ cds_ff_mpt_logic_templates:
         layer: [M2, pin]
         netname: VDD
         xy0: [0.0, 0.912]
-        xy1: [0.172, 1.008]
+        xy1: [0.344, 1.008]
       VSS:
         layer: [M2, pin]
         netname: VSS
         xy0: [0.0, -0.048]
-        xy1: [0.172, 0.048]
+        xy1: [0.344, 0.048]
     xy0: [0.0, 0.0]
-    xy1: [0.172, 0.96]
+    xy1: [0.344, 0.96]
   space_wovdd_1x:
     pins:
       VSS0:
@@ -1611,14 +1611,14 @@ cds_ff_mpt_logic_templates:
         layer: [M2, pin]
         netname: VSS
         xy0: [0.0, -0.048]
-        xy1: [0.172, 0.048]
+        xy1: [0.344, 0.048]
       VSS1:
         layer: [M2, pin]
         netname: VSS
         xy0: [0.0, 0.912]
-        xy1: [0.172, 1.008]
+        xy1: [0.344, 1.008]
     xy0: [0.0, 0.0]
-    xy1: [0.172, 0.96]
+    xy1: [0.344, 0.96]
   tap:
     pins:
       VDD:

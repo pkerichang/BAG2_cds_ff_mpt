@@ -101,20 +101,6 @@ cds_ff_mpt_microtemplates_dense:
     ylayer:
     - [M2, drawing]
     ywidth: [0.032]
-  route_M2_M3_basic_thick:
-    type: route
-    viamap:
-      via_M2_M3_1: [0, 0]
-    xgrid: [0.0]
-    xlayer:
-    - [M3, drawing]
-    xwidth: [0.1]
-    xy0: [0.0, 0.0]
-    xy1: [0.2, 0.4]
-    ygrid: [0.0]
-    ylayer:
-    - [M2, drawing]
-    ywidth: [0.2]
   route_M2_M3_cmos:
     type: route
     viamap:
