@@ -1,0 +1,5 @@
+lib_name: cds_ff_mpt_microtemplates_dense
+cell_name: momcap_center_1x
+pins: [ "TOP", "BOTTOM" ]
+instances:
+  {}

@@ -1,0 +1,18 @@
+capdac_c_m: 1
+capdac_num_bits_vertical: 3
+capdac_num_bits_horizontal: 2
+capdrv_m_list: [2, 2, 2, 2, 4]
+capdrv_space_offset: 0
+salatch_m: 12
+salatch_m_buf: 8
+salatch_m_rgnn: 8
+salatch_m_rst: 6
+sarclkgen_m: 2
+sarclkgen_fo: 4
+sarret_m: 1
+sarret_fo: 2
+sarfsm_m: 2
+sarlogic_m: 4
+dcap2_m: 19
+num_space_samp: 42
+num_space_sar: 48

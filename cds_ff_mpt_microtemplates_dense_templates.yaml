@@ -21,13 +21,17 @@ cds_ff_mpt_microtemplates_dense:
     xy1: [0.086, 0.48]
   _nmos4_fast_base_tap_base:
     pins: {}
-    xy0: [0.172, 0.0]
-    xy1: [0.258, 0.48]
+    xy0: [0.344, 0.0]
+    xy1: [0.43, 0.48]
   _nmos4_fast_boundary_base:
     pins: {}
     xy0: [0.0, 0.0]
     xy1: [0.086, 0.48]
   _nmos4_fast_space_base_nf1:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [0.086, 0.48]
+  _ntap_fast_base_nf1:
     pins: {}
     xy0: [0.0, 0.0]
     xy1: [0.086, 0.48]
@@ -47,10 +51,100 @@ cds_ff_mpt_microtemplates_dense:
     pins: {}
     xy0: [0.0, 0.0]
     xy1: [0.086, 0.48]
+  _ptap_fast_base_nf1:
+    pins: {}
+    xy0: [0.344, 0.0]
+    xy1: [0.43, 0.48]
   _sd_base:
     pins: {}
     xy0: [0.0, 0.0]
     xy1: [0.0, 0.0]
+  boundary_bottom:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [0.172, 0.48]
+  boundary_bottomleft:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [0.516, 0.48]
+  boundary_bottomright:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [0.516, 0.48]
+  boundary_top:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [0.172, 0.48]
+  boundary_topleft:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [0.516, 0.48]
+  boundary_topright:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [0.516, 0.48]
+  momcap_boundary_1x:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [1.28, 0.128]
+  momcap_center_1x:
+    pins:
+      BOTTOM:
+        layer: [M5, pin]
+        netname: BOTTOM
+        xy0: [0.0, -0.016]
+        xy1: [1.28, 0.016]
+      TOP:
+        layer: [M6, pin]
+        netname: TOP
+        xy0: [0.128, 0.048]
+        xy1: [1.152, 0.08]
+    xy0: [0.0, 0.0]
+    xy1: [1.28, 0.128]
+  momcap_dmy_1x:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [1.28, 0.128]
+  momcap_dmyblk_1x:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [1.28, 0.128]
+  momcap_dmyptn_m1_1x:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [1.28, 0.128]
+  momcap_dmyptn_m2_1x:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [1.28, 0.128]
+  momcap_dmyptn_m3_1x:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [1.28, 0.128]
+  momcap_dmyptn_m4_1x:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [1.28, 0.128]
+  momcap_dmyptn_m5_1x:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [1.28, 0.128]
+  momcap_dmyptn_m6_1x:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [1.28, 0.128]
+  momcap_dmyptn_m7_1x:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [1.28, 0.128]
+  momcap_dmyptn_m8_1x:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [1.28, 0.128]
+  momcap_dmyptn_m9_1x:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [1.28, 0.128]
   nmos4_fast_boundary:
     pins: {}
     xy0: [0.0, 0.0]
@@ -206,6 +300,59 @@ cds_ff_mpt_microtemplates_dense:
         xy1: [0.36, 0.281]
     xy0: [0.0, 0.0]
     xy1: [0.602, 0.48]
+  ntap_fast_boundary:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [0.086, 0.48]
+  ntap_fast_center_nf1:
+    pins:
+      TAP0:
+        layer: [M1, pin]
+        netname: VDD
+        xy0: [-0.016, 0.103]
+        xy1: [0.016, 0.281]
+      TAP1:
+        layer: [M1, pin]
+        netname: VDD
+        xy0: [0.07, 0.103]
+        xy1: [0.102, 0.281]
+    xy0: [0.0, 0.0]
+    xy1: [0.086, 0.48]
+  ntap_fast_center_nf2:
+    pins:
+      TAP0:
+        layer: [M1, pin]
+        netname: VDD
+        xy0: [-0.016, 0.103]
+        xy1: [0.016, 0.281]
+      TAP1:
+        layer: [M1, pin]
+        netname: VDD
+        xy0: [0.07, 0.103]
+        xy1: [0.102, 0.281]
+      TAP2:
+        layer: [M1, pin]
+        netname: VDD
+        xy0: [0.156, 0.103]
+        xy1: [0.188, 0.281]
+    xy0: [0.0, 0.0]
+    xy1: [0.172, 0.48]
+  ntap_fast_left:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [0.516, 0.48]
+  ntap_fast_right:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [0.516, 0.48]
+  ntap_fast_space_nf2:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [0.172, 0.48]
+  ntap_fast_space_nf4:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [0.344, 0.48]
   pmos4_fast_boundary:
     pins: {}
     xy0: [0.0, 0.0]
@@ -351,16 +498,69 @@ cds_ff_mpt_microtemplates_dense:
     pins:
       TAP0:
         layer: [M1, pin]
-        netname: VSS
+        netname: VDD
         xy0: [0.242, 0.103]
         xy1: [0.274, 0.281]
       TAP1:
         layer: [M1, pin]
-        netname: VSS
+        netname: VDD
         xy0: [0.328, 0.103]
         xy1: [0.36, 0.281]
     xy0: [0.0, 0.0]
     xy1: [0.602, 0.48]
+  ptap_fast_boundary:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [0.086, 0.48]
+  ptap_fast_center_nf1:
+    pins:
+      TAP0:
+        layer: [M1, pin]
+        netname: VSS
+        xy0: [-0.016, 0.103]
+        xy1: [0.016, 0.281]
+      TAP1:
+        layer: [M1, pin]
+        netname: VSS
+        xy0: [0.07, 0.103]
+        xy1: [0.102, 0.281]
+    xy0: [0.0, 0.0]
+    xy1: [0.086, 0.48]
+  ptap_fast_center_nf2:
+    pins:
+      TAP0:
+        layer: [M1, pin]
+        netname: VSS
+        xy0: [-0.016, 0.103]
+        xy1: [0.016, 0.281]
+      TAP1:
+        layer: [M1, pin]
+        netname: VSS
+        xy0: [0.07, 0.103]
+        xy1: [0.102, 0.281]
+      TAP2:
+        layer: [M1, pin]
+        netname: VSS
+        xy0: [0.156, 0.103]
+        xy1: [0.188, 0.281]
+    xy0: [0.0, 0.0]
+    xy1: [0.172, 0.48]
+  ptap_fast_left:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [0.516, 0.48]
+  ptap_fast_right:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [0.516, 0.48]
+  ptap_fast_space_nf2:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [0.172, 0.48]
+  ptap_fast_space_nf4:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [0.344, 0.48]
   via_M1_M2_0:
     pins: {}
     xy0: [0.0, 0.0]
@@ -402,6 +602,14 @@ cds_ff_mpt_microtemplates_dense:
     xy0: [0.0, 0.0]
     xy1: [0.0, 0.0]
   via_M5_M6_1:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [0.0, 0.0]
+  via_M6_M7_0:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [0.0, 0.0]
+  via_M6_M7_1:
     pins: {}
     xy0: [0.0, 0.0]
     xy1: [0.0, 0.0]

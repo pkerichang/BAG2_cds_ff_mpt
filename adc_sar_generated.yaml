@@ -1,0 +1,375 @@
+adc_sar_generated:
+  capdac:
+    pins:
+      I2<6>:
+        layer: [M7, pin]
+        netname: I<6>
+        xy0: [3.596, 0.064]
+        xy1: [3.628, 0.32]
+      I2<7>:
+        layer: [M7, pin]
+        netname: I<7>
+        xy0: [4.886, 0.064]
+        xy1: [4.918, 0.32]
+      I<0>:
+        layer: [M7, pin]
+        netname: I<0>
+        xy0: [2.306, 0.064]
+        xy1: [2.338, 0.32]
+      I<1>:
+        layer: [M7, pin]
+        netname: I<1>
+        xy0: [2.134, 0.064]
+        xy1: [2.166, 0.32]
+      I<2>:
+        layer: [M7, pin]
+        netname: I<2>
+        xy0: [1.962, 0.064]
+        xy1: [1.994, 0.32]
+      I<3>:
+        layer: [M7, pin]
+        netname: I<3>
+        xy0: [1.79, 0.064]
+        xy1: [1.822, 0.32]
+      I<4>:
+        layer: [M7, pin]
+        netname: I<4>
+        xy0: [1.618, 0.064]
+        xy1: [1.65, 0.32]
+      I<5>:
+        layer: [M7, pin]
+        netname: I<5>
+        xy0: [1.446, 0.064]
+        xy1: [1.478, 0.32]
+      I<6>:
+        layer: [M7, pin]
+        netname: I<6>
+        xy0: [2.564, 0.064]
+        xy1: [2.596, 0.32]
+      I<7>:
+        layer: [M7, pin]
+        netname: I<7>
+        xy0: [3.854, 0.064]
+        xy1: [3.886, 0.32]
+      I_C0:
+        layer: [M7, pin]
+        netname: I_C0
+        xy0: [1.274, 0.064]
+        xy1: [1.306, 0.32]
+      O0:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 0.688]
+        xy1: [1.806, 0.72]
+      O1:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 0.816]
+        xy1: [1.806, 0.848]
+      O10:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 1.968]
+        xy1: [1.806, 2.0]
+      O11:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 2.096]
+        xy1: [1.806, 2.128]
+      O12:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 2.224]
+        xy1: [1.806, 2.256]
+      O13:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 2.352]
+        xy1: [1.806, 2.384]
+      O14:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 2.48]
+        xy1: [1.806, 2.512]
+      O15:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 2.608]
+        xy1: [1.806, 2.64]
+      O16:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 2.736]
+        xy1: [1.806, 2.768]
+      O17:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 2.864]
+        xy1: [1.806, 2.896]
+      O18:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 2.992]
+        xy1: [1.806, 3.024]
+      O19:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 3.12]
+        xy1: [1.806, 3.152]
+      O2:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 0.944]
+        xy1: [1.806, 0.976]
+      O20:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 3.248]
+        xy1: [1.806, 3.28]
+      O21:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 3.376]
+        xy1: [1.806, 3.408]
+      O22:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 3.504]
+        xy1: [1.806, 3.536]
+      O23:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 3.632]
+        xy1: [1.806, 3.664]
+      O24:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 3.76]
+        xy1: [1.806, 3.792]
+      O25:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 3.888]
+        xy1: [1.806, 3.92]
+      O26:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 4.016]
+        xy1: [1.806, 4.048]
+      O27:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 4.144]
+        xy1: [1.806, 4.176]
+      O28:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 4.272]
+        xy1: [1.806, 4.304]
+      O29:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 4.4]
+        xy1: [1.806, 4.432]
+      O3:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 1.072]
+        xy1: [1.806, 1.104]
+      O30:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 4.528]
+        xy1: [1.806, 4.56]
+      O31:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 4.656]
+        xy1: [1.806, 4.688]
+      O32:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 4.784]
+        xy1: [1.806, 4.816]
+      O33:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 4.912]
+        xy1: [1.806, 4.944]
+      O34:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 5.04]
+        xy1: [1.806, 5.072]
+      O35:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 5.168]
+        xy1: [1.806, 5.2]
+      O36:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 5.296]
+        xy1: [1.806, 5.328]
+      O37:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 5.424]
+        xy1: [1.806, 5.456]
+      O38:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 5.552]
+        xy1: [1.806, 5.584]
+      O39:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 5.68]
+        xy1: [1.806, 5.712]
+      O4:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 1.2]
+        xy1: [1.806, 1.232]
+      O40:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 5.808]
+        xy1: [1.806, 5.84]
+      O41:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 5.936]
+        xy1: [1.806, 5.968]
+      O42:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 6.064]
+        xy1: [1.806, 6.096]
+      O43:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 6.192]
+        xy1: [1.806, 6.224]
+      O44:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 6.32]
+        xy1: [1.806, 6.352]
+      O45:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 6.448]
+        xy1: [1.806, 6.48]
+      O46:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 6.576]
+        xy1: [1.806, 6.608]
+      O47:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 6.704]
+        xy1: [1.806, 6.736]
+      O48:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 6.832]
+        xy1: [1.806, 6.864]
+      O49:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 6.96]
+        xy1: [1.806, 6.992]
+      O5:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 1.328]
+        xy1: [1.806, 1.36]
+      O50:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 7.088]
+        xy1: [1.806, 7.12]
+      O51:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 7.216]
+        xy1: [1.806, 7.248]
+      O52:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 7.344]
+        xy1: [1.806, 7.376]
+      O53:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 7.472]
+        xy1: [1.806, 7.504]
+      O54:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 7.6]
+        xy1: [1.806, 7.632]
+      O55:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 7.728]
+        xy1: [1.806, 7.76]
+      O56:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 7.856]
+        xy1: [1.806, 7.888]
+      O57:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 7.984]
+        xy1: [1.806, 8.016]
+      O58:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 8.112]
+        xy1: [1.806, 8.144]
+      O59:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 8.24]
+        xy1: [1.806, 8.272]
+      O6:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 1.456]
+        xy1: [1.806, 1.488]
+      O60:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 8.368]
+        xy1: [1.806, 8.4]
+      O61:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 8.496]
+        xy1: [1.806, 8.528]
+      O62:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 8.624]
+        xy1: [1.806, 8.656]
+      O7:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 1.584]
+        xy1: [1.806, 1.616]
+      O8:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 1.712]
+        xy1: [1.806, 1.744]
+      O9:
+        layer: [M6, pin]
+        netname: O
+        xy0: [1.462, 1.84]
+        xy1: [1.806, 1.872]
+    xy0: [0.0, 0.0]
+    xy1: [9.01, 10.56]
