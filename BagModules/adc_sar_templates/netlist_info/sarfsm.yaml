@@ -1,0 +1,92 @@
+lib_name: adc_sar_templates
+cell_name: sarfsm
+pins: [ "CLK", "RST", "VDD", "VSS", "RSTB_DLY", "SB<7:0>" ]
+instances:
+  I3<7:0>:
+    lib_name: logic_templates
+    cell_name: dff_rsth
+    instpins:
+      VSS:
+        direction: inputOutput
+        net_name: "<*8>VSS"
+        num_bits: 8
+      VDD:
+        direction: inputOutput
+        net_name: "<*8>VDD"
+        num_bits: 8
+      O:
+        direction: output
+        net_name: "SB<7:0>"
+        num_bits: 8
+      CLK:
+        direction: input
+        net_name: "<*8>CLK"
+        num_bits: 8
+      I:
+        direction: input
+        net_name: "RSTB_DLY,SB<7:1>"
+        num_bits: 8
+      RST:
+        direction: input
+        net_name: "<*8>RST"
+        num_bits: 8
+  I1:
+    lib_name: logic_templates
+    cell_name: dff_rsth
+    instpins:
+      VSS:
+        direction: inputOutput
+        net_name: "VSS"
+        num_bits: 1
+      VDD:
+        direction: inputOutput
+        net_name: "VDD"
+        num_bits: 1
+      O:
+        direction: output
+        net_name: "TRIG"
+        num_bits: 1
+      CLK:
+        direction: input
+        net_name: "CLK"
+        num_bits: 1
+      I:
+        direction: input
+        net_name: "VSS"
+        num_bits: 1
+      RST:
+        direction: input
+        net_name: "RST"
+        num_bits: 1
+  I2:
+    lib_name: logic_templates
+    cell_name: inv
+    instpins:
+      I:
+        direction: input
+        net_name: "TRIG"
+        num_bits: 1
+      VSS:
+        direction: inputOutput
+        net_name: "VSS"
+        num_bits: 1
+      VDD:
+        direction: inputOutput
+        net_name: "VDD"
+        num_bits: 1
+      O:
+        direction: output
+        net_name: "RSTB_DLY"
+        num_bits: 1
+  I0:
+    lib_name: logic_templates
+    cell_name: tie
+    instpins:
+      VSS:
+        direction: inputOutput
+        net_name: "VSS"
+        num_bits: 1
+      VDD:
+        direction: inputOutput
+        net_name: "VDD"
+        num_bits: 1

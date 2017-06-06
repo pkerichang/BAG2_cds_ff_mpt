@@ -1,0 +1,188 @@
+lib_name: adc_sar_templates
+cell_name: sar
+pins: [ "INP", "INM", "CLK", "VREF<2:0>", "OSP", "OSM", "ADCOUT<7:0>", "VDD", "VSS", "CKDSEL<3:0>", "EXTSEL_CLK", "EXTCLK", "VOL<6:0>", "VOR<6:0>" ]
+instances:
+  IAFE0:
+    lib_name: adc_sar_templates
+    cell_name: sarafe
+    instpins:
+      CLKB:
+        direction: 
+        net_name: "SARCLKB"
+        num_bits: 1
+      VSS:
+        direction: 
+        net_name: "VSS"
+        num_bits: 1
+      VDD:
+        direction: 
+        net_name: "VDD"
+        num_bits: 1
+      OUTM:
+        direction: 
+        net_name: "OUTM"
+        num_bits: 1
+      OUTP:
+        direction: 
+        net_name: "OUTP"
+        num_bits: 1
+      VOL<6:0>:
+        direction: 
+        net_name: "VOL<6:0>"
+        num_bits: 7
+      VOR<6:0>:
+        direction: 
+        net_name: "VOR<6:0>"
+        num_bits: 7
+      ENL0<2:0>:
+        direction: 
+        net_name: "ZM<1>,ZMID<1>,ZP<1>"
+        num_bits: 3
+      ENL1<2:0>:
+        direction: 
+        net_name: "ZM<2>,ZMID<2>,ZP<2>"
+        num_bits: 3
+      ENL2<2:0>:
+        direction: 
+        net_name: "ZM<3>,ZMID<3>,ZP<3>"
+        num_bits: 3
+      ENL3<2:0>:
+        direction: 
+        net_name: "ZM<4>,ZMID<4>,ZP<4>"
+        num_bits: 3
+      ENL4<2:0>:
+        direction: 
+        net_name: "ZM<5>,ZMID<5>,ZP<5>"
+        num_bits: 3
+      ENL5<2:0>:
+        direction: 
+        net_name: "ZM<6>,ZMID<6>,ZP<6>"
+        num_bits: 3
+      ENL6<2:0>:
+        direction: 
+        net_name: "ZM<7>,ZMID<7>,ZP<7>"
+        num_bits: 3
+      ENR0<2:0>:
+        direction: 
+        net_name: "ZP<1>,ZMID<1>,ZM<1>"
+        num_bits: 3
+      ENR1<2:0>:
+        direction: 
+        net_name: "ZP<2>,ZMID<2>,ZM<2>"
+        num_bits: 3
+      ENR2<2:0>:
+        direction: 
+        net_name: "ZP<3>,ZMID<3>,ZM<3>"
+        num_bits: 3
+      ENR3<2:0>:
+        direction: 
+        net_name: "ZP<4>,ZMID<4>,ZM<4>"
+        num_bits: 3
+      ENR4<2:0>:
+        direction: 
+        net_name: "ZP<5>,ZMID<5>,ZM<5>"
+        num_bits: 3
+      ENR5<2:0>:
+        direction: 
+        net_name: "ZP<6>,ZMID<6>,ZM<6>"
+        num_bits: 3
+      ENR6<2:0>:
+        direction: 
+        net_name: "ZP<7>,ZMID<7>,ZM<7>"
+        num_bits: 3
+      INM:
+        direction: 
+        net_name: "INM"
+        num_bits: 1
+      INP:
+        direction: 
+        net_name: "INP"
+        num_bits: 1
+      OSM:
+        direction: 
+        net_name: "OSM"
+        num_bits: 1
+      OSP:
+        direction: 
+        net_name: "OSP"
+        num_bits: 1
+      VREF<2:0>:
+        direction: 
+        net_name: "VREF<2:0>"
+        num_bits: 3
+  IABE0:
+    lib_name: adc_sar_templates
+    cell_name: sarabe
+    instpins:
+      SARCLKB:
+        direction: output
+        net_name: "SARCLKB"
+        num_bits: 1
+      VSS:
+        direction: inputOutput
+        net_name: "VSS"
+        num_bits: 1
+      VDD:
+        direction: inputOutput
+        net_name: "VDD"
+        num_bits: 1
+      ADCOUT<7:0>:
+        direction: output
+        net_name: "ADCOUT<7:0>"
+        num_bits: 8
+      COMPOUT:
+        direction: output
+        net_name: "COMPOUT"
+        num_bits: 1
+      DONE:
+        direction: output
+        net_name: "DONE"
+        num_bits: 1
+      SARCLK:
+        direction: output
+        net_name: "SARCLK"
+        num_bits: 1
+      SB<7:0>:
+        direction: output
+        net_name: "SB<7:0>"
+        num_bits: 8
+      UP:
+        direction: output
+        net_name: "UP"
+        num_bits: 1
+      ZM<7:0>:
+        direction: output
+        net_name: "ZM<7:0>"
+        num_bits: 8
+      ZMID<7:0>:
+        direction: output
+        net_name: "ZMID<7:0>"
+        num_bits: 8
+      ZP<7:0>:
+        direction: output
+        net_name: "ZP<7:0>"
+        num_bits: 8
+      CKDSEL<3:0>:
+        direction: input
+        net_name: "CKDSEL<3:0>"
+        num_bits: 4
+      EXTCLK:
+        direction: input
+        net_name: "EXTCLK"
+        num_bits: 1
+      EXTSEL_CLK:
+        direction: input
+        net_name: "EXTSEL_CLK"
+        num_bits: 1
+      RST:
+        direction: input
+        net_name: "CLK"
+        num_bits: 1
+      SAOMB:
+        direction: input
+        net_name: "OUTP"
+        num_bits: 1
+      SAOPB:
+        direction: input
+        net_name: "OUTM"
+        num_bits: 1

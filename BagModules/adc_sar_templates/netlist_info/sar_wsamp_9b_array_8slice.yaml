@@ -1,0 +1,1028 @@
+lib_name: adc_sar_templates
+cell_name: sar_wsamp_9b_array_8slice
+pins: [ "INP1", "INM1", "CLK1", "OSP1", "OSP2", "OSP3", "OSP4", "OSP5", "OSP6", "OSP7", "OSM0", "OSM1", "CLK2", "CLK3", "CLK4", "CLK5", "CLK6", "CLK7", "OSP0", "OSM2", "INP2", "INP3", "INP4", "INP5", "INP7", "INP6", "INM0", "OSM4", "INM2", "INM3", "INM4", "INM5", "INM6", "INM7", "CLK0", "OSM3", "INP0", "OSM5", "OSM6", "OSM7", "VREF<2:0>", "VSS", "ADCOUT0<8:0>", "ASCLKD7<3:0>", "ASCLKD6<3:0>", "ASCLKD5<3:0>", "ASCLKD4<3:0>", "ASCLKD3<3:0>", "ASCLKD2<3:0>", "ASCLKD1<3:0>", "EXTSEL_CLK0", "EXTSEL_CLK1", "EXTSEL_CLK2", "EXTSEL_CLK3", "EXTSEL_CLK4", "EXTSEL_CLK5", "EXTSEL_CLK6", "EXTSEL_CLK7", "ASCLKD0<3:0>", "ADCOUT1<8:0>", "ADCOUT2<8:0>", "ADCOUT3<8:0>", "ADCOUT4<8:0>", "ADCOUT5<8:0>", "ADCOUT6<8:0>", "ADCOUT7<8:0>", "CLKO0", "CLKO1", "CLKO2", "CLKO3", "CLKO4", "CLKO5", "CLKO6", "CLKO7", "VDDSAMP", "VDDSAR" ]
+instances:
+  ISLICE7:
+    lib_name: adc_sar_templates
+    cell_name: sar_wsamp_9b
+    instpins:
+      OSM:
+        direction: input
+        net_name: "OSM7"
+        num_bits: 1
+      OSP:
+        direction: input
+        net_name: "OSP7"
+        num_bits: 1
+      SAOM:
+        direction: output
+        net_name: "SAOM_7"
+        num_bits: 1
+      SAOP:
+        direction: output
+        net_name: "SAOP_7"
+        num_bits: 1
+      PHI0:
+        direction: output
+        net_name: "PHI0_7"
+        num_bits: 1
+      ICLK:
+        direction: output
+        net_name: "ICLK7"
+        num_bits: 1
+      VDDSAR:
+        direction: inputOutput
+        net_name: "VDDSAR"
+        num_bits: 1
+      VDDSAMP:
+        direction: inputOutput
+        net_name: "VDDSAMP"
+        num_bits: 1
+      SAMPM:
+        direction: output
+        net_name: "SAMPM7"
+        num_bits: 1
+      SAMPP:
+        direction: output
+        net_name: "SAMPP7"
+        num_bits: 1
+      CLKO:
+        direction: output
+        net_name: "CLKO7"
+        num_bits: 1
+      CLKPRB_SAMP:
+        direction: output
+        net_name: "CLKPRB_SAMP7"
+        num_bits: 1
+      UP:
+        direction: output
+        net_name: "UP7"
+        num_bits: 1
+      SB<8:0>:
+        direction: output
+        net_name: "SB7<8:0>"
+        num_bits: 9
+      SARCLK:
+        direction: output
+        net_name: "SARCLK7"
+        num_bits: 1
+      DONE:
+        direction: output
+        net_name: "DONE7"
+        num_bits: 1
+      ZM<8:0>:
+        direction: output
+        net_name: "ZM7<8:0>"
+        num_bits: 9
+      SARCLKB:
+        direction: output
+        net_name: "SARCLKB7"
+        num_bits: 1
+      ZMID<8:0>:
+        direction: output
+        net_name: "ZMID7<8:0>"
+        num_bits: 9
+      ZP<8:0>:
+        direction: output
+        net_name: "ZP7<8:0>"
+        num_bits: 9
+      VSS:
+        direction: inputOutput
+        net_name: "VSS"
+        num_bits: 1
+      VOL<7:0>:
+        direction: output
+        net_name: "VOL7<7:0>"
+        num_bits: 8
+      VOR<7:0>:
+        direction: output
+        net_name: "VOR7<7:0>"
+        num_bits: 8
+      CKDSEL0<1:0>:
+        direction: input
+        net_name: "ASCLKD7<1:0>"
+        num_bits: 2
+      CLK:
+        direction: input
+        net_name: "CLK7"
+        num_bits: 1
+      EXTSEL_CLK:
+        direction: input
+        net_name: "EXTSEL_CLK7"
+        num_bits: 1
+      ADCOUT<8:0>:
+        direction: output
+        net_name: "ADCOUT7<8:0>"
+        num_bits: 9
+      CKDSEL1<1:0>:
+        direction: input
+        net_name: "ASCLKD7<3:2>"
+        num_bits: 2
+      INM:
+        direction: input
+        net_name: "INM7"
+        num_bits: 1
+      INP:
+        direction: input
+        net_name: "INP7"
+        num_bits: 1
+      VREF<2:0>:
+        direction: input
+        net_name: "VREF<2:0>"
+        num_bits: 3
+  ISLICE6:
+    lib_name: adc_sar_templates
+    cell_name: sar_wsamp_9b
+    instpins:
+      OSM:
+        direction: input
+        net_name: "OSM6"
+        num_bits: 1
+      OSP:
+        direction: input
+        net_name: "OSP6"
+        num_bits: 1
+      SAOM:
+        direction: output
+        net_name: "SAOM6"
+        num_bits: 1
+      SAOP:
+        direction: output
+        net_name: "SAOP6"
+        num_bits: 1
+      PHI0:
+        direction: output
+        net_name: "PHI0_6"
+        num_bits: 1
+      ICLK:
+        direction: output
+        net_name: "ICLK6"
+        num_bits: 1
+      VDDSAR:
+        direction: inputOutput
+        net_name: "VDDSAR"
+        num_bits: 1
+      VDDSAMP:
+        direction: inputOutput
+        net_name: "VDDSAMP"
+        num_bits: 1
+      SAMPM:
+        direction: output
+        net_name: "SAMPM6"
+        num_bits: 1
+      SAMPP:
+        direction: output
+        net_name: "SAMPP6"
+        num_bits: 1
+      CLKO:
+        direction: output
+        net_name: "CLKO6"
+        num_bits: 1
+      CLKPRB_SAMP:
+        direction: output
+        net_name: "CLKPRB_SAMP6"
+        num_bits: 1
+      UP:
+        direction: output
+        net_name: "UP6"
+        num_bits: 1
+      SB<8:0>:
+        direction: output
+        net_name: "SB6<8:0>"
+        num_bits: 9
+      SARCLK:
+        direction: output
+        net_name: "SARCLK6"
+        num_bits: 1
+      DONE:
+        direction: output
+        net_name: "DONE6"
+        num_bits: 1
+      ZM<8:0>:
+        direction: output
+        net_name: "ZM6<8:0>"
+        num_bits: 9
+      SARCLKB:
+        direction: output
+        net_name: "SARCLKB6"
+        num_bits: 1
+      ZMID<8:0>:
+        direction: output
+        net_name: "ZMID6<8:0>"
+        num_bits: 9
+      ZP<8:0>:
+        direction: output
+        net_name: "ZP6<8:0>"
+        num_bits: 9
+      VSS:
+        direction: inputOutput
+        net_name: "VSS"
+        num_bits: 1
+      VOL<7:0>:
+        direction: output
+        net_name: "VOL6<7:0>"
+        num_bits: 8
+      VOR<7:0>:
+        direction: output
+        net_name: "VOR6<7:0>"
+        num_bits: 8
+      CKDSEL0<1:0>:
+        direction: input
+        net_name: "ASCLKD6<1:0>"
+        num_bits: 2
+      CLK:
+        direction: input
+        net_name: "CLK6"
+        num_bits: 1
+      EXTSEL_CLK:
+        direction: input
+        net_name: "EXTSEL_CLK6"
+        num_bits: 1
+      ADCOUT<8:0>:
+        direction: output
+        net_name: "ADCOUT6<8:0>"
+        num_bits: 9
+      CKDSEL1<1:0>:
+        direction: input
+        net_name: "ASCLKD6<3:2>"
+        num_bits: 2
+      INM:
+        direction: input
+        net_name: "INM6"
+        num_bits: 1
+      INP:
+        direction: input
+        net_name: "INP6"
+        num_bits: 1
+      VREF<2:0>:
+        direction: input
+        net_name: "VREF<2:0>"
+        num_bits: 3
+  ISLICE5:
+    lib_name: adc_sar_templates
+    cell_name: sar_wsamp_9b
+    instpins:
+      OSM:
+        direction: input
+        net_name: "OSM5"
+        num_bits: 1
+      OSP:
+        direction: input
+        net_name: "OSP5"
+        num_bits: 1
+      SAOM:
+        direction: output
+        net_name: "SAOM5"
+        num_bits: 1
+      SAOP:
+        direction: output
+        net_name: "SAOP5"
+        num_bits: 1
+      PHI0:
+        direction: output
+        net_name: "PHI0_5"
+        num_bits: 1
+      ICLK:
+        direction: output
+        net_name: "ICLK5"
+        num_bits: 1
+      VDDSAR:
+        direction: inputOutput
+        net_name: "VDDSAR"
+        num_bits: 1
+      VDDSAMP:
+        direction: inputOutput
+        net_name: "VDDSAMP"
+        num_bits: 1
+      SAMPM:
+        direction: output
+        net_name: "SAMPM5"
+        num_bits: 1
+      SAMPP:
+        direction: output
+        net_name: "SAMPP5"
+        num_bits: 1
+      CLKO:
+        direction: output
+        net_name: "CLKO5"
+        num_bits: 1
+      CLKPRB_SAMP:
+        direction: output
+        net_name: "CLKPRB_SAMP5"
+        num_bits: 1
+      UP:
+        direction: output
+        net_name: "UP5"
+        num_bits: 1
+      SB<8:0>:
+        direction: output
+        net_name: "SB5<8:0>"
+        num_bits: 9
+      SARCLK:
+        direction: output
+        net_name: "SARCLK5"
+        num_bits: 1
+      DONE:
+        direction: output
+        net_name: "DONE5"
+        num_bits: 1
+      ZM<8:0>:
+        direction: output
+        net_name: "ZM5<8:0>"
+        num_bits: 9
+      SARCLKB:
+        direction: output
+        net_name: "SARCLKB5"
+        num_bits: 1
+      ZMID<8:0>:
+        direction: output
+        net_name: "ZMID5<8:0>"
+        num_bits: 9
+      ZP<8:0>:
+        direction: output
+        net_name: "ZP5<8:0>"
+        num_bits: 9
+      VSS:
+        direction: inputOutput
+        net_name: "VSS"
+        num_bits: 1
+      VOL<7:0>:
+        direction: output
+        net_name: "VOL5<7:0>"
+        num_bits: 8
+      VOR<7:0>:
+        direction: output
+        net_name: "VOR5<7:0>"
+        num_bits: 8
+      CKDSEL0<1:0>:
+        direction: input
+        net_name: "ASCLKD5<1:0>"
+        num_bits: 2
+      CLK:
+        direction: input
+        net_name: "CLK5"
+        num_bits: 1
+      EXTSEL_CLK:
+        direction: input
+        net_name: "EXTSEL_CLK5"
+        num_bits: 1
+      ADCOUT<8:0>:
+        direction: output
+        net_name: "ADCOUT5<8:0>"
+        num_bits: 9
+      CKDSEL1<1:0>:
+        direction: input
+        net_name: "ASCLKD5<3:2>"
+        num_bits: 2
+      INM:
+        direction: input
+        net_name: "INM5"
+        num_bits: 1
+      INP:
+        direction: input
+        net_name: "INP5"
+        num_bits: 1
+      VREF<2:0>:
+        direction: input
+        net_name: "VREF<2:0>"
+        num_bits: 3
+  ISLICE4:
+    lib_name: adc_sar_templates
+    cell_name: sar_wsamp_9b
+    instpins:
+      OSM:
+        direction: input
+        net_name: "OSM4"
+        num_bits: 1
+      OSP:
+        direction: input
+        net_name: "OSP4"
+        num_bits: 1
+      SAOM:
+        direction: output
+        net_name: "SAOM4"
+        num_bits: 1
+      SAOP:
+        direction: output
+        net_name: "SAOP4"
+        num_bits: 1
+      PHI0:
+        direction: output
+        net_name: "PHI0_4"
+        num_bits: 1
+      ICLK:
+        direction: output
+        net_name: "ICLK4"
+        num_bits: 1
+      VDDSAR:
+        direction: inputOutput
+        net_name: "VDDSAR"
+        num_bits: 1
+      VDDSAMP:
+        direction: inputOutput
+        net_name: "VDDSAMP"
+        num_bits: 1
+      SAMPM:
+        direction: output
+        net_name: "SAMPM4"
+        num_bits: 1
+      SAMPP:
+        direction: output
+        net_name: "SAMPP4"
+        num_bits: 1
+      CLKO:
+        direction: output
+        net_name: "CLKO4"
+        num_bits: 1
+      CLKPRB_SAMP:
+        direction: output
+        net_name: "CLKPRB_SAMP4"
+        num_bits: 1
+      UP:
+        direction: output
+        net_name: "UP4"
+        num_bits: 1
+      SB<8:0>:
+        direction: output
+        net_name: "SB4<8:0>"
+        num_bits: 9
+      SARCLK:
+        direction: output
+        net_name: "SARCLK4"
+        num_bits: 1
+      DONE:
+        direction: output
+        net_name: "DONE4"
+        num_bits: 1
+      ZM<8:0>:
+        direction: output
+        net_name: "ZM4<8:0>"
+        num_bits: 9
+      SARCLKB:
+        direction: output
+        net_name: "SARCLKB4"
+        num_bits: 1
+      ZMID<8:0>:
+        direction: output
+        net_name: "ZMID4<8:0>"
+        num_bits: 9
+      ZP<8:0>:
+        direction: output
+        net_name: "ZP4<8:0>"
+        num_bits: 9
+      VSS:
+        direction: inputOutput
+        net_name: "VSS"
+        num_bits: 1
+      VOL<7:0>:
+        direction: output
+        net_name: "VOL4<7:0>"
+        num_bits: 8
+      VOR<7:0>:
+        direction: output
+        net_name: "VOR4<7:0>"
+        num_bits: 8
+      CKDSEL0<1:0>:
+        direction: input
+        net_name: "ASCLKD4<1:0>"
+        num_bits: 2
+      CLK:
+        direction: input
+        net_name: "CLK4"
+        num_bits: 1
+      EXTSEL_CLK:
+        direction: input
+        net_name: "EXTSEL_CLK4"
+        num_bits: 1
+      ADCOUT<8:0>:
+        direction: output
+        net_name: "ADCOUT4<8:0>"
+        num_bits: 9
+      CKDSEL1<1:0>:
+        direction: input
+        net_name: "ASCLKD4<3:2>"
+        num_bits: 2
+      INM:
+        direction: input
+        net_name: "INM4"
+        num_bits: 1
+      INP:
+        direction: input
+        net_name: "INP4"
+        num_bits: 1
+      VREF<2:0>:
+        direction: input
+        net_name: "VREF<2:0>"
+        num_bits: 3
+  ISLICE3:
+    lib_name: adc_sar_templates
+    cell_name: sar_wsamp_9b
+    instpins:
+      OSM:
+        direction: input
+        net_name: "OSM3"
+        num_bits: 1
+      OSP:
+        direction: input
+        net_name: "OSP3"
+        num_bits: 1
+      SAOM:
+        direction: output
+        net_name: "SAOM3"
+        num_bits: 1
+      SAOP:
+        direction: output
+        net_name: "SAOP3"
+        num_bits: 1
+      PHI0:
+        direction: output
+        net_name: "PHI0_3"
+        num_bits: 1
+      ICLK:
+        direction: output
+        net_name: "ICLK3"
+        num_bits: 1
+      VDDSAR:
+        direction: inputOutput
+        net_name: "VDDSAR"
+        num_bits: 1
+      VDDSAMP:
+        direction: inputOutput
+        net_name: "VDDSAMP"
+        num_bits: 1
+      SAMPM:
+        direction: output
+        net_name: "SAMPM3"
+        num_bits: 1
+      SAMPP:
+        direction: output
+        net_name: "SAMPP3"
+        num_bits: 1
+      CLKO:
+        direction: output
+        net_name: "CLKO3"
+        num_bits: 1
+      CLKPRB_SAMP:
+        direction: output
+        net_name: "CLKPRB_SAMP3"
+        num_bits: 1
+      UP:
+        direction: output
+        net_name: "UP3"
+        num_bits: 1
+      SB<8:0>:
+        direction: output
+        net_name: "SB3<8:0>"
+        num_bits: 9
+      SARCLK:
+        direction: output
+        net_name: "SARCLK3"
+        num_bits: 1
+      DONE:
+        direction: output
+        net_name: "DONE3"
+        num_bits: 1
+      ZM<8:0>:
+        direction: output
+        net_name: "ZM3<8:0>"
+        num_bits: 9
+      SARCLKB:
+        direction: output
+        net_name: "SARCLKB3"
+        num_bits: 1
+      ZMID<8:0>:
+        direction: output
+        net_name: "ZMID3<8:0>"
+        num_bits: 9
+      ZP<8:0>:
+        direction: output
+        net_name: "ZP3<8:0>"
+        num_bits: 9
+      VSS:
+        direction: inputOutput
+        net_name: "VSS"
+        num_bits: 1
+      VOL<7:0>:
+        direction: output
+        net_name: "VOL3<7:0>"
+        num_bits: 8
+      VOR<7:0>:
+        direction: output
+        net_name: "VOR3<7:0>"
+        num_bits: 8
+      CKDSEL0<1:0>:
+        direction: input
+        net_name: "ASCLKD3<1:0>"
+        num_bits: 2
+      CLK:
+        direction: input
+        net_name: "CLK3"
+        num_bits: 1
+      EXTSEL_CLK:
+        direction: input
+        net_name: "EXTSEL_CLK3"
+        num_bits: 1
+      ADCOUT<8:0>:
+        direction: output
+        net_name: "ADCOUT3<8:0>"
+        num_bits: 9
+      CKDSEL1<1:0>:
+        direction: input
+        net_name: "ASCLKD3<3:2>"
+        num_bits: 2
+      INM:
+        direction: input
+        net_name: "INM3"
+        num_bits: 1
+      INP:
+        direction: input
+        net_name: "INP3"
+        num_bits: 1
+      VREF<2:0>:
+        direction: input
+        net_name: "VREF<2:0>"
+        num_bits: 3
+  ISLICE2:
+    lib_name: adc_sar_templates
+    cell_name: sar_wsamp_9b
+    instpins:
+      OSM:
+        direction: input
+        net_name: "OSM2"
+        num_bits: 1
+      OSP:
+        direction: input
+        net_name: "OSP2"
+        num_bits: 1
+      SAOM:
+        direction: output
+        net_name: "SAOM2"
+        num_bits: 1
+      SAOP:
+        direction: output
+        net_name: "SAOP2"
+        num_bits: 1
+      PHI0:
+        direction: output
+        net_name: "PHI0_2"
+        num_bits: 1
+      ICLK:
+        direction: output
+        net_name: "ICLK2"
+        num_bits: 1
+      VDDSAR:
+        direction: inputOutput
+        net_name: "VDDSAR"
+        num_bits: 1
+      VDDSAMP:
+        direction: inputOutput
+        net_name: "VDDSAMP"
+        num_bits: 1
+      SAMPM:
+        direction: output
+        net_name: "SAMPM2"
+        num_bits: 1
+      SAMPP:
+        direction: output
+        net_name: "SAMPP2"
+        num_bits: 1
+      CLKO:
+        direction: output
+        net_name: "CLKO2"
+        num_bits: 1
+      CLKPRB_SAMP:
+        direction: output
+        net_name: "CLKPRB_SAMP2"
+        num_bits: 1
+      UP:
+        direction: output
+        net_name: "UP2"
+        num_bits: 1
+      SB<8:0>:
+        direction: output
+        net_name: "SB2<8:0>"
+        num_bits: 9
+      SARCLK:
+        direction: output
+        net_name: "SARCLK2"
+        num_bits: 1
+      DONE:
+        direction: output
+        net_name: "DONE2"
+        num_bits: 1
+      ZM<8:0>:
+        direction: output
+        net_name: "ZM2<8:0>"
+        num_bits: 9
+      SARCLKB:
+        direction: output
+        net_name: "SARCLKB2"
+        num_bits: 1
+      ZMID<8:0>:
+        direction: output
+        net_name: "ZMID2<8:0>"
+        num_bits: 9
+      ZP<8:0>:
+        direction: output
+        net_name: "ZP2<8:0>"
+        num_bits: 9
+      VSS:
+        direction: inputOutput
+        net_name: "VSS"
+        num_bits: 1
+      VOL<7:0>:
+        direction: output
+        net_name: "VOL2<7:0>"
+        num_bits: 8
+      VOR<7:0>:
+        direction: output
+        net_name: "VOR2<7:0>"
+        num_bits: 8
+      CKDSEL0<1:0>:
+        direction: input
+        net_name: "ASCLKD2<1:0>"
+        num_bits: 2
+      CLK:
+        direction: input
+        net_name: "CLK2"
+        num_bits: 1
+      EXTSEL_CLK:
+        direction: input
+        net_name: "EXTSEL_CLK2"
+        num_bits: 1
+      ADCOUT<8:0>:
+        direction: output
+        net_name: "ADCOUT2<8:0>"
+        num_bits: 9
+      CKDSEL1<1:0>:
+        direction: input
+        net_name: "ASCLKD2<3:2>"
+        num_bits: 2
+      INM:
+        direction: input
+        net_name: "INM2"
+        num_bits: 1
+      INP:
+        direction: input
+        net_name: "INP2"
+        num_bits: 1
+      VREF<2:0>:
+        direction: input
+        net_name: "VREF<2:0>"
+        num_bits: 3
+  ISLICE1:
+    lib_name: adc_sar_templates
+    cell_name: sar_wsamp_9b
+    instpins:
+      OSM:
+        direction: input
+        net_name: "OSM1"
+        num_bits: 1
+      OSP:
+        direction: input
+        net_name: "OSP1"
+        num_bits: 1
+      SAOM:
+        direction: output
+        net_name: "SAOM1"
+        num_bits: 1
+      SAOP:
+        direction: output
+        net_name: "SAOP1"
+        num_bits: 1
+      PHI0:
+        direction: output
+        net_name: "PHI0_1"
+        num_bits: 1
+      ICLK:
+        direction: output
+        net_name: "ICLK1"
+        num_bits: 1
+      VDDSAR:
+        direction: inputOutput
+        net_name: "VDDSAR"
+        num_bits: 1
+      VDDSAMP:
+        direction: inputOutput
+        net_name: "VDDSAMP"
+        num_bits: 1
+      SAMPM:
+        direction: output
+        net_name: "SAMPM1"
+        num_bits: 1
+      SAMPP:
+        direction: output
+        net_name: "SAMPP1"
+        num_bits: 1
+      CLKO:
+        direction: output
+        net_name: "CLKO1"
+        num_bits: 1
+      CLKPRB_SAMP:
+        direction: output
+        net_name: "CLKPRB_SAMP1"
+        num_bits: 1
+      UP:
+        direction: output
+        net_name: "UP1"
+        num_bits: 1
+      SB<8:0>:
+        direction: output
+        net_name: "SB1<8:0>"
+        num_bits: 9
+      SARCLK:
+        direction: output
+        net_name: "SARCLK1"
+        num_bits: 1
+      DONE:
+        direction: output
+        net_name: "DONE1"
+        num_bits: 1
+      ZM<8:0>:
+        direction: output
+        net_name: "ZM1<8:0>"
+        num_bits: 9
+      SARCLKB:
+        direction: output
+        net_name: "SARCLKB1"
+        num_bits: 1
+      ZMID<8:0>:
+        direction: output
+        net_name: "ZMID1<8:0>"
+        num_bits: 9
+      ZP<8:0>:
+        direction: output
+        net_name: "ZP1<8:0>"
+        num_bits: 9
+      VSS:
+        direction: inputOutput
+        net_name: "VSS"
+        num_bits: 1
+      VOL<7:0>:
+        direction: output
+        net_name: "VOL1<7:0>"
+        num_bits: 8
+      VOR<7:0>:
+        direction: output
+        net_name: "VOR1<7:0>"
+        num_bits: 8
+      CKDSEL0<1:0>:
+        direction: input
+        net_name: "ASCLKD1<1:0>"
+        num_bits: 2
+      CLK:
+        direction: input
+        net_name: "CLK1"
+        num_bits: 1
+      EXTSEL_CLK:
+        direction: input
+        net_name: "EXTSEL_CLK1"
+        num_bits: 1
+      ADCOUT<8:0>:
+        direction: output
+        net_name: "ADCOUT1<8:0>"
+        num_bits: 9
+      CKDSEL1<1:0>:
+        direction: input
+        net_name: "ASCLKD1<3:2>"
+        num_bits: 2
+      INM:
+        direction: input
+        net_name: "INM1"
+        num_bits: 1
+      INP:
+        direction: input
+        net_name: "INP1"
+        num_bits: 1
+      VREF<2:0>:
+        direction: input
+        net_name: "VREF<2:0>"
+        num_bits: 3
+  ISLICE0:
+    lib_name: adc_sar_templates
+    cell_name: sar_wsamp_9b
+    instpins:
+      OSM:
+        direction: input
+        net_name: "OSM0"
+        num_bits: 1
+      OSP:
+        direction: input
+        net_name: "OSP0"
+        num_bits: 1
+      SAOM:
+        direction: output
+        net_name: "SAOM0"
+        num_bits: 1
+      SAOP:
+        direction: output
+        net_name: "SAOP0"
+        num_bits: 1
+      PHI0:
+        direction: output
+        net_name: "PHI0_0"
+        num_bits: 1
+      ICLK:
+        direction: output
+        net_name: "ICLK0"
+        num_bits: 1
+      VDDSAR:
+        direction: inputOutput
+        net_name: "VDDSAR"
+        num_bits: 1
+      VDDSAMP:
+        direction: inputOutput
+        net_name: "VDDSAMP"
+        num_bits: 1
+      SAMPM:
+        direction: output
+        net_name: "SAMPM0"
+        num_bits: 1
+      SAMPP:
+        direction: output
+        net_name: "SAMPP0"
+        num_bits: 1
+      CLKO:
+        direction: output
+        net_name: "CLKO0"
+        num_bits: 1
+      CLKPRB_SAMP:
+        direction: output
+        net_name: "CLKPRB_SAMP0"
+        num_bits: 1
+      UP:
+        direction: output
+        net_name: "UP0"
+        num_bits: 1
+      SB<8:0>:
+        direction: output
+        net_name: "SB0<8:0>"
+        num_bits: 9
+      SARCLK:
+        direction: output
+        net_name: "SARCLK0"
+        num_bits: 1
+      DONE:
+        direction: output
+        net_name: "DONE0"
+        num_bits: 1
+      ZM<8:0>:
+        direction: output
+        net_name: "ZM0<8:0>"
+        num_bits: 9
+      SARCLKB:
+        direction: output
+        net_name: "SARCLKB0"
+        num_bits: 1
+      ZMID<8:0>:
+        direction: output
+        net_name: "ZMID0<8:0>"
+        num_bits: 9
+      ZP<8:0>:
+        direction: output
+        net_name: "ZP0<8:0>"
+        num_bits: 9
+      VSS:
+        direction: inputOutput
+        net_name: "VSS"
+        num_bits: 1
+      VOL<7:0>:
+        direction: output
+        net_name: "VOL0<7:0>"
+        num_bits: 8
+      VOR<7:0>:
+        direction: output
+        net_name: "VOR0<7:0>"
+        num_bits: 8
+      CKDSEL0<1:0>:
+        direction: input
+        net_name: "ASCLKD0<1:0>"
+        num_bits: 2
+      CLK:
+        direction: input
+        net_name: "CLK0"
+        num_bits: 1
+      EXTSEL_CLK:
+        direction: input
+        net_name: "EXTSEL_CLK0"
+        num_bits: 1
+      ADCOUT<8:0>:
+        direction: output
+        net_name: "ADCOUT0<8:0>"
+        num_bits: 9
+      CKDSEL1<1:0>:
+        direction: input
+        net_name: "ASCLKD0<3:2>"
+        num_bits: 2
+      INM:
+        direction: input
+        net_name: "INM0"
+        num_bits: 1
+      INP:
+        direction: input
+        net_name: "INP0"
+        num_bits: 1
+      VREF<2:0>:
+        direction: input
+        net_name: "VREF<2:0>"
+        num_bits: 3
