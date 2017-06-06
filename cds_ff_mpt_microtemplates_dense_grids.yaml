@@ -196,6 +196,20 @@ cds_ff_mpt_microtemplates_dense:
     ylayer:
     - [M4, drawing]
     ywidth: [0.032]
+  route_M3_M4_thick:
+    type: route
+    viamap:
+      via_M3_M4_1: [0, 0]
+    xgrid: [0.0]
+    xlayer:
+    - [M3, drawing]
+    xwidth: [0.096]
+    xy0: [0.0, 0.0]
+    xy1: [0.192, 0.192]
+    ygrid: [0.0]
+    ylayer:
+    - [M4, drawing]
+    ywidth: [0.096]
   route_M4_M5_basic:
     type: route
     viamap:
@@ -210,6 +224,20 @@ cds_ff_mpt_microtemplates_dense:
     ylayer:
     - [M4, drawing]
     ywidth: [0.032]
+  route_M4_M5_thick:
+    type: route
+    viamap:
+      via_M4_M5_1: [0, 0]
+    xgrid: [0.0]
+    xlayer:
+    - [M5, drawing]
+    xwidth: [0.096]
+    xy0: [0.0, 0.0]
+    xy1: [0.192, 0.192]
+    ygrid: [0.0]
+    ylayer:
+    - [M4, drawing]
+    ywidth: [0.096]
   route_M5_M6_basic:
     type: route
     viamap:
@@ -224,6 +252,34 @@ cds_ff_mpt_microtemplates_dense:
     ylayer:
     - [M6, drawing]
     ywidth: [0.032]
+  route_M5_M6_basic_thick:
+    type: route
+    viamap:
+      via_M5_M6_1: [0, 0]
+    xgrid: [0.0]
+    xlayer:
+    - [M5, drawing]
+    xwidth: [0.032]
+    xy0: [0.0, 0.0]
+    xy1: [0.086, 0.192]
+    ygrid: [0.0]
+    ylayer:
+    - [M6, drawing]
+    ywidth: [0.096]
+  route_M5_M6_thick:
+    type: route
+    viamap:
+      via_M5_M6_1: [0, 0]
+    xgrid: [0.0]
+    xlayer:
+    - [M5, drawing]
+    xwidth: [0.096]
+    xy0: [0.0, 0.0]
+    xy1: [0.192, 0.192]
+    ygrid: [0.0]
+    ylayer:
+    - [M6, drawing]
+    ywidth: [0.096]
   route_M6_M7_basic:
     type: route
     viamap:
