@@ -1,8 +1,6 @@
 lib_name: cds_ff_mpt_microtemplates_dense
-cell_name: via_M6_M7_1
+cell_name: _gate_base_nf1_left
 rects:
-  1:
-s:
   1:
     layer: LiPo drawing
     bBox: [[-0.004000, 0.369000], [0.064000, 0.399000]]

@@ -373,3 +373,894 @@ adc_sar_generated:
         xy1: [1.806, 1.872]
     xy0: [0.0, 0.0]
     xy1: [9.01, 10.56]
+  capdrv_nsw_2x:
+    pins:
+      EN<0>:
+        layer: [M4, pin]
+        netname: EN<0>
+        xy0: [0.086, 0.112]
+        xy1: [0.43, 0.144]
+      EN<1>:
+        layer: [M4, pin]
+        netname: EN<1>
+        xy0: [0.086, 0.176]
+        xy1: [0.43, 0.208]
+      EN<2>:
+        layer: [M4, pin]
+        netname: EN<2>
+        xy0: [0.086, 0.24]
+        xy1: [0.43, 0.272]
+      VO:
+        layer: [M4, pin]
+        netname: VO
+        xy0: [0.946, 0.752]
+        xy1: [1.29, 0.784]
+      VREF<0>:
+        layer: [M4, pin]
+        netname: VREF<0>
+        xy0: [0.086, 0.368]
+        xy1: [0.43, 0.4]
+      VREF<1>:
+        layer: [M4, pin]
+        netname: VREF<1>
+        xy0: [0.086, 0.496]
+        xy1: [0.43, 0.528]
+      VREF<2>:
+        layer: [M4, pin]
+        netname: VREF<2>
+        xy0: [0.086, 0.624]
+        xy1: [0.43, 0.656]
+      VSS0:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [2.924, 0.048]
+      VSS1:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, 0.912]
+        xy1: [2.924, 1.008]
+    xy0: [0.0, 0.0]
+    xy1: [2.924, 0.96]
+  capdrv_nsw_4x:
+    pins:
+      EN<0>:
+        layer: [M4, pin]
+        netname: EN<0>
+        xy0: [0.086, 0.112]
+        xy1: [0.43, 0.144]
+      EN<1>:
+        layer: [M4, pin]
+        netname: EN<1>
+        xy0: [0.086, 0.176]
+        xy1: [0.43, 0.208]
+      EN<2>:
+        layer: [M4, pin]
+        netname: EN<2>
+        xy0: [0.086, 0.24]
+        xy1: [0.43, 0.272]
+      VO:
+        layer: [M4, pin]
+        netname: VO
+        xy0: [1.462, 0.752]
+        xy1: [1.806, 0.784]
+      VREF<0>:
+        layer: [M4, pin]
+        netname: VREF<0>
+        xy0: [0.086, 0.368]
+        xy1: [0.43, 0.4]
+      VREF<1>:
+        layer: [M4, pin]
+        netname: VREF<1>
+        xy0: [0.086, 0.496]
+        xy1: [0.43, 0.528]
+      VREF<2>:
+        layer: [M4, pin]
+        netname: VREF<2>
+        xy0: [0.086, 0.624]
+        xy1: [0.43, 0.656]
+      VSS0:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [2.236, 0.048]
+      VSS1:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, 0.912]
+        xy1: [2.236, 1.008]
+    xy0: [0.0, 0.0]
+    xy1: [2.924, 0.96]
+  capdrv_nsw_8x:
+    pins:
+      EN<0>:
+        layer: [M4, pin]
+        netname: EN<0>
+        xy0: [0.086, 0.112]
+        xy1: [0.43, 0.144]
+      EN<1>:
+        layer: [M4, pin]
+        netname: EN<1>
+        xy0: [0.086, 0.176]
+        xy1: [0.43, 0.208]
+      EN<2>:
+        layer: [M4, pin]
+        netname: EN<2>
+        xy0: [0.086, 0.24]
+        xy1: [0.43, 0.272]
+      VO:
+        layer: [M4, pin]
+        netname: VO
+        xy0: [2.494, 0.752]
+        xy1: [2.838, 0.784]
+      VREF<0>:
+        layer: [M4, pin]
+        netname: VREF<0>
+        xy0: [0.086, 0.368]
+        xy1: [0.43, 0.4]
+      VREF<1>:
+        layer: [M4, pin]
+        netname: VREF<1>
+        xy0: [0.086, 0.496]
+        xy1: [0.43, 0.528]
+      VREF<2>:
+        layer: [M4, pin]
+        netname: VREF<2>
+        xy0: [0.086, 0.624]
+        xy1: [0.43, 0.656]
+      VSS0:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [2.924, 0.048]
+      VSS1:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, 0.912]
+        xy1: [2.924, 1.008]
+    xy0: [0.0, 0.0]
+    xy1: [2.924, 0.96]
+  salatch_pmos:
+    pins:
+      CLKB:
+        layer: [M5, pin]
+        netname: CLKB
+        xy0: [9.358, 3.52]
+        xy1: [9.39, 3.776]
+      INM:
+        layer: [M3, pin]
+        netname: INM
+        xy0: [9.96, 0.96]
+        xy1: [9.992, 1.216]
+      INP:
+        layer: [M3, pin]
+        netname: INP
+        xy0: [8.068, 0.96]
+        xy1: [8.1, 1.216]
+      INTM:
+        layer: [M3, pin]
+        netname: INTM
+        xy0: [8.326, 2.88]
+        xy1: [8.358, 3.12]
+      INTP:
+        layer: [M3, pin]
+        netname: INTP
+        xy0: [9.702, 2.88]
+        xy1: [9.734, 3.12]
+      OSM:
+        layer: [M3, pin]
+        netname: OSM
+        xy0: [10.476, 3.584]
+        xy1: [10.508, 3.84]
+      OSP:
+        layer: [M3, pin]
+        netname: OSP
+        xy0: [7.552, 3.584]
+        xy1: [7.584, 3.84]
+      OUTM:
+        layer: [M5, pin]
+        netname: OUTM
+        xy0: [9.444, 3.712]
+        xy1: [9.476, 3.968]
+      OUTP:
+        layer: [M5, pin]
+        netname: OUTP
+        xy0: [8.584, 3.712]
+        xy1: [8.616, 3.968]
+      VDD0:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.602, 0.72]
+        xy1: [17.458, 0.816]
+      VDD1:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.602, 2.256]
+        xy1: [17.458, 2.352]
+      VDDL0:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [6.262, 0.576]
+        xy1: [6.294, 3.84]
+      VDDL1:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [6.09, 0.576]
+        xy1: [6.122, 3.84]
+      VDDL10:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [4.542, 0.576]
+        xy1: [4.574, 3.84]
+      VDDL11:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [4.37, 0.576]
+        xy1: [4.402, 3.84]
+      VDDL12:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [4.198, 0.576]
+        xy1: [4.23, 3.84]
+      VDDL13:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [4.026, 0.576]
+        xy1: [4.058, 3.84]
+      VDDL14:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [3.854, 0.576]
+        xy1: [3.886, 3.84]
+      VDDL15:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [3.682, 0.576]
+        xy1: [3.714, 3.84]
+      VDDL16:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [3.51, 0.576]
+        xy1: [3.542, 3.84]
+      VDDL17:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [3.338, 0.576]
+        xy1: [3.37, 3.84]
+      VDDL18:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [3.166, 0.576]
+        xy1: [3.198, 3.84]
+      VDDL19:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [2.994, 0.576]
+        xy1: [3.026, 3.84]
+      VDDL2:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [5.918, 0.576]
+        xy1: [5.95, 3.84]
+      VDDL20:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [2.822, 0.576]
+        xy1: [2.854, 3.84]
+      VDDL21:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [2.65, 0.576]
+        xy1: [2.682, 3.84]
+      VDDL22:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [2.478, 0.576]
+        xy1: [2.51, 3.84]
+      VDDL23:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [2.306, 0.576]
+        xy1: [2.338, 3.84]
+      VDDL24:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [2.134, 0.576]
+        xy1: [2.166, 3.84]
+      VDDL25:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [1.962, 0.576]
+        xy1: [1.994, 3.84]
+      VDDL26:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [1.79, 0.576]
+        xy1: [1.822, 3.84]
+      VDDL27:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [1.618, 0.576]
+        xy1: [1.65, 3.84]
+      VDDL28:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [1.446, 0.576]
+        xy1: [1.478, 3.84]
+      VDDL29:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [1.274, 0.576]
+        xy1: [1.306, 3.84]
+      VDDL3:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [5.746, 0.576]
+        xy1: [5.778, 3.84]
+      VDDL30:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [1.102, 0.576]
+        xy1: [1.134, 3.84]
+      VDDL31:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [0.93, 0.576]
+        xy1: [0.962, 3.84]
+      VDDL32:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [0.758, 0.576]
+        xy1: [0.79, 3.84]
+      VDDL33:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [0.586, 0.576]
+        xy1: [0.618, 3.84]
+      VDDL4:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [5.574, 0.576]
+        xy1: [5.606, 3.84]
+      VDDL5:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [5.402, 0.576]
+        xy1: [5.434, 3.84]
+      VDDL6:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [5.23, 0.576]
+        xy1: [5.262, 3.84]
+      VDDL7:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [5.058, 0.576]
+        xy1: [5.09, 3.84]
+      VDDL8:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [4.886, 0.576]
+        xy1: [4.918, 3.84]
+      VDDL9:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [4.714, 0.576]
+        xy1: [4.746, 3.84]
+      VDDR0:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [11.766, 0.576]
+        xy1: [11.798, 3.84]
+      VDDR1:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [11.938, 0.576]
+        xy1: [11.97, 3.84]
+      VDDR10:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [13.486, 0.576]
+        xy1: [13.518, 3.84]
+      VDDR11:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [13.658, 0.576]
+        xy1: [13.69, 3.84]
+      VDDR12:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [13.83, 0.576]
+        xy1: [13.862, 3.84]
+      VDDR13:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [14.002, 0.576]
+        xy1: [14.034, 3.84]
+      VDDR14:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [14.174, 0.576]
+        xy1: [14.206, 3.84]
+      VDDR15:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [14.346, 0.576]
+        xy1: [14.378, 3.84]
+      VDDR16:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [14.518, 0.576]
+        xy1: [14.55, 3.84]
+      VDDR17:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [14.69, 0.576]
+        xy1: [14.722, 3.84]
+      VDDR18:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [14.862, 0.576]
+        xy1: [14.894, 3.84]
+      VDDR19:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [15.034, 0.576]
+        xy1: [15.066, 3.84]
+      VDDR2:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [12.11, 0.576]
+        xy1: [12.142, 3.84]
+      VDDR20:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [15.206, 0.576]
+        xy1: [15.238, 3.84]
+      VDDR21:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [15.378, 0.576]
+        xy1: [15.41, 3.84]
+      VDDR22:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [15.55, 0.576]
+        xy1: [15.582, 3.84]
+      VDDR23:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [15.722, 0.576]
+        xy1: [15.754, 3.84]
+      VDDR24:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [15.894, 0.576]
+        xy1: [15.926, 3.84]
+      VDDR25:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [16.066, 0.576]
+        xy1: [16.098, 3.84]
+      VDDR26:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [16.238, 0.576]
+        xy1: [16.27, 3.84]
+      VDDR27:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [16.41, 0.576]
+        xy1: [16.442, 3.84]
+      VDDR28:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [16.582, 0.576]
+        xy1: [16.614, 3.84]
+      VDDR29:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [16.754, 0.576]
+        xy1: [16.786, 3.84]
+      VDDR3:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [12.282, 0.576]
+        xy1: [12.314, 3.84]
+      VDDR30:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [16.926, 0.576]
+        xy1: [16.958, 3.84]
+      VDDR31:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [17.098, 0.576]
+        xy1: [17.13, 3.84]
+      VDDR32:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [17.27, 0.576]
+        xy1: [17.302, 3.84]
+      VDDR33:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [17.442, 0.576]
+        xy1: [17.474, 3.84]
+      VDDR4:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [12.454, 0.576]
+        xy1: [12.486, 3.84]
+      VDDR5:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [12.626, 0.576]
+        xy1: [12.658, 3.84]
+      VDDR6:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [12.798, 0.576]
+        xy1: [12.83, 3.84]
+      VDDR7:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [12.97, 0.576]
+        xy1: [13.002, 3.84]
+      VDDR8:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [13.142, 0.576]
+        xy1: [13.174, 3.84]
+      VDDR9:
+        layer: [M3, pin]
+        netname: VDD
+        xy0: [13.314, 0.576]
+        xy1: [13.346, 3.84]
+      VSS0:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.602, 3.408]
+        xy1: [17.458, 3.504]
+      VSSL0:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [6.348, 0.576]
+        xy1: [6.38, 3.84]
+      VSSL1:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [6.176, 0.576]
+        xy1: [6.208, 3.84]
+      VSSL10:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [4.628, 0.576]
+        xy1: [4.66, 3.84]
+      VSSL11:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [4.456, 0.576]
+        xy1: [4.488, 3.84]
+      VSSL12:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [4.284, 0.576]
+        xy1: [4.316, 3.84]
+      VSSL13:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [4.112, 0.576]
+        xy1: [4.144, 3.84]
+      VSSL14:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [3.94, 0.576]
+        xy1: [3.972, 3.84]
+      VSSL15:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [3.768, 0.576]
+        xy1: [3.8, 3.84]
+      VSSL16:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [3.596, 0.576]
+        xy1: [3.628, 3.84]
+      VSSL17:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [3.424, 0.576]
+        xy1: [3.456, 3.84]
+      VSSL18:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [3.252, 0.576]
+        xy1: [3.284, 3.84]
+      VSSL19:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [3.08, 0.576]
+        xy1: [3.112, 3.84]
+      VSSL2:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [6.004, 0.576]
+        xy1: [6.036, 3.84]
+      VSSL20:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [2.908, 0.576]
+        xy1: [2.94, 3.84]
+      VSSL21:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [2.736, 0.576]
+        xy1: [2.768, 3.84]
+      VSSL22:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [2.564, 0.576]
+        xy1: [2.596, 3.84]
+      VSSL23:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [2.392, 0.576]
+        xy1: [2.424, 3.84]
+      VSSL24:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [2.22, 0.576]
+        xy1: [2.252, 3.84]
+      VSSL25:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [2.048, 0.576]
+        xy1: [2.08, 3.84]
+      VSSL26:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [1.876, 0.576]
+        xy1: [1.908, 3.84]
+      VSSL27:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [1.704, 0.576]
+        xy1: [1.736, 3.84]
+      VSSL28:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [1.532, 0.576]
+        xy1: [1.564, 3.84]
+      VSSL29:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [1.36, 0.576]
+        xy1: [1.392, 3.84]
+      VSSL3:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [5.832, 0.576]
+        xy1: [5.864, 3.84]
+      VSSL30:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [1.188, 0.576]
+        xy1: [1.22, 3.84]
+      VSSL31:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [1.016, 0.576]
+        xy1: [1.048, 3.84]
+      VSSL32:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [0.844, 0.576]
+        xy1: [0.876, 3.84]
+      VSSL33:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [0.672, 0.576]
+        xy1: [0.704, 3.84]
+      VSSL4:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [5.66, 0.576]
+        xy1: [5.692, 3.84]
+      VSSL5:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [5.488, 0.576]
+        xy1: [5.52, 3.84]
+      VSSL6:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [5.316, 0.576]
+        xy1: [5.348, 3.84]
+      VSSL7:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [5.144, 0.576]
+        xy1: [5.176, 3.84]
+      VSSL8:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [4.972, 0.576]
+        xy1: [5.004, 3.84]
+      VSSL9:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [4.8, 0.576]
+        xy1: [4.832, 3.84]
+      VSSR0:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [11.68, 0.576]
+        xy1: [11.712, 3.84]
+      VSSR1:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [11.852, 0.576]
+        xy1: [11.884, 3.84]
+      VSSR10:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [13.4, 0.576]
+        xy1: [13.432, 3.84]
+      VSSR11:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [13.572, 0.576]
+        xy1: [13.604, 3.84]
+      VSSR12:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [13.744, 0.576]
+        xy1: [13.776, 3.84]
+      VSSR13:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [13.916, 0.576]
+        xy1: [13.948, 3.84]
+      VSSR14:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [14.088, 0.576]
+        xy1: [14.12, 3.84]
+      VSSR15:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [14.26, 0.576]
+        xy1: [14.292, 3.84]
+      VSSR16:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [14.432, 0.576]
+        xy1: [14.464, 3.84]
+      VSSR17:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [14.604, 0.576]
+        xy1: [14.636, 3.84]
+      VSSR18:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [14.776, 0.576]
+        xy1: [14.808, 3.84]
+      VSSR19:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [14.948, 0.576]
+        xy1: [14.98, 3.84]
+      VSSR2:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [12.024, 0.576]
+        xy1: [12.056, 3.84]
+      VSSR20:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [15.12, 0.576]
+        xy1: [15.152, 3.84]
+      VSSR21:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [15.292, 0.576]
+        xy1: [15.324, 3.84]
+      VSSR22:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [15.464, 0.576]
+        xy1: [15.496, 3.84]
+      VSSR23:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [15.636, 0.576]
+        xy1: [15.668, 3.84]
+      VSSR24:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [15.808, 0.576]
+        xy1: [15.84, 3.84]
+      VSSR25:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [15.98, 0.576]
+        xy1: [16.012, 3.84]
+      VSSR26:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [16.152, 0.576]
+        xy1: [16.184, 3.84]
+      VSSR27:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [16.324, 0.576]
+        xy1: [16.356, 3.84]
+      VSSR28:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [16.496, 0.576]
+        xy1: [16.528, 3.84]
+      VSSR29:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [16.668, 0.576]
+        xy1: [16.7, 3.84]
+      VSSR3:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [12.196, 0.576]
+        xy1: [12.228, 3.84]
+      VSSR30:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [16.84, 0.576]
+        xy1: [16.872, 3.84]
+      VSSR31:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [17.012, 0.576]
+        xy1: [17.044, 3.84]
+      VSSR32:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [17.184, 0.576]
+        xy1: [17.216, 3.84]
+      VSSR33:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [17.356, 0.576]
+        xy1: [17.388, 3.84]
+      VSSR4:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [12.368, 0.576]
+        xy1: [12.4, 3.84]
+      VSSR5:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [12.54, 0.576]
+        xy1: [12.572, 3.84]
+      VSSR6:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [12.712, 0.576]
+        xy1: [12.744, 3.84]
+      VSSR7:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [12.884, 0.576]
+        xy1: [12.916, 3.84]
+      VSSR8:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [13.056, 0.576]
+        xy1: [13.088, 3.84]
+      VSSR9:
+        layer: [M3, pin]
+        netname: VSS
+        xy0: [13.228, 0.576]
+        xy1: [13.26, 3.84]
+    xy0: [0.0, 0.0]
+    xy1: [18.06, 4.32]

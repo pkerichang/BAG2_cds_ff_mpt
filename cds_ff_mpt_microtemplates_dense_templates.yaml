@@ -53,8 +53,8 @@ cds_ff_mpt_microtemplates_dense:
     xy1: [0.086, 0.48]
   _ptap_fast_base_nf1:
     pins: {}
-    xy0: [0.172, 0.0]
-    xy1: [0.258, 0.48]
+    xy0: [0.0, 0.0]
+    xy1: [0.086, 0.48]
   _sd_base:
     pins: {}
     xy0: [0.0, 0.0]
@@ -62,7 +62,7 @@ cds_ff_mpt_microtemplates_dense:
   boundary_bottom:
     pins: {}
     xy0: [0.0, 0.0]
-    xy1: [0.172, 0.48]
+    xy1: [0.086, 0.48]
   boundary_bottomleft:
     pins: {}
     xy0: [0.0, 0.0]
@@ -74,7 +74,7 @@ cds_ff_mpt_microtemplates_dense:
   boundary_top:
     pins: {}
     xy0: [0.0, 0.0]
-    xy1: [0.172, 0.48]
+    xy1: [0.086, 0.48]
   boundary_topleft:
     pins: {}
     xy0: [0.0, 0.0]
@@ -345,6 +345,10 @@ cds_ff_mpt_microtemplates_dense:
     pins: {}
     xy0: [0.0, 0.0]
     xy1: [0.516, 0.48]
+  ntap_fast_space:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [0.086, 0.48]
   ntap_fast_space_nf2:
     pins: {}
     xy0: [0.0, 0.0]
@@ -553,6 +557,10 @@ cds_ff_mpt_microtemplates_dense:
     pins: {}
     xy0: [0.0, 0.0]
     xy1: [0.516, 0.48]
+  ptap_fast_space:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [0.086, 0.48]
   ptap_fast_space_nf2:
     pins: {}
     xy0: [0.0, 0.0]
