@@ -1753,12 +1753,12 @@ cds_ff_mpt_logic_templates:
     pins:
       TIEVDD:
         layer: [M3, pin]
-        netname: TIEVDD
+        netname: VDD
         xy0: [0.242, 0.128]
         xy1: [0.274, 0.832]
       TIEVSS:
         layer: [M3, pin]
-        netname: TIEVSS
+        netname: VSS
         xy0: [0.07, 0.128]
         xy1: [0.102, 0.832]
       VDD:
@@ -1777,12 +1777,12 @@ cds_ff_mpt_logic_templates:
     pins:
       TIEVSS:
         layer: [M3, pin]
-        netname: TIEVSS
+        netname: VSS
         xy0: [0.07, 0.128]
         xy1: [0.102, 0.832]
       TIEVSS2:
         layer: [M3, pin]
-        netname: TIEVSS2
+        netname: VSS
         xy0: [0.242, 0.128]
         xy1: [0.274, 0.832]
       VSS0:

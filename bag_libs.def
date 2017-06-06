@@ -3,5 +3,5 @@ BAG_prim $BAG_TECH_CONFIG_DIR/DesignModules
 #invamp_templates $BAG_WORK_DIR/example_repo/BagModules
 demo_templates /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/BagModules
 logic_templates laygo/generators/logic/BagModules
-adc_sar_templates laygo/generators/adc_sar/BagModules
+adc_sar_templates BagModules
 cds_ff_mpt_microtemplates_dense /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/BagModules

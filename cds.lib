@@ -34,3 +34,4 @@ DEFINE adc_sar_generated /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/gen_libs/adc_
 DEFINE adc_sar_templates ./adc_sar_templates
 DEFINE adc_sar_testbenches ./adc_sar_testbenches
 
+DEFINE cds_ff_mpt_logic_templates /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/gen_libs/cds_ff_mpt_logic_templates
