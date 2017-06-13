@@ -19,7 +19,6 @@ DEFINE demo_templates $BAG_FRAMEWORK/tutorial/demo_templates
 DEFINE demo_testbenches $BAG_FRAMEWORK/tutorial/demo_testbenches
 
 #primitive templates
-DEFINE cds_ff_mpt_templates_logic ./cds_ff_mpt_templates_logic
 DEFINE cds_ff_mpt_microtemplates_dense ./cds_ff_mpt_microtemplates_dense
 
 #logic family
