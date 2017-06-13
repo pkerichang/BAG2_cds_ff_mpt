@@ -21,8 +21,8 @@ cds_ff_mpt_microtemplates_dense:
     xy1: [0.086, 0.48]
   _nmos4_fast_base_tap_base:
     pins: {}
-    xy0: [0.172, 0.0]
-    xy1: [0.258, 0.48]
+    xy0: [0.344, 0.0]
+    xy1: [0.43, 0.48]
   _nmos4_fast_boundary_base:
     pins: {}
     xy0: [0.0, 0.0]

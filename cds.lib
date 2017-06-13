@@ -32,3 +32,5 @@ DEFINE adc_sar_testbenches ./adc_sar_testbenches
 DEFINE laygo_working ./laygo_working
 
 
+DEFINE cds_ff_mpt_logic_templates /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/cds_ff_mpt_logic_templates
+DEFINE adc_sar_generated /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/adc_sar_generated
