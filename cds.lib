@@ -6,6 +6,11 @@ DEFINE     avTech       /tools/cadence/ASSURA/ASSURA_615/tools/assura/etc/avtech
 #technology base libraries
 DEFINE     cds_ff_mpt   $BAG_WORK_DIR/PDK/cds_ff_mpt
 
+#DEFINE serdes_bm_templates $BAG_WORK_DIR/bag_serdes_burst_mode/serdes_bm_templates
+#DEFINE serdes_bm_testbenches $BAG_WORK_DIR/bag_serdes_burst_mode/serdes_bm_testbenches
+#DEFINE invamp_templates $BAG_WORK_DIR/example_repo/invamp_templates
+#DEFINE invamp_testbenches $BAG_WORK_DIR/example_repo/invamp_testbenches
+
 #BAG base libraries
 DEFINE     BAG_prim     $BAG_TECH_CONFIG_DIR/BAG_prim
 
@@ -13,28 +18,18 @@ DEFINE     BAG_prim     $BAG_TECH_CONFIG_DIR/BAG_prim
 DEFINE demo_templates $BAG_FRAMEWORK/tutorial/demo_templates
 DEFINE demo_testbenches $BAG_FRAMEWORK/tutorial/demo_testbenches
 
-#DEFINE serdes_bm_templates $BAG_WORK_DIR/bag_serdes_burst_mode/serdes_bm_templates
-#DEFINE serdes_bm_testbenches $BAG_WORK_DIR/bag_serdes_burst_mode/serdes_bm_testbenches
-#DEFINE invamp_templates $BAG_WORK_DIR/example_repo/invamp_templates
-#DEFINE invamp_testbenches $BAG_WORK_DIR/example_repo/invamp_testbenches
-
 #primitive templates
-DEFINE cds_ff_mpt_microtemplates_dense ./gen_libs/cds_ff_mpt_microtemplates_dense
+DEFINE cds_ff_mpt_templates_logic ./cds_ff_mpt_templates_logic
+DEFINE cds_ff_mpt_microtemplates_dense ./cds_ff_mpt_microtemplates_dense
 
 #logic family
 DEFINE logic_templates laygo/generators/logic/logic_templates
-
-#working libraries
-DEFINE laygo_working ./laygo_working
-DEFINE cds_ff_mpt_templates_logic ./gen_libs/cds_ff_mpt_templates_logic
-DEFINE serdes_generated /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/gen_libs/serdes_generated
-DEFINE adc_sar_generated /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/gen_libs/adc_sar_generated
 
 #adc libs
 DEFINE adc_sar_templates ./adc_sar_templates
 DEFINE adc_sar_testbenches ./adc_sar_testbenches
 
-DEFINE cds_ff_mpt_logic_templates /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/gen_libs/cds_ff_mpt_logic_templates
-DEFINE cds_ff_mpt_logic_templates /tools/designs/zhongkai/tsmc16/craft/test/BAG2_cds_ff_mpt/gen_libs/cds_ff_mpt_logic_templates
-DEFINE cds_ff_mpt_logic_templates /tools/designs/zhongkai/tsmc16/others/test/BAG2_cds_ff_mpt/gen_libs/cds_ff_mpt_logic_templates
-DEFINE adc_sar_generated /tools/designs/zhongkai/tsmc16/others/test/BAG2_cds_ff_mpt/gen_libs/adc_sar_generated
+#working libraries
+DEFINE laygo_working ./laygo_working
+
+

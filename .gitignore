@@ -1,3 +1,45 @@
+# python/IDE files
+*.pyc
+__pycache__
+.idea
+
+# misc_
+jdskill
+
+# misc edit/log files
+*~
+*.log
+IPOPT.out
+
+# misc BAG files
+BAG_server_port.txt
+BAG_sim_server_port.txt
+
+# misc configuration/history files
+.ipython
+.jupyter
+
+# generated files/directories
+adc_sar_generated
+tsmcN16_logic_templates
+calibre_run
+gen_libs
+pvs_run
+#cds.lib
+
+# cadence files
+.cadence
+*.cdslck
+.calibreviewsetup
+.tmp_*
+
+# calibre files
+.cgidrcdb
+.cgilvsdb
+calibreview.setup
+
+# pvs files
+
 # Laygo related files     #
 ###########################
 old
