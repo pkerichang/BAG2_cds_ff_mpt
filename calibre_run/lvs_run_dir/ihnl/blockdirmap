@@ -1,0 +1,16 @@
+CADENCE IHNL111414
+
+adc_sar_generated momcap_center_1x schematic cds0
+adc_sar_generated capdac schematic cds1
+BAG_prim nmos4_fast schematic cds2
+BAG_prim pmos4_fast schematic cds3
+adc_sar_generated salatch_pmos schematic cds4
+adc_sar_generated nsw_wovdd schematic cds5
+adc_sar_generated tie_wovdd schematic cds6
+adc_sar_generated capdrv_nsw schematic cds7
+adc_sar_generated nsw_wovdd_XTOP_ICDRVM0_ICDRV0_ISW0 schematic cds8
+adc_sar_generated capdrv_nsw_XTOP_ICDRVM0_ICDRV0 schematic cds9
+adc_sar_generated nsw_wovdd_XTOP_ICDRVM0_ICDRV0_ISW0_1 schematic cds10
+adc_sar_generated capdrv_nsw_XTOP_ICDRVM0_ICDRV0_1 schematic cds11
+adc_sar_generated capdrv_nsw_array schematic cds12
+adc_sar_generated sarafe_nsw schematic cds13

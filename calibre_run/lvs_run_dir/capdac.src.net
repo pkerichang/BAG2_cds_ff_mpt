@@ -1,0 +1,250 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  adc_sar_generated
+* Top Cell Name: capdac
+* View Name:     schematic
+* Netlisted on:  Jun 13 14:33:53 2017
+************************************************************************
+
+.INCLUDE  /tools/designs/zhongkai/tsmc16/others/test/BAG2_cds_ff_mpt/cds_ff_mpt/calibre_rcx_setup/source.added
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: adc_sar_generated
+* Cell Name:    momcap_center_1x
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT momcap_center_1x BOTTOM TOP
+*.PININFO BOTTOM:B TOP:B
+.ENDS
+
+************************************************************************
+* Library Name: adc_sar_generated
+* Cell Name:    capdac
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT capdac I<7> I<6> I<5> I<4> I<3> I<2> I<1> I<0> I_C0 O
+*.PININFO I<7>:I I<6>:I I<5>:I I<4>:I I<3>:I I<2>:I I<1>:I I<0>:I I_C0:I O:B
+XI7<99> I<7> O / momcap_center_1x
+XI7<98> I<7> O / momcap_center_1x
+XI7<97> I<7> O / momcap_center_1x
+XI7<96> I<7> O / momcap_center_1x
+XI7<95> I<7> O / momcap_center_1x
+XI7<94> I<7> O / momcap_center_1x
+XI7<93> I<7> O / momcap_center_1x
+XI7<92> I<7> O / momcap_center_1x
+XI7<91> I<7> O / momcap_center_1x
+XI7<90> I<7> O / momcap_center_1x
+XI7<89> I<7> O / momcap_center_1x
+XI7<88> I<7> O / momcap_center_1x
+XI7<87> I<7> O / momcap_center_1x
+XI7<86> I<7> O / momcap_center_1x
+XI7<85> I<7> O / momcap_center_1x
+XI7<84> I<7> O / momcap_center_1x
+XI7<83> I<7> O / momcap_center_1x
+XI7<82> I<7> O / momcap_center_1x
+XI7<81> I<7> O / momcap_center_1x
+XI7<80> I<7> O / momcap_center_1x
+XI7<79> I<7> O / momcap_center_1x
+XI7<78> I<7> O / momcap_center_1x
+XI7<77> I<7> O / momcap_center_1x
+XI7<76> I<7> O / momcap_center_1x
+XI7<75> I<7> O / momcap_center_1x
+XI7<74> I<7> O / momcap_center_1x
+XI7<73> I<7> O / momcap_center_1x
+XI7<72> I<7> O / momcap_center_1x
+XI7<71> I<7> O / momcap_center_1x
+XI7<70> I<7> O / momcap_center_1x
+XI7<69> I<7> O / momcap_center_1x
+XI7<68> I<7> O / momcap_center_1x
+XI7<67> I<7> O / momcap_center_1x
+XI7<66> I<7> O / momcap_center_1x
+XI7<65> I<7> O / momcap_center_1x
+XI7<64> I<7> O / momcap_center_1x
+XI7<63> I<7> O / momcap_center_1x
+XI7<62> I<7> O / momcap_center_1x
+XI7<61> I<7> O / momcap_center_1x
+XI7<60> I<7> O / momcap_center_1x
+XI7<59> I<7> O / momcap_center_1x
+XI7<58> I<7> O / momcap_center_1x
+XI7<57> I<7> O / momcap_center_1x
+XI7<56> I<7> O / momcap_center_1x
+XI7<55> I<7> O / momcap_center_1x
+XI7<54> I<7> O / momcap_center_1x
+XI7<53> I<7> O / momcap_center_1x
+XI7<52> I<7> O / momcap_center_1x
+XI7<51> I<7> O / momcap_center_1x
+XI7<50> I<7> O / momcap_center_1x
+XI7<49> I<7> O / momcap_center_1x
+XI7<48> I<7> O / momcap_center_1x
+XI7<47> I<7> O / momcap_center_1x
+XI7<46> I<7> O / momcap_center_1x
+XI7<45> I<7> O / momcap_center_1x
+XI7<44> I<7> O / momcap_center_1x
+XI7<43> I<7> O / momcap_center_1x
+XI7<42> I<7> O / momcap_center_1x
+XI7<41> I<7> O / momcap_center_1x
+XI7<40> I<7> O / momcap_center_1x
+XI7<39> I<7> O / momcap_center_1x
+XI7<38> I<7> O / momcap_center_1x
+XI7<37> I<7> O / momcap_center_1x
+XI7<36> I<7> O / momcap_center_1x
+XI7<35> I<7> O / momcap_center_1x
+XI7<34> I<7> O / momcap_center_1x
+XI7<33> I<7> O / momcap_center_1x
+XI7<32> I<7> O / momcap_center_1x
+XI7<31> I<7> O / momcap_center_1x
+XI7<30> I<7> O / momcap_center_1x
+XI7<29> I<7> O / momcap_center_1x
+XI7<28> I<7> O / momcap_center_1x
+XI7<27> I<7> O / momcap_center_1x
+XI7<26> I<7> O / momcap_center_1x
+XI7<25> I<7> O / momcap_center_1x
+XI7<24> I<7> O / momcap_center_1x
+XI7<23> I<7> O / momcap_center_1x
+XI7<22> I<7> O / momcap_center_1x
+XI7<21> I<7> O / momcap_center_1x
+XI7<20> I<7> O / momcap_center_1x
+XI7<19> I<7> O / momcap_center_1x
+XI7<18> I<7> O / momcap_center_1x
+XI7<17> I<7> O / momcap_center_1x
+XI7<16> I<7> O / momcap_center_1x
+XI7<15> I<7> O / momcap_center_1x
+XI7<14> I<7> O / momcap_center_1x
+XI7<13> I<7> O / momcap_center_1x
+XI7<12> I<7> O / momcap_center_1x
+XI7<11> I<7> O / momcap_center_1x
+XI7<10> I<7> O / momcap_center_1x
+XI7<9> I<7> O / momcap_center_1x
+XI7<8> I<7> O / momcap_center_1x
+XI7<7> I<7> O / momcap_center_1x
+XI7<6> I<7> O / momcap_center_1x
+XI7<5> I<7> O / momcap_center_1x
+XI7<4> I<7> O / momcap_center_1x
+XI7<3> I<7> O / momcap_center_1x
+XI7<2> I<7> O / momcap_center_1x
+XI7<1> I<7> O / momcap_center_1x
+XI7<0> I<7> O / momcap_center_1x
+XI6<52> I<6> O / momcap_center_1x
+XI6<51> I<6> O / momcap_center_1x
+XI6<50> I<6> O / momcap_center_1x
+XI6<49> I<6> O / momcap_center_1x
+XI6<48> I<6> O / momcap_center_1x
+XI6<47> I<6> O / momcap_center_1x
+XI6<46> I<6> O / momcap_center_1x
+XI6<45> I<6> O / momcap_center_1x
+XI6<44> I<6> O / momcap_center_1x
+XI6<43> I<6> O / momcap_center_1x
+XI6<42> I<6> O / momcap_center_1x
+XI6<41> I<6> O / momcap_center_1x
+XI6<40> I<6> O / momcap_center_1x
+XI6<39> I<6> O / momcap_center_1x
+XI6<38> I<6> O / momcap_center_1x
+XI6<37> I<6> O / momcap_center_1x
+XI6<36> I<6> O / momcap_center_1x
+XI6<35> I<6> O / momcap_center_1x
+XI6<34> I<6> O / momcap_center_1x
+XI6<33> I<6> O / momcap_center_1x
+XI6<32> I<6> O / momcap_center_1x
+XI6<31> I<6> O / momcap_center_1x
+XI6<30> I<6> O / momcap_center_1x
+XI6<29> I<6> O / momcap_center_1x
+XI6<28> I<6> O / momcap_center_1x
+XI6<27> I<6> O / momcap_center_1x
+XI6<26> I<6> O / momcap_center_1x
+XI6<25> I<6> O / momcap_center_1x
+XI6<24> I<6> O / momcap_center_1x
+XI6<23> I<6> O / momcap_center_1x
+XI6<22> I<6> O / momcap_center_1x
+XI6<21> I<6> O / momcap_center_1x
+XI6<20> I<6> O / momcap_center_1x
+XI6<19> I<6> O / momcap_center_1x
+XI6<18> I<6> O / momcap_center_1x
+XI6<17> I<6> O / momcap_center_1x
+XI6<16> I<6> O / momcap_center_1x
+XI6<15> I<6> O / momcap_center_1x
+XI6<14> I<6> O / momcap_center_1x
+XI6<13> I<6> O / momcap_center_1x
+XI6<12> I<6> O / momcap_center_1x
+XI6<11> I<6> O / momcap_center_1x
+XI6<10> I<6> O / momcap_center_1x
+XI6<9> I<6> O / momcap_center_1x
+XI6<8> I<6> O / momcap_center_1x
+XI6<7> I<6> O / momcap_center_1x
+XI6<6> I<6> O / momcap_center_1x
+XI6<5> I<6> O / momcap_center_1x
+XI6<4> I<6> O / momcap_center_1x
+XI6<3> I<6> O / momcap_center_1x
+XI6<2> I<6> O / momcap_center_1x
+XI6<1> I<6> O / momcap_center_1x
+XI6<0> I<6> O / momcap_center_1x
+XI5<27> I<5> O / momcap_center_1x
+XI5<26> I<5> O / momcap_center_1x
+XI5<25> I<5> O / momcap_center_1x
+XI5<24> I<5> O / momcap_center_1x
+XI5<23> I<5> O / momcap_center_1x
+XI5<22> I<5> O / momcap_center_1x
+XI5<21> I<5> O / momcap_center_1x
+XI5<20> I<5> O / momcap_center_1x
+XI5<19> I<5> O / momcap_center_1x
+XI5<18> I<5> O / momcap_center_1x
+XI5<17> I<5> O / momcap_center_1x
+XI5<16> I<5> O / momcap_center_1x
+XI5<15> I<5> O / momcap_center_1x
+XI5<14> I<5> O / momcap_center_1x
+XI5<13> I<5> O / momcap_center_1x
+XI5<12> I<5> O / momcap_center_1x
+XI5<11> I<5> O / momcap_center_1x
+XI5<10> I<5> O / momcap_center_1x
+XI5<9> I<5> O / momcap_center_1x
+XI5<8> I<5> O / momcap_center_1x
+XI5<7> I<5> O / momcap_center_1x
+XI5<6> I<5> O / momcap_center_1x
+XI5<5> I<5> O / momcap_center_1x
+XI5<4> I<5> O / momcap_center_1x
+XI5<3> I<5> O / momcap_center_1x
+XI5<2> I<5> O / momcap_center_1x
+XI5<1> I<5> O / momcap_center_1x
+XI5<0> I<5> O / momcap_center_1x
+XI4<15> I<4> O / momcap_center_1x
+XI4<14> I<4> O / momcap_center_1x
+XI4<13> I<4> O / momcap_center_1x
+XI4<12> I<4> O / momcap_center_1x
+XI4<11> I<4> O / momcap_center_1x
+XI4<10> I<4> O / momcap_center_1x
+XI4<9> I<4> O / momcap_center_1x
+XI4<8> I<4> O / momcap_center_1x
+XI4<7> I<4> O / momcap_center_1x
+XI4<6> I<4> O / momcap_center_1x
+XI4<5> I<4> O / momcap_center_1x
+XI4<4> I<4> O / momcap_center_1x
+XI4<3> I<4> O / momcap_center_1x
+XI4<2> I<4> O / momcap_center_1x
+XI4<1> I<4> O / momcap_center_1x
+XI4<0> I<4> O / momcap_center_1x
+XI3<7> I<3> O / momcap_center_1x
+XI3<6> I<3> O / momcap_center_1x
+XI3<5> I<3> O / momcap_center_1x
+XI3<4> I<3> O / momcap_center_1x
+XI3<3> I<3> O / momcap_center_1x
+XI3<2> I<3> O / momcap_center_1x
+XI3<1> I<3> O / momcap_center_1x
+XI3<0> I<3> O / momcap_center_1x
+XI2<3> I<2> O / momcap_center_1x
+XI2<2> I<2> O / momcap_center_1x
+XI2<1> I<2> O / momcap_center_1x
+XI2<0> I<2> O / momcap_center_1x
+XI1<1> I<1> O / momcap_center_1x
+XI1<0> I<1> O / momcap_center_1x
+XIC0_0 I_C0 O / momcap_center_1x
+XI0 I<0> O / momcap_center_1x
+.ENDS
+

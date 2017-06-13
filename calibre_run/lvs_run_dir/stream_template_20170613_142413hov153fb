@@ -1,0 +1,49 @@
+case                               "preserve"
+cellListFile                       ""
+cellMap                            ""
+cellNamePrefix                     ""
+cellNameSuffix                     ""
+convertDot                         "node"
+convertPin                         "geometry"
+#doNotPreservePcellPins
+#flattenPcells
+#flattenVias
+fontMap                            ""
+#ignoreLines
+#ignorePcellEvalFail
+labelCase                          "preserve"
+labelDepth                         "1"
+labelMap                           ""
+layerMap                           ""
+library                            "adc_sar_generated"
+logFile                            "strmOut.log"
+maxVertices                        "200"
+#mergePathSegsToPath
+#noConvertHalfWidthPath
+noInfo                             ""
+#noObjectProp
+#noOutputTextDisplays
+#noOutputUnplacedInst
+noWarn                             ""
+objectMap                          ""
+outputDir                          "/tools/designs/zhongkai/tsmc16/others/test/BAG2_cds_ff_mpt/calibre_run/lvs_run_dir"
+#pathToPolygon
+pinAttNum                          "0"
+propMap                            ""
+#propValueOnly
+#rectToBox
+refLibList                         ""
+#replaceBusBitChar
+#reportPrecisionLoss
+#respectGDSIINameLimit
+runDir                             "/tools/designs/zhongkai/tsmc16/others/test/BAG2_cds_ff_mpt/calibre_run/lvs_run_dir"
+#snapToGrid
+strmFile                           "capdac.calibre.db"
+strmVersion                        "5"
+summaryFile                        ""
+techLib                            ""
+topCell                            "capdac"
+userSkillFile                      ""
+viaMap                             ""
+view                               "layout"
+warnToErr                          ""

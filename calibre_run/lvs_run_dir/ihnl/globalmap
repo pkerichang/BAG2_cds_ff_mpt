@@ -1,0 +1,21 @@
+CADENCE IHNL11140
+$model
+adc_sar_generated/tie_wovdd/schematic tie_wovdd
+adc_sar_generated/momcap_center_1x/schematic momcap_center_1x
+adc_sar_generated/capdrv_nsw_XTOP_ICDRVM0_ICDRV0_1/schematic capdrv_nsw_XTOP_ICDRVM0_ICDRV0_1
+BAG_prim/nmos4_fast/schematic nmos4_fast
+adc_sar_generated/capdrv_nsw/schematic capdrv_nsw
+adc_sar_generated/capdrv_nsw_array/schematic capdrv_nsw_array
+adc_sar_generated/nsw_wovdd_XTOP_ICDRVM0_ICDRV0_ISW0/schematic nsw_wovdd_XTOP_ICDRVM0_ICDRV0_ISW0
+adc_sar_generated/nsw_wovdd/schematic nsw_wovdd
+BAG_prim/pmos4_fast/schematic pmos4_fast
+adc_sar_generated/capdrv_nsw_XTOP_ICDRVM0_ICDRV0/schematic capdrv_nsw_XTOP_ICDRVM0_ICDRV0
+adc_sar_generated/nsw_wovdd_XTOP_ICDRVM0_ICDRV0_ISW0_1/schematic nsw_wovdd_XTOP_ICDRVM0_ICDRV0_ISW0_1
+adc_sar_generated/sarafe_nsw/schematic sarafe_nsw
+adc_sar_generated/capdac/schematic capdac
+adc_sar_generated/salatch_pmos/schematic salatch_pmos
+$endmodel
+$net
+$endnet
+$param
+$endparam

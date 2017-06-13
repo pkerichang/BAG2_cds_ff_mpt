@@ -163,11 +163,11 @@ instances:
         net_name: "ZP<7:0>"
         num_bits: 8
       VSS:
-        direction: 
+        direction: inputOutput
         net_name: "VSS"
         num_bits: 1
       VDD:
-        direction: 
+        direction: inputOutput
         net_name: "VDD"
         num_bits: 1
       ADCOUT<7:0>:
@@ -175,6 +175,6 @@ instances:
         net_name: "ADCOUT<7:0>"
         num_bits: 8
       CLK:
-        direction: 
+        direction: input
         net_name: "RST"
         num_bits: 1

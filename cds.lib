@@ -35,3 +35,6 @@ DEFINE adc_sar_templates ./adc_sar_templates
 DEFINE adc_sar_testbenches ./adc_sar_testbenches
 
 DEFINE cds_ff_mpt_logic_templates /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/gen_libs/cds_ff_mpt_logic_templates
+DEFINE cds_ff_mpt_logic_templates /tools/designs/zhongkai/tsmc16/craft/test/BAG2_cds_ff_mpt/gen_libs/cds_ff_mpt_logic_templates
+DEFINE cds_ff_mpt_logic_templates /tools/designs/zhongkai/tsmc16/others/test/BAG2_cds_ff_mpt/gen_libs/cds_ff_mpt_logic_templates
+DEFINE adc_sar_generated /tools/designs/zhongkai/tsmc16/others/test/BAG2_cds_ff_mpt/gen_libs/adc_sar_generated

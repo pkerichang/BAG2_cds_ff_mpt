@@ -3,7 +3,7 @@ cell_name: capdac
 pins: [ "I_C0", "O", "I" ]
 instances:
   C0:
-    lib_name: tsmcN16_microtemplates_dense
+    lib_name: cds_ff_mpt_microtemplates_dense
     cell_name: momcap_center_1x
     instpins:
       BOTTOM:
@@ -15,7 +15,7 @@ instances:
         net_name: "O"
         num_bits: 1
   CDAC0:
-    lib_name: tsmcN16_microtemplates_dense
+    lib_name: cds_ff_mpt_microtemplates_dense
     cell_name: momcap_center_1x
     instpins:
       BOTTOM:
