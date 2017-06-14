@@ -9,6 +9,7 @@ salatch_m_rgnn: 8
 salatch_m_rst: 6
 sarclkgen_m: 2
 sarclkgen_fo: 4
+sarclkgen_ndelay: 1
 sarret_m: 1
 sarret_fo: 2
 sarfsm_m: 2
