@@ -42,9 +42,7 @@ cds_ff_mpt_microtemplates_dense:
       - [0, 4]
       - [0, 6]
       - [0, 7]
-      via_M1_M2_1:
-      - [0, 0]
-      - [0, 9]
+      via_M1_M2_1: [0, 0]
       via_M1_M2_2:
       - [0, 3]
       - [0, 5]
@@ -54,7 +52,7 @@ cds_ff_mpt_microtemplates_dense:
     xwidth: [0.032]
     xy0: [0.0, 0.0]
     xy1: [0.086, 0.96]
-    ygrid: [0.0, 0.144, 0.24, 0.384, 0.48, 0.576, 0.72, 0.816, 0.96]
+    ygrid: [0.0, 0.144, 0.24, 0.384, 0.48, 0.576, 0.72, 0.816]
     ylayer:
     - [M2, drawing]
     - [M2, drawing]
@@ -64,8 +62,7 @@ cds_ff_mpt_microtemplates_dense:
     - [M2, drawing]
     - [M2, drawing]
     - [M2, drawing]
-    - [M2, drawing]
-    ywidth: [0.096, 0.032, 0.032, 0.032, 0.032, 0.032, 0.032, 0.032, 0.096]
+    ywidth: [0.096, 0.032, 0.032, 0.032, 0.032, 0.032, 0.032, 0.032]
   route_M1_M2_mos:
     type: route
     viamap:
@@ -108,13 +105,13 @@ cds_ff_mpt_microtemplates_dense:
     xgrid: [0.0]
     xlayer:
     - [M3, drawing]
-    xwidth: [0.1]
+    xwidth: [0.032]
     xy0: [0.0, 0.0]
     xy1: [0.2, 0.4]
     ygrid: [0.0]
     ylayer:
     - [M2, drawing]
-    ywidth: [0.2]
+    ywidth: [0.096]
   route_M2_M3_cmos:
     type: route
     viamap:
@@ -126,16 +123,14 @@ cds_ff_mpt_microtemplates_dense:
       - [0, 5]
       - [0, 6]
       - [0, 7]
-      via_M2_M3_1:
-      - [0, 0]
-      - [0, 9]
+      via_M2_M3_1: [0, 0]
     xgrid: [0.0]
     xlayer:
     - [M3, drawing]
     xwidth: [0.032]
     xy0: [0.0, 0.0]
     xy1: [0.086, 0.96]
-    ygrid: [0.0, 0.144, 0.24, 0.384, 0.48, 0.576, 0.72, 0.816, 0.96]
+    ygrid: [0.0, 0.144, 0.24, 0.384, 0.48, 0.576, 0.72, 0.816]
     ylayer:
     - [M2, drawing]
     - [M2, drawing]
@@ -145,8 +140,7 @@ cds_ff_mpt_microtemplates_dense:
     - [M2, drawing]
     - [M2, drawing]
     - [M2, drawing]
-    - [M2, drawing]
-    ywidth: [0.096, 0.032, 0.032, 0.032, 0.032, 0.032, 0.032, 0.032, 0.096]
+    ywidth: [0.096, 0.032, 0.032, 0.032, 0.032, 0.032, 0.032, 0.032]
   route_M2_M3_mos:
     type: route
     viamap:
