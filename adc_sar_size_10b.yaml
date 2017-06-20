@@ -1,7 +1,7 @@
-capdac_c_m: 2
+capdac_c_m: 1
 capdac_num_bits_horizontal: 2
-capdac_num_bits_vertical: 3
-capdrv_m_list: [2, 2, 2, 2, 4]
+capdac_num_bits_vertical: 7
+capdrv_m_list: [2, 2, 2, 2, 2, 2, 2, 4, 8]
 capdrv_space_offset: 0
 dcap2_m: 19
 m_dcap2: 19

@@ -4,13 +4,14 @@ capdac_num_bits_vertical: 6
 capdrv_m_list: [2, 2, 2, 2, 2, 2, 4, 8]
 capdrv_space_offset: 0
 dcap2_m: 19
-m_dcap2: 18
+m_dcap2: 19
 num_space_samp: 42
 num_space_sar: 48
 salatch_m: 12
 salatch_m_buf: 8
 salatch_m_rgnn: 8
 salatch_m_rst: 6
+sarabe_m_space_left_4x: 0
 sarclkgen_fo: 4
 sarclkgen_m: 2
 sarclkgen_ndelay: 1
