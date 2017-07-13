@@ -46,7 +46,7 @@ class adc_sar_templates__sarclkdelay_compact_dual(Module):
     def __init__(self, bag_config, parent=None, prj=None, **kwargs):
         Module.__init__(self, bag_config, yaml_file, parent=parent, prj=prj, **kwargs)
 
-    def design(self, lch, pw, nw, m, device_intent='fast'):
+    def design(self, lch, pw, nw, m, ndelay, device_intent='fast'):
         """To be overridden by subclasses to design this module.
 
         This method should fill in values for all parameters in
@@ -68,12 +68,8 @@ class adc_sar_templates__sarclkdelay_compact_dual(Module):
         self.parameters['nw'] = nw
         self.parameters['m'] = m
         self.parameters['device_intent'] = device_intent
-        #self.instances['I0'].design(lch=lch, pw=pw, nw=nw, m=m, device_intent=device_intent)
-        #self.instances['I1'].design(lch=lch, pw=pw, nw=nw, m=m, device_intent=device_intent)
-        #self.instances['I2'].design(lch=lch, pw=pw, nw=nw, m=m, device_intent=device_intent)
-        self.instances['I0'].design(lch=lch, pw=pw, nw=nw, m=2, device_intent=device_intent)
-        self.instances['I1'].design(lch=lch, pw=pw, nw=nw, m=2, device_intent=device_intent)
-        #self.instances['I2'].design(lch=lch, pw=pw, nw=nw, m=2, device_intent=device_intent)
+        self.instances['I0'].design(lch=lch, pw=pw, nw=nw, m=1, ndelay=ndelay, device_intent=device_intent)
+        self.instances['I1'].design(lch=lch, pw=pw, nw=nw, m=1, ndelay=ndelay, device_intent=device_intent)
         self.instances['IMUX0'].design(lch=lch, pw=pw, nw=nw, m=m, device_intent=device_intent)
         self.instances['INR0'].design(lch=lch, pw=pw, nw=nw, m=2, device_intent=device_intent)
         self.instances['IINV0'].design(lch=lch, pw=pw, nw=nw, m=m, device_intent=device_intent)

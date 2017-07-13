@@ -83,21 +83,9 @@ instances:
         net_name: "UPB"
         num_bits: 1
   IND0:
-    lib_name: adc_sar_templates
-    cell_name: sarclkgen_core2
+    lib_name: logic_templates
+    cell_name: nand
     instpins:
-      B:
-        direction: input
-        net_name: "SAOM"
-        num_bits: 1
-      A:
-        direction: input
-        net_name: "SAOP"
-        num_bits: 1
-      CLKB:
-        direction: input
-        net_name: "CLKOB"
-        num_bits: 1
       VSS:
         direction: inputOutput
         net_name: "VSS"
@@ -106,9 +94,17 @@ instances:
         direction: inputOutput
         net_name: "VDD"
         num_bits: 1
-      DONE:
+      O:
         direction: output
         net_name: "DONE"
+        num_bits: 1
+      A:
+        direction: input
+        net_name: "SAOP"
+        num_bits: 1
+      B:
+        direction: input
+        net_name: "SAOM"
         num_bits: 1
   IDLY0:
     lib_name: adc_sar_templates

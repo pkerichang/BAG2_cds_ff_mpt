@@ -46,7 +46,7 @@ class adc_sar_templates__sarclkgen_static(Module):
     def __init__(self, bag_config, parent=None, prj=None, **kwargs):
         Module.__init__(self, bag_config, yaml_file, parent=parent, prj=prj, **kwargs)
 
-    def design(self, lch, pw, nw, m, fo, device_intent='fast'):
+    def design(self, lch, pw, nw, m, fo, ndelay, device_intent='fast'):
         """To be overridden by subclasses to design this module.
 
         This method should fill in values for all parameters in
@@ -67,17 +67,18 @@ class adc_sar_templates__sarclkgen_static(Module):
         self.parameters['nw'] = nw
         self.parameters['m'] = m
         self.parameters['fo'] = fo
+        self.parameters['ndelay'] = ndelay
         self.parameters['device_intent'] = device_intent
         self.instances['IINV0'].design(lch=lch, pw=pw, nw=nw, m=1, device_intent=device_intent)
         self.instances['IINV1'].design(lch=lch, pw=pw, nw=nw, m=1, device_intent=device_intent)
         self.instances['IINV2'].design(lch=lch, pw=pw, nw=nw, m=1, device_intent=device_intent)
 
-        self.instances['IDLY0'].design(lch=lch, pw=pw, nw=nw, m=1, device_intent=device_intent)
+        self.instances['IDLY0'].design(lch=lch, pw=pw, nw=nw, m=1, ndelay=ndelay, device_intent=device_intent)
         self.instances['IINV5'].design(lch=lch, pw=pw, nw=nw, m=m, device_intent=device_intent)
 
         self.instances['IINV7'].design(lch=lch, pw=pw, nw=nw, m=1, device_intent=device_intent)
         #self.instances['IND0'].design(lch=lch, pw=pw, nw=nw, m=m*2, device_intent=device_intent)
-        self.instances['ICORE2'].design(lch=lch, pw=pw, nw=nw, m=m*2, device_intent=device_intent)
+        self.instances['IND0'].design(lch=lch, pw=pw, nw=nw, m=m*2, device_intent=device_intent)
 
         self.instances['IINV8'].design(lch=lch, pw=pw, nw=nw, m=m*fo, device_intent=device_intent)
         self.instances['IINV8B'].design(lch=lch, pw=pw, nw=nw, m=m*2*fo, device_intent=device_intent)

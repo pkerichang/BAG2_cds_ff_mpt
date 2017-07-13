@@ -38,3 +38,5 @@ cycle_dac: 0.25
 vdd: 0.8
 vdd_min: 0.72
 vdd_max: 0.88
+#True if laygo is used for sampler generation. If false, AnalogBase is used
+samp_use_laygo: True

@@ -46,7 +46,7 @@ class adc_sar_templates__sarclkdelayslice_compact(Module):
     def __init__(self, bag_config, parent=None, prj=None, **kwargs):
         Module.__init__(self, bag_config, yaml_file, parent=parent, prj=prj, **kwargs)
 
-    def design(self, lch, pw, nw, m, device_intent='fast'):
+    def design(self, lch, pw, nw, m, ndelay, device_intent='fast'):
         """To be overridden by subclasses to design this module.
 
         This method should fill in values for all parameters in
@@ -66,9 +66,29 @@ class adc_sar_templates__sarclkdelayslice_compact(Module):
         self.parameters['pw'] = pw
         self.parameters['nw'] = nw
         self.parameters['m'] = m
+        self.parameters['ndelay'] = ndelay
         self.parameters['device_intent'] = device_intent
-        self.instances['IINV11'].design(lch=lch, pw=pw, nw=nw, m=m, device_intent=device_intent)
-        self.instances['IINV12'].design(lch=lch, pw=pw, nw=nw, m=m, device_intent=device_intent)
+        #array generation
+        name_list=[]
+        term_list=[]
+        for i in range(ndelay):
+            term_list.append({'I': 'INT<%d>'%(2*i), 'O':'INT<%d>'%(2*i+1)})
+            name_list.append('IINVDA%d'%(i))
+        term_list[0]['I']='I'
+        self.array_instance('IINVDA0', name_list, term_list=term_list)
+        name_list=[]
+        term_list=[]
+        for i in range(ndelay):
+            term_list.append({'I': 'INT<%d>'%(2*i+1), 'O':'INT<%d>'%(2*i+2)})
+            name_list.append('IINVDA%d'%(i))
+        term_list[-1]['O']='CKD1'
+        self.array_instance('IINVDB0', name_list, term_list=term_list)
+        for i in range(ndelay):
+            self.instances['IINVDA0'][i].design(lch=lch, pw=pw, nw=nw, m=m, device_intent=device_intent)
+            self.instances['IINVDB0'][i].design(lch=lch, pw=pw, nw=nw, m=m, device_intent=device_intent)
+
+        #self.instances['IINV11'].design(lch=lch, pw=pw, nw=nw, m=m, device_intent=device_intent)
+        #self.instances['IINV12'].design(lch=lch, pw=pw, nw=nw, m=m, device_intent=device_intent)
         self.instances['IINVSEL0'].design(lch=lch, pw=pw, nw=nw, m=m, device_intent=device_intent)
         self.instances['IMUX0'].design(lch=lch, pw=pw, nw=nw, m=1, device_intent=device_intent)
 

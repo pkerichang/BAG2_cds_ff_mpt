@@ -54,13 +54,13 @@ instances:
         direction: output
         net_name: "SELB"
         num_bits: 1
-  IINV12:
+  IINVDB0:
     lib_name: logic_templates
     cell_name: inv
     instpins:
       I:
         direction: input
-        net_name: "n1"
+        net_name: "INT0"
         num_bits: 1
       VSS:
         direction: inputOutput
@@ -74,7 +74,7 @@ instances:
         direction: output
         net_name: "CKD1"
         num_bits: 1
-  IINV11:
+  IINVDA0:
     lib_name: logic_templates
     cell_name: inv
     instpins:
@@ -92,5 +92,5 @@ instances:
         num_bits: 1
       O:
         direction: output
-        net_name: "n1"
+        net_name: "INT0"
         num_bits: 1

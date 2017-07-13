@@ -41,7 +41,7 @@ class adc_sar_templates__sarfsm(Module):
     def __init__(self, bag_config, parent=None, prj=None, **kwargs):
         Module.__init__(self, bag_config, yaml_file, parent=parent, prj=prj, **kwargs)
 
-    def design(self, lch, pw, nw, m, device_intent='fast'):
+    def design(self, lch, pw, nw, m, num_bits, device_intent='fast'):
         """To be overridden by subclasses to design this module.
 
         This method should fill in values for all parameters in
@@ -61,11 +61,26 @@ class adc_sar_templates__sarfsm(Module):
         self.parameters['pw'] = pw
         self.parameters['nw'] = nw
         self.parameters['m'] = m
+        self.parameters['num_bits'] = num_bits
         self.parameters['device_intent'] = device_intent
         self.instances['I0'].design(lch=lch, pw=pw, nw=nw, m=2, device_intent=device_intent)
         self.instances['I1'].design(lch=lch, pw=pw, nw=nw, m=m, device_intent=device_intent)
         self.instances['I2'].design(lch=lch, pw=pw, nw=nw, m=m, device_intent=device_intent)
-        self.instances['I3<7:0>'].design(lch=lch, pw=pw, nw=nw, m=m, device_intent=device_intent)
+        self.instances['I3<0>'].design(lch=lch, pw=pw, nw=nw, m=m, device_intent=device_intent)
+        #array generation
+        name_list=[]
+        term_list=[]
+        for i in range(num_bits):
+            term_list.append({'I': 'SB<%d>'%(i+1), 
+                              'O': 'SB<%d>'%(i),}) 
+            if i==num_bits-1:
+                term_list[-1]['I']='TRIGB'
+            name_list.append('I3<%d>'%(i))
+        self.array_instance('I3<0>', name_list, term_list=term_list)
+        for i in range(num_bits):
+            self.instances['I3<0>'][i].design(lch=lch, pw=pw, nw=nw, m=m, device_intent=device_intent)
+
+        self.rename_pin('SB<0>','SB<%d:0>'%(num_bits-1))
 
     def get_layout_params(self, **kwargs):
         """Returns a dictionary with layout parameters.

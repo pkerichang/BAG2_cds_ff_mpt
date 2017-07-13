@@ -33,12 +33,12 @@ import pkg_resources
 from bag.design import Module
 
 
-yaml_file = pkg_resources.resource_filename(__name__, os.path.join('netlist_info', 'sar.yaml'))
+yaml_file = pkg_resources.resource_filename(__name__, os.path.join('netlist_info', 'sar_wsamp.yaml'))
 
 
 # noinspection PyPep8Naming
-class adc_sar_templates__sar(Module):
-    """Module for library adc_sar_templates cell sar.
+class adc_sar_templates__sar_wsamp(Module):
+    """Module for library adc_sar_templates cell sar_wsamp.
 
     Fill in high level description here.
     """
@@ -46,7 +46,7 @@ class adc_sar_templates__sar(Module):
     def __init__(self, bag_config, parent=None, prj=None, **kwargs):
         Module.__init__(self, bag_config, yaml_file, parent=parent, prj=prj, **kwargs)
 
-    def design(self, lch, pw, nw, sa_m, sa_m_rst, sa_m_rgnn, sa_m_buf, drv_m_list, ckgen_m, ckgen_fo, ckgen_ndelay, logic_m, fsm_m, ret_m, ret_fo, c_m, rdx_array, num_bits, device_intent):
+    def design(self, sar_lch, sar_pw, sar_nw, sar_sa_m, sar_sa_m_rst, sar_sa_m_rgnn, sar_sa_m_buf, sar_drv_m_list, sar_ckgen_m, sar_ckgen_fo, sar_ckgen_ndelay, sar_logic_m, sar_fsm_m, sar_ret_m, sar_ret_fo, sar_device_intent, sar_c_m, sar_rdx_array, samp_lch, samp_wp, samp_wn, samp_fgn, samp_fg_inbuf_list, samp_fg_outbuf_list, samp_nduml, samp_ndumr, samp_nsep, samp_intent, num_bits, samp_use_laygo=False):
         """To be overridden by subclasses to design this module.
 
         This method should fill in values for all parameters in
@@ -62,45 +62,54 @@ class adc_sar_templates__sar(Module):
         restore_instance()
         array_instance()
         """
-        self.parameters['lch'] = lch
-        self.parameters['pw'] = pw
-        self.parameters['nw'] = nw
-        self.parameters['sa_m'] = sa_m
-        self.parameters['sa_m_rst'] = sa_m_rst
-        self.parameters['sa_m_rgnn'] = sa_m_rgnn
-        self.parameters['sa_m_buf'] = sa_m_buf
-        self.parameters['drv_m_list'] = drv_m_list
-        self.parameters['ckgen_m'] = ckgen_m
-        self.parameters['ckgen_fo'] = ckgen_fo
-        self.parameters['ckgen_ndelay'] = ckgen_ndelay
-        self.parameters['logic_m'] = logic_m
-        self.parameters['fsm_m'] = fsm_m
-        self.parameters['ret_m'] = ret_m
-        self.parameters['ret_fo'] = ret_fo
-        self.parameters['c_m'] = c_m
-        self.parameters['rdx_array'] = rdx_array
+        self.parameters['sar_lch'] = sar_lch
+        self.parameters['sar_pw'] = sar_pw
+        self.parameters['sar_nw'] = sar_nw
+        self.parameters['sar_sa_m'] = sar_sa_m
+        self.parameters['sar_sa_m_rst'] = sar_sa_m_rst
+        self.parameters['sar_sa_m_rgnn'] = sar_sa_m_rgnn
+        self.parameters['sar_sa_m_buf'] = sar_sa_m_buf
+        self.parameters['sar_drv_m_list'] = sar_drv_m_list
+        self.parameters['sar_ckgen_m'] = sar_ckgen_m
+        self.parameters['sar_ckgen_fo'] = sar_ckgen_fo
+        self.parameters['sar_ckgen_ndelay'] = sar_ckgen_ndelay
+        self.parameters['sar_logic_m'] = sar_logic_m
+        self.parameters['sar_fsm_m'] = sar_fsm_m
+        self.parameters['sar_ret_m'] = sar_ret_m
+        self.parameters['sar_ret_fo'] = sar_ret_fo
+        self.parameters['sar_device_intent'] = sar_device_intent
+        self.parameters['sar_c_m'] = sar_c_m
+        self.parameters['sar_rdx_array'] = sar_rdx_array
+        self.parameters['samp_lch'] = samp_lch
+        self.parameters['samp_wp'] = samp_wp
+        self.parameters['samp_wn'] = samp_wn
+        self.parameters['samp_fgn'] = samp_fgn
+        self.parameters['samp_fg_inbuf_list'] = samp_fg_inbuf_list
+        self.parameters['samp_fg_outbuf_list'] = samp_fg_outbuf_list
+        self.parameters['samp_nduml'] = samp_nduml
+        self.parameters['samp_ndumr'] = samp_ndumr
+        self.parameters['samp_nsep'] = samp_nsep
+        self.parameters['samp_intent'] = samp_intent
         self.parameters['num_bits'] = num_bits
-        self.parameters['device_intent'] = device_intent
-        self.instances['IAFE0'].design(lch=lch, pw=pw, nw=nw, sa_m=sa_m, sa_m_rst=sa_m_rst, sa_m_rgnn=sa_m_rgnn, sa_m_buf=sa_m_buf, drv_m_list=drv_m_list, num_bits=num_bits-1, c_m=c_m, rdx_array=rdx_array, device_intent=device_intent)
-        self.instances['IABE0'].design(lch=lch, pw=pw, nw=nw, ckgen_m=ckgen_m, ckgen_fo=ckgen_fo, ckgen_ndelay=ckgen_ndelay, logic_m=logic_m, fsm_m=fsm_m, ret_m=ret_m, ret_fo=ret_fo, num_bits=num_bits, device_intent=device_intent)
+        self.parameters['samp_use_laygo'] = samp_use_laygo #if true, use laygo for sampler generation
+
+        self.instances['ISAR0'].design(lch=sar_lch, pw=sar_pw, nw=sar_nw, sa_m=sar_sa_m, sa_m_rst=sar_sa_m_rst, sa_m_rgnn=sar_sa_m_rgnn, sa_m_buf=sar_sa_m_buf, 
+                                       drv_m_list=sar_drv_m_list, ckgen_m=sar_ckgen_m, ckgen_fo=sar_ckgen_fo, ckgen_ndelay=sar_ckgen_ndelay, logic_m=sar_logic_m, 
+                                       fsm_m=sar_fsm_m, ret_m=sar_ret_m, ret_fo=sar_ret_fo, c_m=sar_c_m, rdx_array=sar_rdx_array, num_bits=num_bits, 
+                                       device_intent=sar_device_intent)
+        if samp_use_laygo==True:
+            self.replace_instance_master(inst_name='XSAMP0', lib_name='adc_sar_templates', cell_name='sarsamp')
+            self.instances['XSAMP0'].design(lch=samp_lch, pw=samp_wp, nw=samp_wn, m_sw=4, m_sw_arr=samp_fgn, m_inbuf_list=samp_fg_inbuf_list, m_outbuf_list=samp_fg_outbuf_list, device_intent=samp_intent)
+        else:
+            self.instances['XSAMP0'].design_specs(lch=samp_lch, pw=samp_wp, nw=samp_wn, m_sw=samp_fgn, fg_inbuf_list=samp_fg_inbuf_list, fg_outbuf_list=samp_fg_outbuf_list, nduml=samp_nduml, ndumr=samp_ndumr, nsep=samp_nsep, intent=samp_intent)
         #rewiring
-        self.reconnect_instance_terminal(inst_name='IAFE0', term_name='VOL', net_name='VOL<%d:0>'%(num_bits-2))
-        self.reconnect_instance_terminal(inst_name='IAFE0', term_name='VOR', net_name='VOR<%d:0>'%(num_bits-2))
-        pin_enl=''
-        pin_enr=''
-        for i in range(1, num_bits):
-            pin_enl=pin_enl+'ZM<%d>,ZMID<%d>,ZP<%d>'%(i,i,i)
-            pin_enr=pin_enr+'ZP<%d>,ZMID<%d>,ZM<%d>'%(i,i,i)
-            if i<num_bits-1:
-                pin_enl=pin_enl+','
-                pin_enr=pin_enr+','
-        self.reconnect_instance_terminal(inst_name='IAFE0', term_name='ENL0<2:0>', net_name=pin_enl)
-        self.reconnect_instance_terminal(inst_name='IAFE0', term_name='ENR0<2:0>', net_name=pin_enr)
-        self.reconnect_instance_terminal(inst_name='IABE0', term_name='ZP<0>', net_name='ZP<%d:0>'%(num_bits-1))
-        self.reconnect_instance_terminal(inst_name='IABE0', term_name='ZMID<0>', net_name='ZMID<%d:0>'%(num_bits-1))
-        self.reconnect_instance_terminal(inst_name='IABE0', term_name='ZM<0>', net_name='ZM<%d:0>'%(num_bits-1))
-        self.reconnect_instance_terminal(inst_name='IABE0', term_name='ADCOUT<0>', net_name='ADCOUT<%d:0>'%(num_bits-1))
-        self.reconnect_instance_terminal(inst_name='IABE0', term_name='SB<0>', net_name='SB<%d:0>'%(num_bits-1))
+        self.reconnect_instance_terminal(inst_name='ISAR0', term_name='ADCOUT<0>', net_name='ADCOUT<%d:0>'%(num_bits-1))
+        self.reconnect_instance_terminal(inst_name='ISAR0', term_name='VOL<0>', net_name='VOL<%d:0>'%(num_bits-2))
+        self.reconnect_instance_terminal(inst_name='ISAR0', term_name='VOR<0>', net_name='VOR<%d:0>'%(num_bits-2))
+        self.reconnect_instance_terminal(inst_name='ISAR0', term_name='ZP<0>', net_name='ZP<%d:0>'%(num_bits-1))
+        self.reconnect_instance_terminal(inst_name='ISAR0', term_name='ZMID<0>', net_name='ZMID<%d:0>'%(num_bits-1))
+        self.reconnect_instance_terminal(inst_name='ISAR0', term_name='ZM<0>', net_name='ZM<%d:0>'%(num_bits-1))
+        self.reconnect_instance_terminal(inst_name='ISAR0', term_name='SB<0>', net_name='SB<%d:0>'%(num_bits-1))
         #rename pins
         self.rename_pin('VOL<0>', 'VOL<%d:0>'%(num_bits-2))
         self.rename_pin('VOR<0>', 'VOR<%d:0>'%(num_bits-2))
@@ -109,7 +118,6 @@ class adc_sar_templates__sar(Module):
         self.rename_pin('ZP<0>', 'ZP<%d:0>'%(num_bits-1))
         self.rename_pin('SB<0>', 'SB<%d:0>'%(num_bits-1))
         self.rename_pin('ADCOUT<0>', 'ADCOUT<%d:0>'%(num_bits-1))
-
 
     def get_layout_params(self, **kwargs):
         """Returns a dictionary with layout parameters.

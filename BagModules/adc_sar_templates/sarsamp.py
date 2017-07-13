@@ -33,12 +33,12 @@ import pkg_resources
 from bag.design import Module
 
 
-yaml_file = pkg_resources.resource_filename(__name__, os.path.join('netlist_info', 'sarafe_nsw.yaml'))
+yaml_file = pkg_resources.resource_filename(__name__, os.path.join('netlist_info', 'sarsamp.yaml'))
 
 
 # noinspection PyPep8Naming
-class adc_sar_templates__sarafe_nsw(Module):
-    """Module for library adc_sar_templates cell sarafe_nsw.
+class adc_sar_templates__sarsamp(Module):
+    """Module for library adc_sar_templates cell sarsamp.
 
     Fill in high level description here.
     """
@@ -46,7 +46,7 @@ class adc_sar_templates__sarafe_nsw(Module):
     def __init__(self, bag_config, parent=None, prj=None, **kwargs):
         Module.__init__(self, bag_config, yaml_file, parent=parent, prj=prj, **kwargs)
 
-    def design(self, lch, pw, nw, sa_m, sa_m_rst, sa_m_rgnn, sa_m_buf, drv_m_list, num_bits, c_m, rdx_array, device_intent='fast'):
+    def design(self, lch, pw, nw, m_sw, m_sw_arr, m_inbuf_list, m_outbuf_list, device_intent='fast'):
         """To be overridden by subclasses to design this module.
 
         This method should fill in values for all parameters in
@@ -65,40 +65,45 @@ class adc_sar_templates__sarafe_nsw(Module):
         self.parameters['lch'] = lch
         self.parameters['pw'] = pw
         self.parameters['nw'] = nw
-        self.parameters['sa_m'] = sa_m
-        self.parameters['sa_m_rst'] = sa_m_rst
-        self.parameters['sa_m_rgnn'] = sa_m_rgnn
-        self.parameters['sa_m_buf'] = sa_m_buf
-        self.parameters['drv_m_list'] = drv_m_list
-        self.parameters['num_bits'] = num_bits
-        self.parameters['c_m'] = c_m
-        self.parameters['rdx_array'] = rdx_array
+        self.parameters['m_sw'] = m_sw
+        self.parameters['m_sw_arr'] = m_sw_arr
+        self.parameters['m_inbuf_list'] = m_inbuf_list
+        self.parameters['m_outbuf_list'] = m_outbuf_list
         self.parameters['device_intent'] = device_intent
-        self.instances['ISA0'].design(lch=lch, pw=pw, nw=nw, m=sa_m, m_rst=sa_m_rst, m_rgnn=sa_m_rgnn, m_buf=sa_m_buf, device_intent=device_intent)
-        self.instances['ICDRVP0'].design(lch=lch, pw=pw, nw=nw, num_bits=num_bits, m_list=drv_m_list, device_intent=device_intent)
-        self.instances['ICDRVM0'].design(lch=lch, pw=pw, nw=nw, num_bits=num_bits, m_list=drv_m_list, device_intent=device_intent)
-        self.instances['ICAPP0'].design(num_bits=num_bits, c_m=c_m, rdx_array=rdx_array)
-        self.instances['ICAPM0'].design(num_bits=num_bits, c_m=c_m, rdx_array=rdx_array)
-        #VOL/VOR
-        self.reconnect_instance_terminal(inst_name='ICAPP0', term_name='I', net_name='VOL<%d:0>'%(num_bits-1))
-        self.reconnect_instance_terminal(inst_name='ICAPM0', term_name='I', net_name='VOR<%d:0>'%(num_bits-1))
-        self.reconnect_instance_terminal(inst_name='ICDRVP0', term_name='VO', net_name='VOL<%d:0>'%(num_bits-1))
-        self.reconnect_instance_terminal(inst_name='ICDRVM0', term_name='VO', net_name='VOR<%d:0>'%(num_bits-1))
-        self.rename_pin('VOL', 'VOL<%d:0>'%(num_bits-1))
-        self.rename_pin('VOR', 'VOR<%d:0>'%(num_bits-1))
-        #EN
-        pin_enl=''
-        pin_enr=''
-        for i in range(num_bits):
-            pin_enl=pin_enl+'ENL%d<2:0>'%i
-            pin_enr=pin_enr+'ENR%d<2:0>'%i
-            if i<num_bits-1:
-                pin_enl=pin_enl+','
-                pin_enr=pin_enr+','
-        self.reconnect_instance_terminal(inst_name='ICDRVP0', term_name='EN<2:0>', net_name=pin_enl)
-        self.reconnect_instance_terminal(inst_name='ICDRVM0', term_name='EN<2:0>', net_name=pin_enr)
-        self.rename_pin('ENL0<2:0>', pin_enl)
-        self.rename_pin('ENR0<2:0>', pin_enr)
+        #switch
+        self.array_instance('ISWP0', ['ISWP<%d:0>'%(m_sw_arr-1)])
+        self.array_instance('ISWN0', ['ISWN<%d:0>'%(m_sw_arr-1)])
+        for swp in self.instances['ISWP0']:
+            swp.design(lch=lch, pw=pw, nw=nw, m=m_sw, device_intent=device_intent)
+        for swn in self.instances['ISWN0']:
+            swn.design(lch=lch, pw=pw, nw=nw, m=m_sw, device_intent=device_intent)
+        #input buffer
+        name_list=[]
+        term_list=[]
+        for i, m_in in enumerate(m_inbuf_list):
+            in_pin = 'in_int<%d>'%(i-1)
+            out_pin = 'in_int<%d>'%i
+            term_list.append({'I': in_pin, 'O':out_pin})
+            name_list.append('IBUFA%d'%i)
+        term_list[0]['I']='ckin'
+        term_list[-1]['O']='ckpg'
+        self.array_instance('IBUFA0', name_list, term_list=term_list)
+        for inst, m in zip(self.instances['IBUFA0'], m_inbuf_list):
+            inst.design(lch=lch, pw=pw, nw=nw, m=m, device_intent=device_intent)
+
+        #input buffer
+        name_list=[]
+        term_list=[]
+        for i, m_in in enumerate(m_outbuf_list):
+            in_pin = 'out_int<%d>'%(i-1)
+            out_pin = 'out_int<%d>'%i
+            term_list.append({'I': in_pin, 'O':out_pin})
+            name_list.append('IBUFB%d'%i)
+        term_list[0]['I']='ckpg'
+        term_list[-1]['O']='ckout'
+        self.array_instance('IBUFB0', name_list, term_list=term_list)
+        for inst, m in zip(self.instances['IBUFB0'], m_outbuf_list):
+            inst.design(lch=lch, pw=pw, nw=nw, m=m, device_intent=device_intent)
 
     def get_layout_params(self, **kwargs):
         """Returns a dictionary with layout parameters.

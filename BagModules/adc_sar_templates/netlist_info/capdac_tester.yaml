@@ -1,0 +1,20 @@
+lib_name: adc_sar_templates
+cell_name: capdac_tester
+pins: [ "O" ]
+instances:
+  ICDAC0:
+    lib_name: adc_sar_templates
+    cell_name: capdac
+    instpins:
+      I:
+        direction: input
+        net_name: "I<0>"
+        num_bits: 1
+      O:
+        direction: inputOutput
+        net_name: "O"
+        num_bits: 1
+      I_C0:
+        direction: input
+        net_name: "gnd!"
+        num_bits: 1

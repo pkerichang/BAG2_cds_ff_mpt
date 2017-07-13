@@ -69,8 +69,8 @@ class adc_sar_templates__sarret_wckbuf(Module):
         self.parameters['fo'] = fo
         self.parameters['num_bits'] = num_bits
         self.parameters['device_intent'] = device_intent
-        m_ckbuf0 = int(max(1, m*int(9/2)*2/4))
-        m_ckbuf1 = int(max(4, m*int(9/2)*2))
+        m_ckbuf0 = int(max(1, m*int(num_bits/2)*2/4))
+        m_ckbuf1 = int(max(4, m*int(num_bits/2)*2))
         self.instances['ICKBUF0'].design(lch=lch, pw=pw, nw=nw, m=m_ckbuf0, device_intent=device_intent)
         self.instances['ICKBUF1'].design(lch=lch, pw=pw, nw=nw, m=m_ckbuf1, device_intent=device_intent)
         self.instances['ICKBUF2'].design(lch=lch, pw=pw, nw=nw, m=m_ckbuf0, device_intent=device_intent)
@@ -79,7 +79,6 @@ class adc_sar_templates__sarret_wckbuf(Module):
         #array generation
         name_list=[]
         term_list=[]
-        pin_en=''
         for i in range(num_bits):
             term_list.append({'I': 'IN<%d>'%(i), 'O':'OUT<%d>'%(i)})
             name_list.append('I%d'%(i))

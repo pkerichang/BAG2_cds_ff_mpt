@@ -1,6 +1,6 @@
 lib_name: adc_sar_templates
-cell_name: sarabe_dualdelay_9b
-pins: [ "SAOM", "PHI0", "RST", "EXTSEL_CLK", "CKDSEL1<1:0>", "ZP<8:0>", "CKDSEL0<1:0>", "SARCLKB", "SAOP", "RSTOUT", "UP", "DONE", "SARCLK", "ADCOUT<8:0>", "ZM<8:0>", "ZMID<8:0>", "SB<8:0>", "VDD", "VSS" ]
+cell_name: sarabe_dualdelay
+pins: [ "SAOM", "PHI0", "RST", "EXTSEL_CLK", "CKDSEL1<1:0>", "CKDSEL0<1:0>", "SARCLKB", "SAOP", "RSTOUT", "SB<0>", "UP", "DONE", "SARCLK", "ZM<0>", "ZMID<0>", "ZP<0>", "ADCOUT<0>", "VDD", "VSS" ]
 instances:
   ISARFSM0:
     lib_name: adc_sar_templates
@@ -8,7 +8,7 @@ instances:
     instpins:
       SB<0>:
         direction: output
-        net_name: "net3"
+        net_name: "SB<0>"
         num_bits: 1
       RST_DLY:
         direction: output
@@ -92,11 +92,11 @@ instances:
     instpins:
       OUT<0>:
         direction: output
-        net_name: "net10"
+        net_name: "ADCOUT<0>"
         num_bits: 1
       IN<0>:
         direction: input
-        net_name: "net9"
+        net_name: "RETI<0>"
         num_bits: 1
       CLKO:
         direction: output
@@ -120,23 +120,23 @@ instances:
     instpins:
       RETO<0>:
         direction: output
-        net_name: "net5"
+        net_name: "RETI<0>"
         num_bits: 1
       ZM<0>:
         direction: output
-        net_name: "net8"
+        net_name: "ZM<0>"
         num_bits: 1
       ZMID<0>:
         direction: output
-        net_name: "net7"
+        net_name: "ZMID<0>"
         num_bits: 1
       ZP<0>:
         direction: output
-        net_name: "net6"
+        net_name: "ZP<0>"
         num_bits: 1
       SB<0>:
         direction: input
-        net_name: "net4"
+        net_name: "SB<0>"
         num_bits: 1
       SAOP:
         direction: input

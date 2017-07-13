@@ -33,12 +33,12 @@ import pkg_resources
 from bag.design import Module
 
 
-yaml_file = pkg_resources.resource_filename(__name__, os.path.join('netlist_info', 'sarafe_nsw.yaml'))
+yaml_file = pkg_resources.resource_filename(__name__, os.path.join('netlist_info', 'sarabe_dualdelay.yaml'))
 
 
 # noinspection PyPep8Naming
-class adc_sar_templates__sarafe_nsw(Module):
-    """Module for library adc_sar_templates cell sarafe_nsw.
+class adc_sar_templates__sarabe_dualdelay(Module):
+    """Module for library adc_sar_templates cell sarabe_dualdelay.
 
     Fill in high level description here.
     """
@@ -46,7 +46,7 @@ class adc_sar_templates__sarafe_nsw(Module):
     def __init__(self, bag_config, parent=None, prj=None, **kwargs):
         Module.__init__(self, bag_config, yaml_file, parent=parent, prj=prj, **kwargs)
 
-    def design(self, lch, pw, nw, sa_m, sa_m_rst, sa_m_rgnn, sa_m_buf, drv_m_list, num_bits, c_m, rdx_array, device_intent='fast'):
+    def design(self, lch, pw, nw, ckgen_m, ckgen_fo, ckgen_ndelay, logic_m, fsm_m, ret_m, ret_fo, num_bits, device_intent='fast'):
         """To be overridden by subclasses to design this module.
 
         This method should fill in values for all parameters in
@@ -65,40 +65,34 @@ class adc_sar_templates__sarafe_nsw(Module):
         self.parameters['lch'] = lch
         self.parameters['pw'] = pw
         self.parameters['nw'] = nw
-        self.parameters['sa_m'] = sa_m
-        self.parameters['sa_m_rst'] = sa_m_rst
-        self.parameters['sa_m_rgnn'] = sa_m_rgnn
-        self.parameters['sa_m_buf'] = sa_m_buf
-        self.parameters['drv_m_list'] = drv_m_list
         self.parameters['num_bits'] = num_bits
-        self.parameters['c_m'] = c_m
-        self.parameters['rdx_array'] = rdx_array
+        self.parameters['ckgen_m'] = ckgen_m
+        self.parameters['ckgen_fo'] = ckgen_fo
+        self.parameters['ckgen_ndelay'] = ckgen_ndelay
+        self.parameters['logic_m'] = logic_m
+        self.parameters['fsm_m'] = fsm_m
+        self.parameters['ret_m'] = ret_m
+        self.parameters['ret_fo'] = ret_fo
         self.parameters['device_intent'] = device_intent
-        self.instances['ISA0'].design(lch=lch, pw=pw, nw=nw, m=sa_m, m_rst=sa_m_rst, m_rgnn=sa_m_rgnn, m_buf=sa_m_buf, device_intent=device_intent)
-        self.instances['ICDRVP0'].design(lch=lch, pw=pw, nw=nw, num_bits=num_bits, m_list=drv_m_list, device_intent=device_intent)
-        self.instances['ICDRVM0'].design(lch=lch, pw=pw, nw=nw, num_bits=num_bits, m_list=drv_m_list, device_intent=device_intent)
-        self.instances['ICAPP0'].design(num_bits=num_bits, c_m=c_m, rdx_array=rdx_array)
-        self.instances['ICAPM0'].design(num_bits=num_bits, c_m=c_m, rdx_array=rdx_array)
-        #VOL/VOR
-        self.reconnect_instance_terminal(inst_name='ICAPP0', term_name='I', net_name='VOL<%d:0>'%(num_bits-1))
-        self.reconnect_instance_terminal(inst_name='ICAPM0', term_name='I', net_name='VOR<%d:0>'%(num_bits-1))
-        self.reconnect_instance_terminal(inst_name='ICDRVP0', term_name='VO', net_name='VOL<%d:0>'%(num_bits-1))
-        self.reconnect_instance_terminal(inst_name='ICDRVM0', term_name='VO', net_name='VOR<%d:0>'%(num_bits-1))
-        self.rename_pin('VOL', 'VOL<%d:0>'%(num_bits-1))
-        self.rename_pin('VOR', 'VOR<%d:0>'%(num_bits-1))
-        #EN
-        pin_enl=''
-        pin_enr=''
-        for i in range(num_bits):
-            pin_enl=pin_enl+'ENL%d<2:0>'%i
-            pin_enr=pin_enr+'ENR%d<2:0>'%i
-            if i<num_bits-1:
-                pin_enl=pin_enl+','
-                pin_enr=pin_enr+','
-        self.reconnect_instance_terminal(inst_name='ICDRVP0', term_name='EN<2:0>', net_name=pin_enl)
-        self.reconnect_instance_terminal(inst_name='ICDRVM0', term_name='EN<2:0>', net_name=pin_enr)
-        self.rename_pin('ENL0<2:0>', pin_enl)
-        self.rename_pin('ENR0<2:0>', pin_enr)
+        self.instances['ICKGEN0'].design(lch=lch, pw=pw, nw=nw, m=ckgen_m, fo=ckgen_fo, ndelay=ckgen_ndelay, device_intent=device_intent)
+        self.instances['ISARLOGIC0'].design(lch=lch, pw=pw, nw=nw, m=logic_m, num_bits=num_bits, device_intent=device_intent)
+        self.instances['ISARFSM0'].design(lch=lch, pw=pw, nw=nw, m=fsm_m, num_bits=num_bits, device_intent=device_intent)
+        self.instances['IRET0'].design(lch=lch, pw=pw, nw=nw, m=ret_m, fo=ret_fo, num_bits=num_bits, device_intent=device_intent)
+        self.reconnect_instance_terminal(inst_name='ICKGEN0', term_name='SHORTB', net_name='ZMID<%d>'%(max(0, num_bits-3)))
+        self.reconnect_instance_terminal(inst_name='ISARFSM0', term_name='SB<0>', net_name='SB<%d:0>'%(num_bits-1))
+        self.reconnect_instance_terminal(inst_name='ISARLOGIC0', term_name='SB<0>', net_name='SB<%d:0>'%(num_bits-1))
+        self.reconnect_instance_terminal(inst_name='ISARLOGIC0', term_name='ZM<0>', net_name='ZM<%d:0>'%(num_bits-1))
+        self.reconnect_instance_terminal(inst_name='ISARLOGIC0', term_name='ZP<0>', net_name='ZP<%d:0>'%(num_bits-1))
+        self.reconnect_instance_terminal(inst_name='ISARLOGIC0', term_name='ZMID<0>', net_name='ZMID<%d:0>'%(num_bits-1))
+        self.reconnect_instance_terminal(inst_name='ISARLOGIC0', term_name='RETO<0>', net_name='RETI<%d:0>'%(num_bits-1))
+        self.reconnect_instance_terminal(inst_name='IRET0', term_name='IN<0>', net_name='RETI<%d:0>'%(num_bits-1))
+        self.reconnect_instance_terminal(inst_name='IRET0', term_name='OUT<0>', net_name='ADCOUT<%d:0>'%(num_bits-1))
+
+        self.rename_pin('ZP<0>','ZP<%d:0>'%(num_bits-1))
+        self.rename_pin('ZMID<0>','ZMID<%d:0>'%(num_bits-1))
+        self.rename_pin('ZM<0>','ZM<%d:0>'%(num_bits-1))
+        self.rename_pin('ADCOUT<0>','ADCOUT<%d:0>'%(num_bits-1))
+        self.rename_pin('SB<0>','SB<%d:0>'%(num_bits-1))
 
     def get_layout_params(self, **kwargs):
         """Returns a dictionary with layout parameters.
