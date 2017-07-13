@@ -3,8 +3,8 @@ cell_name: sar_wsamp
 pins: [ "VDDSAMP", "CLKO", "VREF<2:0>", "OSM", "OSP", "INM", "INP", "EXTSEL_CLK", "CKDSEL0<1:0>", "CKDSEL1<1:0>", "CLK", "VOR<0>", "VOL<0>", "ADCOUT<0>", "ICLK", "CLKPRB_SAMP", "SAOP", "UP", "SB<0>", "SARCLKB", "ZM<0>", "SARCLK", "ZMID<0>", "DONE", "ZP<0>", "PHI0", "SAMPP", "SAMPM", "VDDSAR", "VSS", "SAOM" ]
 instances:
   XSAMP0:
-    lib_name: adc_ec_templates
-    cell_name: sampler_nmos
+    lib_name: adc_sar_templates
+    cell_name: sarsamp
     instpins:
       ckpg:
         direction: output
