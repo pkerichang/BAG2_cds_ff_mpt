@@ -589,11 +589,19 @@ cds_ff_mpt_microtemplates_dense:
     pins: {}
     xy0: [0.0, 0.0]
     xy1: [0.0, 0.0]
+  via_M2_M3_2:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [0.0, 0.0]
   via_M3_M4_0:
     pins: {}
     xy0: [0.0, 0.0]
     xy1: [0.0, 0.0]
   via_M3_M4_1:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [0.0, 0.0]
+  via_M3_M4_2:
     pins: {}
     xy0: [0.0, 0.0]
     xy1: [0.0, 0.0]
@@ -605,11 +613,23 @@ cds_ff_mpt_microtemplates_dense:
     pins: {}
     xy0: [0.0, 0.0]
     xy1: [0.0, 0.0]
+  via_M4_M5_2:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [0.0, 0.0]
   via_M5_M6_0:
     pins: {}
     xy0: [0.0, 0.0]
     xy1: [0.0, 0.0]
   via_M5_M6_1:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [0.0, 0.0]
+  via_M5_M6_2:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [0.0, 0.0]
+  via_M5_M6_3:
     pins: {}
     xy0: [0.0, 0.0]
     xy1: [0.0, 0.0]

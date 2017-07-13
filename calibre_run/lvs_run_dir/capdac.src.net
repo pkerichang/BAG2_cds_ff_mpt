@@ -4,10 +4,10 @@
 * Library Name:  adc_sar_generated
 * Top Cell Name: capdac
 * View Name:     schematic
-* Netlisted on:  Jun 13 14:33:53 2017
+* Netlisted on:  Jul 12 21:21:43 2017
 ************************************************************************
 
-.INCLUDE  /tools/designs/zhongkai/tsmc16/others/test/BAG2_cds_ff_mpt/cds_ff_mpt/calibre_rcx_setup/source.added
+.INCLUDE  /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/cds_ff_mpt/calibre_rcx_setup/source.added
 *.EQUATION
 *.SCALE METER
 *.MEGA

@@ -101,17 +101,17 @@ cds_ff_mpt_microtemplates_dense:
   route_M2_M3_basic_thick:
     type: route
     viamap:
-      via_M2_M3_1: [0, 0]
+      via_M2_M3_2: [0, 0]
     xgrid: [0.0]
     xlayer:
     - [M3, drawing]
-    xwidth: [0.032]
+    xwidth: [0.096]
     xy0: [0.0, 0.0]
-    xy1: [0.2, 0.4]
+    xy1: [0.192, 0.086]
     ygrid: [0.0]
     ylayer:
     - [M2, drawing]
-    ywidth: [0.096]
+    ywidth: [0.032]
   route_M2_M3_cmos:
     type: route
     viamap:
@@ -199,7 +199,7 @@ cds_ff_mpt_microtemplates_dense:
     - [M3, drawing]
     xwidth: [0.032]
     xy0: [0.0, 0.0]
-    xy1: [0.192, 0.192]
+    xy1: [0.086, 0.192]
     ygrid: [0.0]
     ylayer:
     - [M4, drawing]
@@ -207,7 +207,7 @@ cds_ff_mpt_microtemplates_dense:
   route_M3_M4_thick:
     type: route
     viamap:
-      via_M3_M4_1: [0, 0]
+      via_M3_M4_2: [0, 0]
     xgrid: [0.0]
     xlayer:
     - [M3, drawing]
@@ -232,10 +232,24 @@ cds_ff_mpt_microtemplates_dense:
     ylayer:
     - [M4, drawing]
     ywidth: [0.032]
-  route_M4_M5_thick:
+  route_M4_M5_basic_thick:
     type: route
     viamap:
       via_M4_M5_1: [0, 0]
+    xgrid: [0.0]
+    xlayer:
+    - [M5, drawing]
+    xwidth: [0.096]
+    xy0: [0.0, 0.0]
+    xy1: [0.192, 0.086]
+    ygrid: [0.0]
+    ylayer:
+    - [M4, drawing]
+    ywidth: [0.032]
+  route_M4_M5_thick:
+    type: route
+    viamap:
+      via_M4_M5_2: [0, 0]
     xgrid: [0.0]
     xlayer:
     - [M5, drawing]
@@ -277,7 +291,7 @@ cds_ff_mpt_microtemplates_dense:
   route_M5_M6_thick:
     type: route
     viamap:
-      via_M5_M6_1: [0, 0]
+      via_M5_M6_2: [0, 0]
     xgrid: [0.0]
     xlayer:
     - [M5, drawing]
@@ -288,6 +302,20 @@ cds_ff_mpt_microtemplates_dense:
     ylayer:
     - [M6, drawing]
     ywidth: [0.096]
+  route_M5_M6_thick_basic:
+    type: route
+    viamap:
+      via_M5_M6_3: [0, 0]
+    xgrid: [0.0]
+    xlayer:
+    - [M5, drawing]
+    xwidth: [0.096]
+    xy0: [0.0, 0.0]
+    xy1: [0.192, 0.086]
+    ygrid: [0.0]
+    ylayer:
+    - [M6, drawing]
+    ywidth: [0.032]
   route_M6_M7_basic:
     type: route
     viamap:
