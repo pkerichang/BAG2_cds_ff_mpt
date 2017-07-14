@@ -4,4 +4,5 @@ BAG_prim $BAG_TECH_CONFIG_DIR/DesignModules
 demo_templates BagModules
 logic_templates laygo/generators/logic/BagModules
 adc_sar_templates BagModules
+clk_dis_templates BagModules
 cds_ff_mpt_microtemplates_dense BagModules

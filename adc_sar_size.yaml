@@ -1,10 +1,10 @@
-capdac_c_m: 1
+capdac_c_m: 2
 capdac_num_bits_horizontal: 2
-capdac_num_bits_vertical: 6
-capdrv_m_list: [2, 2, 2, 2, 2, 2, 4, 8]
+capdac_num_bits_vertical: 3
+capdrv_m_list: [2, 2, 2, 2, 4]
 capdrv_space_offset: 0
 dcap2_m: 19
-m_dcap2: 18
+m_dcap2: 19
 num_space_samp: 42
 num_space_sar: 48
 salatch_m: 12
@@ -19,7 +19,8 @@ sarfsm_m: 2
 sarlogic_m: 4
 sarret_fo: 2
 sarret_m: 1
-sarsamp_m_inbuf_list: [16, 24]
-sarsamp_m_outbuf_list: [8, 32]
 sarsamp_m_sw: 4
 sarsamp_m_sw_arr: 6
+sarsamp_m_inbuf_list: [16, 24]
+sarsamp_m_outbuf_list: [8, 32]
+slice_order: [0, 1]

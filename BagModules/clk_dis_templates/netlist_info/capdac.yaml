@@ -1,0 +1,16 @@
+lib_name: clk_dis_templates
+cell_name: capdac
+pins: [ "O", "I" ]
+instances:
+  CDAC:
+    lib_name: tsmcN16_microtemplates_dense
+    cell_name: momcap_center_1x
+    instpins:
+      BOTTOM:
+        direction: inputOutput
+        net_name: "I"
+        num_bits: 1
+      TOP:
+        direction: inputOutput
+        net_name: "O"
+        num_bits: 1

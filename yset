@@ -1,0 +1,13 @@
+#!/bin/tcsh
+if ( "$1" == "load" ) then
+  cp adc_sar_spec.yaml adc_sar_spec.yaml.bak
+  cp adc_sar_size.yaml adc_sar_size.yaml.bak
+  cp adc_sar_spec_$2.yaml adc_sar_spec.yaml
+  cp adc_sar_size_$2.yaml adc_sar_size.yaml
+endif
+if ( "$1" == "save" ) then
+  cp adc_sar_spec_$2.yaml adc_sar_spec_$2.yaml.bak
+  cp adc_sar_size_$2.yaml adc_sar_size_$2.yaml.bak
+  cp adc_sar_spec.yaml adc_sar_spec_$2.yaml
+  cp adc_sar_size.yaml adc_sar_size_$2.yaml
+endif

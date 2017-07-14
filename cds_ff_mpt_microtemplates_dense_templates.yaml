@@ -21,8 +21,8 @@ cds_ff_mpt_microtemplates_dense:
     xy1: [0.086, 0.48]
   _nmos4_fast_base_tap_base:
     pins: {}
-    xy0: [0.344, 0.0]
-    xy1: [0.43, 0.48]
+    xy0: [0.258, 0.0]
+    xy1: [0.344, 0.48]
   _nmos4_fast_boundary_base:
     pins: {}
     xy0: [0.0, 0.0]
@@ -86,65 +86,83 @@ cds_ff_mpt_microtemplates_dense:
   momcap_boundary_1x:
     pins: {}
     xy0: [0.0, 0.0]
-    xy1: [1.28, 0.128]
+    xy1: [1.152, 0.128]
   momcap_center_1x:
     pins:
       BOTTOM:
         layer: [M5, pin]
         netname: BOTTOM
         xy0: [0.0, -0.016]
-        xy1: [1.28, 0.016]
+        xy1: [1.152, 0.016]
       TOP:
         layer: [M6, pin]
         netname: TOP
         xy0: [0.128, 0.048]
-        xy1: [1.152, 0.08]
+        xy1: [1.024, 0.08]
     xy0: [0.0, 0.0]
-    xy1: [1.28, 0.128]
+    xy1: [1.152, 0.128]
   momcap_dmy_1x:
     pins: {}
     xy0: [0.0, 0.0]
-    xy1: [1.28, 0.128]
+    xy1: [1.152, 0.128]
   momcap_dmyblk_1x:
     pins: {}
     xy0: [0.0, 0.0]
-    xy1: [1.28, 0.128]
+    xy1: [1.152, 0.128]
   momcap_dmyptn_m1_1x:
     pins: {}
     xy0: [0.0, 0.0]
-    xy1: [1.28, 0.128]
+    xy1: [1.152, 0.128]
   momcap_dmyptn_m2_1x:
     pins: {}
     xy0: [0.0, 0.0]
-    xy1: [1.28, 0.128]
+    xy1: [1.152, 0.128]
   momcap_dmyptn_m3_1x:
     pins: {}
     xy0: [0.0, 0.0]
-    xy1: [1.28, 0.128]
+    xy1: [1.152, 0.128]
   momcap_dmyptn_m4_1x:
     pins: {}
     xy0: [0.0, 0.0]
-    xy1: [1.28, 0.128]
+    xy1: [1.152, 0.128]
   momcap_dmyptn_m5_1x:
     pins: {}
     xy0: [0.0, 0.0]
-    xy1: [1.28, 0.128]
+    xy1: [1.152, 0.128]
   momcap_dmyptn_m6_1x:
     pins: {}
     xy0: [0.0, 0.0]
-    xy1: [1.28, 0.128]
+    xy1: [1.152, 0.128]
   momcap_dmyptn_m7_1x:
     pins: {}
     xy0: [0.0, 0.0]
-    xy1: [1.28, 0.128]
+    xy1: [1.152, 0.128]
   momcap_dmyptn_m8_1x:
     pins: {}
     xy0: [0.0, 0.0]
-    xy1: [1.28, 0.128]
+    xy1: [1.152, 0.128]
   momcap_dmyptn_m9_1x:
     pins: {}
     xy0: [0.0, 0.0]
-    xy1: [1.28, 0.128]
+    xy1: [1.152, 0.128]
+  momcap_m4_center_1x:
+    pins:
+      BOTTOM:
+        layer: [M4, pin]
+        netname: BOTTOM
+        xy0: [0.0, -0.016]
+        xy1: [1.152, 0.016]
+      TOP:
+        layer: [M4, pin]
+        netname: TOP
+        xy0: [0.128, 0.048]
+        xy1: [1.024, 0.08]
+    xy0: [0.0, 0.0]
+    xy1: [1.152, 0.128]
+  momcap_m4_dmy_1x:
+    pins: {}
+    xy0: [0.0, 0.0]
+    xy1: [1.152, 0.128]
   nmos4_fast_boundary:
     pins: {}
     xy0: [0.0, 0.0]

@@ -1,0 +1,24 @@
+lib_name: clk_dis_templates
+cell_name: cap_sw_array
+pins: [ "EN", "VDD", "VSS", "VO" ]
+instances:
+  I0:
+    lib_name: logic_templates
+    cell_name: cap_sw
+    instpins:
+      VDD:
+        direction: inputOutput
+        net_name: "VDD"
+        num_bits: 1
+      VSS:
+        direction: inputOutput
+        net_name: "VSS"
+        num_bits: 1
+      VO:
+        direction: inputOutput
+        net_name: "VO"
+        num_bits: 1
+      EN:
+        direction: input
+        net_name: "EN"
+        num_bits: 1

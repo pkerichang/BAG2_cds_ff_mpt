@@ -26,6 +26,7 @@ DEFINE logic_templates laygo/generators/logic/logic_templates
 
 #adc libs
 DEFINE adc_sar_templates ./adc_sar_templates
+DEFINE clk_dis_templates ./clk_dis_templates
 DEFINE adc_sar_testbenches ./adc_sar_testbenches
 
 #working libraries
@@ -36,3 +37,4 @@ DEFINE cds_ff_mpt_logic_templates /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/cds_
 DEFINE demo_1 ./demo_1
 DEFINE adc_sar_generated /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/adc_sar_generated
 DEFINE adc_sar_generated /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/adc_sar_generated
+DEFINE clk_dis_generated /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/clk_dis_generated

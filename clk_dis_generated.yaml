@@ -1,0 +1,1759 @@
+clk_dis_generated:
+  cap_sw_array:
+    pins:
+      EN<0>:
+        layer: [M3, pin]
+        netname: EN<0>
+        xy0: [0.156, 0.384]
+        xy1: [0.188, 0.576]
+      EN<1>:
+        layer: [M3, pin]
+        netname: EN<1>
+        xy0: [0.586, 0.384]
+        xy1: [0.618, 0.576]
+      EN<2>:
+        layer: [M3, pin]
+        netname: EN<2>
+        xy0: [1.188, 0.384]
+        xy1: [1.22, 0.576]
+      EN<3>:
+        layer: [M3, pin]
+        netname: EN<3>
+        xy0: [2.134, 0.384]
+        xy1: [2.166, 0.576]
+      EN<4>:
+        layer: [M3, pin]
+        netname: EN<4>
+        xy0: [3.768, 0.384]
+        xy1: [3.8, 0.576]
+      VDD:
+        layer: [M2, pin]
+        netname: VDD
+        xy0: [0.0, 0.912]
+        xy1: [6.708, 1.008]
+      VO<0>:
+        layer: [M3, pin]
+        netname: VO<0>
+        xy0: [0.242, 0.0]
+        xy1: [0.274, 0.192]
+      VO<1>:
+        layer: [M3, pin]
+        netname: VO<1>
+        xy0: [0.672, 0.0]
+        xy1: [0.704, 0.192]
+      VO<2>:
+        layer: [M3, pin]
+        netname: VO<2>
+        xy0: [1.274, 0.0]
+        xy1: [1.306, 0.192]
+      VO<3>:
+        layer: [M3, pin]
+        netname: VO<3>
+        xy0: [2.22, 0.0]
+        xy1: [2.252, 0.192]
+      VO<4>:
+        layer: [M3, pin]
+        netname: VO<4>
+        xy0: [3.854, 0.0]
+        xy1: [3.886, 0.192]
+      VSS:
+        layer: [M2, pin]
+        netname: VSS
+        xy0: [0.0, -0.048]
+        xy1: [6.708, 0.048]
+    xy0: [0.0, 0.0]
+    xy1: [6.708, 0.96]
+  capdac:
+    pins:
+      I<0>:
+        layer: [M3, pin]
+        netname: I<0>
+        xy0: [5.872, 0.64]
+        xy1: [5.904, 0.896]
+      I<1>:
+        layer: [M3, pin]
+        netname: I<1>
+        xy0: [6.0, 0.64]
+        xy1: [6.032, 0.896]
+      I<2>:
+        layer: [M3, pin]
+        netname: I<2>
+        xy0: [6.128, 0.64]
+        xy1: [6.16, 0.896]
+      I<3>:
+        layer: [M3, pin]
+        netname: I<3>
+        xy0: [6.256, 0.64]
+        xy1: [6.288, 0.896]
+      I<4>:
+        layer: [M3, pin]
+        netname: I<4>
+        xy0: [6.384, 0.64]
+        xy1: [6.416, 0.896]
+      O0:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 1.072]
+        xy1: [6.144, 1.104]
+      O1:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 1.2]
+        xy1: [6.144, 1.232]
+      O10:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 2.352]
+        xy1: [6.144, 2.384]
+      O11:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 2.48]
+        xy1: [6.144, 2.512]
+      O12:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 2.608]
+        xy1: [6.144, 2.64]
+      O13:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 2.736]
+        xy1: [6.144, 2.768]
+      O14:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 2.864]
+        xy1: [6.144, 2.896]
+      O15:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 2.992]
+        xy1: [6.144, 3.024]
+      O16:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 3.12]
+        xy1: [6.144, 3.152]
+      O17:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 3.248]
+        xy1: [6.144, 3.28]
+      O18:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 3.376]
+        xy1: [6.144, 3.408]
+      O19:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 3.504]
+        xy1: [6.144, 3.536]
+      O2:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 1.328]
+        xy1: [6.144, 1.36]
+      O20:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 3.632]
+        xy1: [6.144, 3.664]
+      O21:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 3.76]
+        xy1: [6.144, 3.792]
+      O22:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 3.888]
+        xy1: [6.144, 3.92]
+      O23:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 4.016]
+        xy1: [6.144, 4.048]
+      O24:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 4.144]
+        xy1: [6.144, 4.176]
+      O25:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 4.272]
+        xy1: [6.144, 4.304]
+      O26:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 4.4]
+        xy1: [6.144, 4.432]
+      O27:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 4.528]
+        xy1: [6.144, 4.56]
+      O28:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 4.656]
+        xy1: [6.144, 4.688]
+      O29:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 4.784]
+        xy1: [6.144, 4.816]
+      O3:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 1.456]
+        xy1: [6.144, 1.488]
+      O30:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 4.912]
+        xy1: [6.144, 4.944]
+      O31:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 5.04]
+        xy1: [6.144, 5.072]
+      O32:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 5.168]
+        xy1: [6.144, 5.2]
+      O33:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 5.296]
+        xy1: [6.144, 5.328]
+      O34:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 5.424]
+        xy1: [6.144, 5.456]
+      O35:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 5.552]
+        xy1: [6.144, 5.584]
+      O36:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 5.68]
+        xy1: [6.144, 5.712]
+      O37:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 5.808]
+        xy1: [6.144, 5.84]
+      O38:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 5.936]
+        xy1: [6.144, 5.968]
+      O39:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 6.064]
+        xy1: [6.144, 6.096]
+      O4:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 1.584]
+        xy1: [6.144, 1.616]
+      O40:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 6.192]
+        xy1: [6.144, 6.224]
+      O41:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 6.32]
+        xy1: [6.144, 6.352]
+      O42:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 6.448]
+        xy1: [6.144, 6.48]
+      O43:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 6.576]
+        xy1: [6.144, 6.608]
+      O44:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 6.704]
+        xy1: [6.144, 6.736]
+      O45:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 6.832]
+        xy1: [6.144, 6.864]
+      O46:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 6.96]
+        xy1: [6.144, 6.992]
+      O47:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 7.088]
+        xy1: [6.144, 7.12]
+      O48:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 7.216]
+        xy1: [6.144, 7.248]
+      O49:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 7.344]
+        xy1: [6.144, 7.376]
+      O5:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 1.712]
+        xy1: [6.144, 1.744]
+      O50:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 7.472]
+        xy1: [6.144, 7.504]
+      O51:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 7.6]
+        xy1: [6.144, 7.632]
+      O52:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 7.728]
+        xy1: [6.144, 7.76]
+      O53:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 7.856]
+        xy1: [6.144, 7.888]
+      O54:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 7.984]
+        xy1: [6.144, 8.016]
+      O55:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 8.112]
+        xy1: [6.144, 8.144]
+      O56:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 8.24]
+        xy1: [6.144, 8.272]
+      O57:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 8.368]
+        xy1: [6.144, 8.4]
+      O58:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 8.496]
+        xy1: [6.144, 8.528]
+      O59:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 8.624]
+        xy1: [6.144, 8.656]
+      O6:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 1.84]
+        xy1: [6.144, 1.872]
+      O60:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 8.752]
+        xy1: [6.144, 8.784]
+      O61:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 8.88]
+        xy1: [6.144, 8.912]
+      O7:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 1.968]
+        xy1: [6.144, 2.0]
+      O8:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 2.096]
+        xy1: [6.144, 2.128]
+      O9:
+        layer: [M4, pin]
+        netname: O
+        xy0: [5.888, 2.224]
+        xy1: [6.144, 2.256]
+    xy0: [0.0, 0.0]
+    xy1: [8.064, 9.6]
+  clk_dis_cell:
+    pins:
+      CAL<0>:
+        layer: [M3, pin]
+        netname: CAL<0>
+        xy0: [1.532, 3.2]
+        xy1: [1.564, 3.264]
+      CAL<1>:
+        layer: [M3, pin]
+        netname: CAL<1>
+        xy0: [1.962, 3.2]
+        xy1: [1.994, 3.264]
+      CAL<2>:
+        layer: [M3, pin]
+        netname: CAL<2>
+        xy0: [2.564, 3.2]
+        xy1: [2.596, 3.264]
+      CAL<3>:
+        layer: [M3, pin]
+        netname: CAL<3>
+        xy0: [3.51, 3.2]
+        xy1: [3.542, 3.264]
+      CAL<4>:
+        layer: [M3, pin]
+        netname: CAL<4>
+        xy0: [5.144, 3.2]
+        xy1: [5.176, 3.264]
+      CAPSW<0>:
+        layer: [M3, pin]
+        netname: CAPSW<0>
+        xy0: [1.618, 0.32]
+        xy1: [1.65, 0.384]
+      CAPSW<1>:
+        layer: [M3, pin]
+        netname: CAPSW<1>
+        xy0: [2.048, 0.32]
+        xy1: [2.08, 0.384]
+      CAPSW<2>:
+        layer: [M3, pin]
+        netname: CAPSW<2>
+        xy0: [2.65, 0.32]
+        xy1: [2.682, 0.384]
+      CAPSW<3>:
+        layer: [M3, pin]
+        netname: CAPSW<3>
+        xy0: [3.596, 0.32]
+        xy1: [3.628, 0.384]
+      CAPSW<4>:
+        layer: [M3, pin]
+        netname: CAPSW<4>
+        xy0: [5.23, 0.32]
+        xy1: [5.262, 0.384]
+      CLKI_0:
+        layer: [M5, pin]
+        netname: CLKI
+        xy0: [9.272, 4.096]
+        xy1: [9.304, 4.16]
+      CLKI_1:
+        layer: [M5, pin]
+        netname: CLKI
+        xy0: [9.1, 4.096]
+        xy1: [9.132, 4.16]
+      CLKI_10:
+        layer: [M5, pin]
+        netname: CLKI
+        xy0: [7.552, 4.096]
+        xy1: [7.584, 4.16]
+      CLKI_11:
+        layer: [M5, pin]
+        netname: CLKI
+        xy0: [7.38, 4.096]
+        xy1: [7.412, 4.16]
+      CLKI_2:
+        layer: [M5, pin]
+        netname: CLKI
+        xy0: [8.928, 4.096]
+        xy1: [8.96, 4.16]
+      CLKI_3:
+        layer: [M5, pin]
+        netname: CLKI
+        xy0: [8.756, 4.096]
+        xy1: [8.788, 4.16]
+      CLKI_4:
+        layer: [M5, pin]
+        netname: CLKI
+        xy0: [8.584, 4.096]
+        xy1: [8.616, 4.16]
+      CLKI_5:
+        layer: [M5, pin]
+        netname: CLKI
+        xy0: [8.412, 4.096]
+        xy1: [8.444, 4.16]
+      CLKI_6:
+        layer: [M5, pin]
+        netname: CLKI
+        xy0: [8.24, 4.096]
+        xy1: [8.272, 4.16]
+      CLKI_7:
+        layer: [M5, pin]
+        netname: CLKI
+        xy0: [8.068, 4.096]
+        xy1: [8.1, 4.16]
+      CLKI_8:
+        layer: [M5, pin]
+        netname: CLKI
+        xy0: [7.896, 4.096]
+        xy1: [7.928, 4.16]
+      CLKI_9:
+        layer: [M5, pin]
+        netname: CLKI
+        xy0: [7.724, 4.096]
+        xy1: [7.756, 4.16]
+      CLKO_0:
+        layer: [M5, pin]
+        netname: CLKO
+        xy0: [8.498, 0.832]
+        xy1: [8.53, 0.896]
+      CLKO_1:
+        layer: [M5, pin]
+        netname: CLKO
+        xy0: [8.67, 0.832]
+        xy1: [8.702, 0.896]
+      CLKO_2:
+        layer: [M5, pin]
+        netname: CLKO
+        xy0: [8.842, 0.832]
+        xy1: [8.874, 0.896]
+      CLKO_3:
+        layer: [M5, pin]
+        netname: CLKO
+        xy0: [9.014, 0.832]
+        xy1: [9.046, 0.896]
+      I:
+        layer: [M3, pin]
+        netname: I
+        xy0: [9.874, 2.88]
+        xy1: [9.906, 2.944]
+      O:
+        layer: [M3, pin]
+        netname: O
+        xy0: [16.324, 2.88]
+        xy1: [16.356, 2.944]
+      RST:
+        layer: [M3, pin]
+        netname: RST
+        xy0: [9.53, 2.88]
+        xy1: [9.562, 2.944]
+      ST:
+        layer: [M3, pin]
+        netname: ST
+        xy0: [9.186, 2.88]
+        xy1: [9.218, 2.944]
+      VDD0_0:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [0.0, 3.408]
+        xy1: [0.688, 3.504]
+      VDD0_1:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [0.0, 3.216]
+        xy1: [0.688, 3.312]
+      VDD0_2:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [0.0, 3.024]
+        xy1: [0.688, 3.12]
+      VDD0_3:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [0.0, 2.832]
+        xy1: [0.688, 2.928]
+      VDD1_0:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [17.372, 3.504]
+        xy1: [16.512, 3.408]
+      VDD1_1:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [17.372, 3.312]
+        xy1: [16.512, 3.216]
+      VDD1_2:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [17.372, 3.12]
+        xy1: [16.512, 3.024]
+      VDD1_3:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [17.372, 2.928]
+        xy1: [16.512, 2.832]
+      VSS0_0:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [0.0, 0.72]
+        xy1: [0.688, 0.816]
+      VSS0_1:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [0.0, 0.912]
+        xy1: [0.688, 1.008]
+      VSS0_2:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [0.0, 1.104]
+        xy1: [0.688, 1.2]
+      VSS0_3:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [0.0, 1.296]
+        xy1: [0.688, 1.392]
+      VSS1_0:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [17.372, 0.816]
+        xy1: [16.512, 0.72]
+      VSS1_1:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [17.372, 1.008]
+        xy1: [16.512, 0.912]
+      VSS1_2:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [17.372, 1.2]
+        xy1: [16.512, 1.104]
+      VSS1_3:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [17.372, 1.392]
+        xy1: [16.512, 1.296]
+    xy0: [0.0, 0.0]
+    xy1: [17.372, 4.32]
+  clk_dis_htree:
+    pins:
+      WI_0:
+        layer: [M5, pin]
+        netname: W
+        xy0: [-0.016, -0.128]
+        xy1: [0.016, 0.0]
+      WI_1:
+        layer: [M5, pin]
+        netname: W
+        xy0: [0.156, -0.128]
+        xy1: [0.188, 0.0]
+      WI_10:
+        layer: [M5, pin]
+        netname: W
+        xy0: [1.704, -0.128]
+        xy1: [1.736, 0.0]
+      WI_11:
+        layer: [M5, pin]
+        netname: W
+        xy0: [1.876, -0.128]
+        xy1: [1.908, 0.0]
+      WI_2:
+        layer: [M5, pin]
+        netname: W
+        xy0: [0.328, -0.128]
+        xy1: [0.36, 0.0]
+      WI_3:
+        layer: [M5, pin]
+        netname: W
+        xy0: [0.5, -0.128]
+        xy1: [0.532, 0.0]
+      WI_4:
+        layer: [M5, pin]
+        netname: W
+        xy0: [0.672, -0.128]
+        xy1: [0.704, 0.0]
+      WI_5:
+        layer: [M5, pin]
+        netname: W
+        xy0: [0.844, -0.128]
+        xy1: [0.876, 0.0]
+      WI_6:
+        layer: [M5, pin]
+        netname: W
+        xy0: [1.016, -0.128]
+        xy1: [1.048, 0.0]
+      WI_7:
+        layer: [M5, pin]
+        netname: W
+        xy0: [1.188, -0.128]
+        xy1: [1.22, 0.0]
+      WI_8:
+        layer: [M5, pin]
+        netname: W
+        xy0: [1.36, -0.128]
+        xy1: [1.392, 0.0]
+      WI_9:
+        layer: [M5, pin]
+        netname: W
+        xy0: [1.532, -0.128]
+        xy1: [1.564, 0.0]
+      WO0_0_0:
+        layer: [M5, pin]
+        netname: W
+        xy0: [-0.016, -3.456]
+        xy1: [0.016, -3.328]
+      WO0_0_1:
+        layer: [M5, pin]
+        netname: W
+        xy0: [0.156, -3.456]
+        xy1: [0.188, -3.328]
+      WO0_0_10:
+        layer: [M5, pin]
+        netname: W
+        xy0: [1.704, -3.456]
+        xy1: [1.736, -3.328]
+      WO0_0_11:
+        layer: [M5, pin]
+        netname: W
+        xy0: [1.876, -3.456]
+        xy1: [1.908, -3.328]
+      WO0_0_2:
+        layer: [M5, pin]
+        netname: W
+        xy0: [0.328, -3.456]
+        xy1: [0.36, -3.328]
+      WO0_0_3:
+        layer: [M5, pin]
+        netname: W
+        xy0: [0.5, -3.456]
+        xy1: [0.532, -3.328]
+      WO0_0_4:
+        layer: [M5, pin]
+        netname: W
+        xy0: [0.672, -3.456]
+        xy1: [0.704, -3.328]
+      WO0_0_5:
+        layer: [M5, pin]
+        netname: W
+        xy0: [0.844, -3.456]
+        xy1: [0.876, -3.328]
+      WO0_0_6:
+        layer: [M5, pin]
+        netname: W
+        xy0: [1.016, -3.456]
+        xy1: [1.048, -3.328]
+      WO0_0_7:
+        layer: [M5, pin]
+        netname: W
+        xy0: [1.188, -3.456]
+        xy1: [1.22, -3.328]
+      WO0_0_8:
+        layer: [M5, pin]
+        netname: W
+        xy0: [1.36, -3.456]
+        xy1: [1.392, -3.328]
+      WO0_0_9:
+        layer: [M5, pin]
+        netname: W
+        xy0: [1.532, -3.456]
+        xy1: [1.564, -3.328]
+    xy0: [0.0, 0.0]
+    xy1: [0.0, 0.0]
+  clk_dis_viadel:
+    pins:
+      CLKCAL0<0>:
+        layer: [M2, pin]
+        netname: CLKCAL0<0>
+        xy0: [34.572, 3.824]
+        xy1: [34.744, 3.856]
+      CLKCAL0<1>:
+        layer: [M2, pin]
+        netname: CLKCAL0<1>
+        xy0: [34.572, 3.888]
+        xy1: [34.744, 3.92]
+      CLKCAL0<2>:
+        layer: [M2, pin]
+        netname: CLKCAL0<2>
+        xy0: [34.572, 3.952]
+        xy1: [34.744, 3.984]
+      CLKCAL0<3>:
+        layer: [M2, pin]
+        netname: CLKCAL0<3>
+        xy0: [34.572, 4.016]
+        xy1: [34.744, 4.048]
+      CLKCAL0<4>:
+        layer: [M2, pin]
+        netname: CLKCAL0<4>
+        xy0: [34.572, 4.08]
+        xy1: [34.744, 4.112]
+      CLKCAL1<0>:
+        layer: [M2, pin]
+        netname: CLKCAL1<0>
+        xy0: [34.572, 4.144]
+        xy1: [34.744, 4.176]
+      CLKCAL1<1>:
+        layer: [M2, pin]
+        netname: CLKCAL1<1>
+        xy0: [34.572, 4.208]
+        xy1: [34.744, 4.24]
+      CLKCAL1<2>:
+        layer: [M2, pin]
+        netname: CLKCAL1<2>
+        xy0: [34.572, 4.272]
+        xy1: [34.744, 4.304]
+      CLKCAL1<3>:
+        layer: [M2, pin]
+        netname: CLKCAL1<3>
+        xy0: [34.572, 4.336]
+        xy1: [34.744, 4.368]
+      CLKCAL1<4>:
+        layer: [M2, pin]
+        netname: CLKCAL1<4>
+        xy0: [34.572, 4.4]
+        xy1: [34.744, 4.432]
+      CLKI0_0:
+        layer: [M5, pin]
+        netname: CLKI<0>
+        xy0: [9.272, 3.968]
+        xy1: [9.304, 4.096]
+      CLKI0_1:
+        layer: [M5, pin]
+        netname: CLKI<0>
+        xy0: [9.1, 3.968]
+        xy1: [9.132, 4.096]
+      CLKI0_10:
+        layer: [M5, pin]
+        netname: CLKI<0>
+        xy0: [7.552, 3.968]
+        xy1: [7.584, 4.096]
+      CLKI0_11:
+        layer: [M5, pin]
+        netname: CLKI<0>
+        xy0: [7.38, 3.968]
+        xy1: [7.412, 4.096]
+      CLKI0_2:
+        layer: [M5, pin]
+        netname: CLKI<0>
+        xy0: [8.928, 3.968]
+        xy1: [8.96, 4.096]
+      CLKI0_3:
+        layer: [M5, pin]
+        netname: CLKI<0>
+        xy0: [8.756, 3.968]
+        xy1: [8.788, 4.096]
+      CLKI0_4:
+        layer: [M5, pin]
+        netname: CLKI<0>
+        xy0: [8.584, 3.968]
+        xy1: [8.616, 4.096]
+      CLKI0_5:
+        layer: [M5, pin]
+        netname: CLKI<0>
+        xy0: [8.412, 3.968]
+        xy1: [8.444, 4.096]
+      CLKI0_6:
+        layer: [M5, pin]
+        netname: CLKI<0>
+        xy0: [8.24, 3.968]
+        xy1: [8.272, 4.096]
+      CLKI0_7:
+        layer: [M5, pin]
+        netname: CLKI<0>
+        xy0: [8.068, 3.968]
+        xy1: [8.1, 4.096]
+      CLKI0_8:
+        layer: [M5, pin]
+        netname: CLKI<0>
+        xy0: [7.896, 3.968]
+        xy1: [7.928, 4.096]
+      CLKI0_9:
+        layer: [M5, pin]
+        netname: CLKI<0>
+        xy0: [7.724, 3.968]
+        xy1: [7.756, 4.096]
+      CLKI1_0:
+        layer: [M5, pin]
+        netname: CLKI<1>
+        xy0: [26.644, 3.968]
+        xy1: [26.676, 4.096]
+      CLKI1_1:
+        layer: [M5, pin]
+        netname: CLKI<1>
+        xy0: [26.472, 3.968]
+        xy1: [26.504, 4.096]
+      CLKI1_10:
+        layer: [M5, pin]
+        netname: CLKI<1>
+        xy0: [24.924, 3.968]
+        xy1: [24.956, 4.096]
+      CLKI1_11:
+        layer: [M5, pin]
+        netname: CLKI<1>
+        xy0: [24.752, 3.968]
+        xy1: [24.784, 4.096]
+      CLKI1_2:
+        layer: [M5, pin]
+        netname: CLKI<1>
+        xy0: [26.3, 3.968]
+        xy1: [26.332, 4.096]
+      CLKI1_3:
+        layer: [M5, pin]
+        netname: CLKI<1>
+        xy0: [26.128, 3.968]
+        xy1: [26.16, 4.096]
+      CLKI1_4:
+        layer: [M5, pin]
+        netname: CLKI<1>
+        xy0: [25.956, 3.968]
+        xy1: [25.988, 4.096]
+      CLKI1_5:
+        layer: [M5, pin]
+        netname: CLKI<1>
+        xy0: [25.784, 3.968]
+        xy1: [25.816, 4.096]
+      CLKI1_6:
+        layer: [M5, pin]
+        netname: CLKI<1>
+        xy0: [25.612, 3.968]
+        xy1: [25.644, 4.096]
+      CLKI1_7:
+        layer: [M5, pin]
+        netname: CLKI<1>
+        xy0: [25.44, 3.968]
+        xy1: [25.472, 4.096]
+      CLKI1_8:
+        layer: [M5, pin]
+        netname: CLKI<1>
+        xy0: [25.268, 3.968]
+        xy1: [25.3, 4.096]
+      CLKI1_9:
+        layer: [M5, pin]
+        netname: CLKI<1>
+        xy0: [25.096, 3.968]
+        xy1: [25.128, 4.096]
+      CLKO0_0:
+        layer: [M5, pin]
+        netname: CLKO<0>
+        xy0: [8.498, -19.968]
+        xy1: [8.53, -19.84]
+      CLKO0_1:
+        layer: [M5, pin]
+        netname: CLKO<0>
+        xy0: [8.67, -19.968]
+        xy1: [8.702, -19.84]
+      CLKO0_2:
+        layer: [M5, pin]
+        netname: CLKO<0>
+        xy0: [8.842, -19.968]
+        xy1: [8.874, -19.84]
+      CLKO0_3:
+        layer: [M5, pin]
+        netname: CLKO<0>
+        xy0: [9.014, -19.968]
+        xy1: [9.046, -19.84]
+      CLKO1_0:
+        layer: [M5, pin]
+        netname: CLKO<1>
+        xy0: [25.87, -19.968]
+        xy1: [25.902, -19.84]
+      CLKO1_1:
+        layer: [M5, pin]
+        netname: CLKO<1>
+        xy0: [26.042, -19.968]
+        xy1: [26.074, -19.84]
+      CLKO1_2:
+        layer: [M5, pin]
+        netname: CLKO<1>
+        xy0: [26.214, -19.968]
+        xy1: [26.246, -19.84]
+      CLKO1_3:
+        layer: [M5, pin]
+        netname: CLKO<1>
+        xy0: [26.386, -19.968]
+        xy1: [26.418, -19.84]
+      DATAO<0>:
+        layer: [M3, pin]
+        netname: DATAO<0>
+        xy0: [9.874, 2.88]
+        xy1: [9.906, 2.944]
+      DATAO<1>:
+        layer: [M3, pin]
+        netname: DATAO<1>
+        xy0: [27.246, 2.88]
+        xy1: [27.278, 2.944]
+      RSTN:
+        layer: [M2, pin]
+        netname: RSTN
+        xy0: [0.0, 2.352]
+        xy1: [0.172, 2.384]
+      RSTP:
+        layer: [M2, pin]
+        netname: RSTP
+        xy0: [0.0, 2.288]
+        xy1: [0.172, 2.32]
+      VDD0_0_0:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [0.0, 3.408]
+        xy1: [0.688, 3.504]
+      VDD0_0_1:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [0.0, 3.216]
+        xy1: [0.688, 3.312]
+      VDD0_0_2:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [0.0, 3.024]
+        xy1: [0.688, 3.12]
+      VDD0_0_3:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [0.0, 2.832]
+        xy1: [0.688, 2.928]
+      VDD0_1_0:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [17.372, 3.408]
+        xy1: [18.06, 3.504]
+      VDD0_1_1:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [17.372, 3.216]
+        xy1: [18.06, 3.312]
+      VDD0_1_2:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [17.372, 3.024]
+        xy1: [18.06, 3.12]
+      VDD0_1_3:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [17.372, 2.832]
+        xy1: [18.06, 2.928]
+      VDD1_0_0:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [17.372, 3.504]
+        xy1: [16.512, 3.408]
+      VDD1_0_1:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [17.372, 3.312]
+        xy1: [16.512, 3.216]
+      VDD1_0_2:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [17.372, 3.12]
+        xy1: [16.512, 3.024]
+      VDD1_0_3:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [17.372, 2.928]
+        xy1: [16.512, 2.832]
+      VDD1_1_0:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [34.744, 3.504]
+        xy1: [33.884, 3.408]
+      VDD1_1_1:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [34.744, 3.312]
+        xy1: [33.884, 3.216]
+      VDD1_1_2:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [34.744, 3.12]
+        xy1: [33.884, 3.024]
+      VDD1_1_3:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [34.744, 2.928]
+        xy1: [33.884, 2.832]
+      VSS0_0_0:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [0.0, 0.72]
+        xy1: [0.688, 0.816]
+      VSS0_0_1:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [0.0, 0.912]
+        xy1: [0.688, 1.008]
+      VSS0_0_2:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [0.0, 1.104]
+        xy1: [0.688, 1.2]
+      VSS0_0_3:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [0.0, 1.296]
+        xy1: [0.688, 1.392]
+      VSS0_1_0:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [17.372, 0.72]
+        xy1: [18.06, 0.816]
+      VSS0_1_1:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [17.372, 0.912]
+        xy1: [18.06, 1.008]
+      VSS0_1_2:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [17.372, 1.104]
+        xy1: [18.06, 1.2]
+      VSS0_1_3:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [17.372, 1.296]
+        xy1: [18.06, 1.392]
+      VSS1_0_0:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [17.372, 0.816]
+        xy1: [16.512, 0.72]
+      VSS1_0_1:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [17.372, 1.008]
+        xy1: [16.512, 0.912]
+      VSS1_0_2:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [17.372, 1.2]
+        xy1: [16.512, 1.104]
+      VSS1_0_3:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [17.372, 1.392]
+        xy1: [16.512, 1.296]
+      VSS1_1_0:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [34.744, 0.816]
+        xy1: [33.884, 0.72]
+      VSS1_1_1:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [34.744, 1.008]
+        xy1: [33.884, 0.912]
+      VSS1_1_2:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [34.744, 1.2]
+        xy1: [33.884, 1.104]
+      VSS1_1_3:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [34.744, 1.392]
+        xy1: [33.884, 1.296]
+    xy0: [0.0, -9.6]
+    xy1: [34.744, 4.32]
+  clk_dis_viadel_cell:
+    pins:
+      CAL<0>:
+        layer: [M3, pin]
+        netname: CAL<0>
+        xy0: [1.532, 3.2]
+        xy1: [1.564, 3.264]
+      CAL<1>:
+        layer: [M3, pin]
+        netname: CAL<1>
+        xy0: [1.962, 3.2]
+        xy1: [1.994, 3.264]
+      CAL<2>:
+        layer: [M3, pin]
+        netname: CAL<2>
+        xy0: [2.564, 3.2]
+        xy1: [2.596, 3.264]
+      CAL<3>:
+        layer: [M3, pin]
+        netname: CAL<3>
+        xy0: [3.51, 3.2]
+        xy1: [3.542, 3.264]
+      CAL<4>:
+        layer: [M3, pin]
+        netname: CAL<4>
+        xy0: [5.144, 3.2]
+        xy1: [5.176, 3.264]
+      CLKI_0:
+        layer: [M5, pin]
+        netname: CLKI
+        xy0: [9.272, 3.968]
+        xy1: [9.304, 4.096]
+      CLKI_1:
+        layer: [M5, pin]
+        netname: CLKI
+        xy0: [9.1, 3.968]
+        xy1: [9.132, 4.096]
+      CLKI_10:
+        layer: [M5, pin]
+        netname: CLKI
+        xy0: [7.552, 3.968]
+        xy1: [7.584, 4.096]
+      CLKI_11:
+        layer: [M5, pin]
+        netname: CLKI
+        xy0: [7.38, 3.968]
+        xy1: [7.412, 4.096]
+      CLKI_2:
+        layer: [M5, pin]
+        netname: CLKI
+        xy0: [8.928, 3.968]
+        xy1: [8.96, 4.096]
+      CLKI_3:
+        layer: [M5, pin]
+        netname: CLKI
+        xy0: [8.756, 3.968]
+        xy1: [8.788, 4.096]
+      CLKI_4:
+        layer: [M5, pin]
+        netname: CLKI
+        xy0: [8.584, 3.968]
+        xy1: [8.616, 4.096]
+      CLKI_5:
+        layer: [M5, pin]
+        netname: CLKI
+        xy0: [8.412, 3.968]
+        xy1: [8.444, 4.096]
+      CLKI_6:
+        layer: [M5, pin]
+        netname: CLKI
+        xy0: [8.24, 3.968]
+        xy1: [8.272, 4.096]
+      CLKI_7:
+        layer: [M5, pin]
+        netname: CLKI
+        xy0: [8.068, 3.968]
+        xy1: [8.1, 4.096]
+      CLKI_8:
+        layer: [M5, pin]
+        netname: CLKI
+        xy0: [7.896, 3.968]
+        xy1: [7.928, 4.096]
+      CLKI_9:
+        layer: [M5, pin]
+        netname: CLKI
+        xy0: [7.724, 3.968]
+        xy1: [7.756, 4.096]
+      CLKO_0:
+        layer: [M5, pin]
+        netname: CLKO
+        xy0: [8.498, -19.968]
+        xy1: [8.53, -19.84]
+      CLKO_1:
+        layer: [M5, pin]
+        netname: CLKO
+        xy0: [8.67, -19.968]
+        xy1: [8.702, -19.84]
+      CLKO_2:
+        layer: [M5, pin]
+        netname: CLKO
+        xy0: [8.842, -19.968]
+        xy1: [8.874, -19.84]
+      CLKO_3:
+        layer: [M5, pin]
+        netname: CLKO
+        xy0: [9.014, -19.968]
+        xy1: [9.046, -19.84]
+      DATAI:
+        layer: [M3, pin]
+        netname: DATAI
+        xy0: [9.874, 2.88]
+        xy1: [9.906, 2.944]
+      DATAO:
+        layer: [M3, pin]
+        netname: DATAO
+        xy0: [16.324, 2.88]
+        xy1: [16.356, 2.944]
+      RST:
+        layer: [M3, pin]
+        netname: RST
+        xy0: [9.53, 2.88]
+        xy1: [9.562, 2.944]
+      ST:
+        layer: [M3, pin]
+        netname: ST
+        xy0: [9.186, 2.88]
+        xy1: [9.218, 2.944]
+      VDD0_0:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [0.0, 3.408]
+        xy1: [0.688, 3.504]
+      VDD0_1:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [0.0, 3.216]
+        xy1: [0.688, 3.312]
+      VDD0_2:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [0.0, 3.024]
+        xy1: [0.688, 3.12]
+      VDD0_3:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [0.0, 2.832]
+        xy1: [0.688, 2.928]
+      VDD1_0:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [17.372, 3.504]
+        xy1: [16.512, 3.408]
+      VDD1_1:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [17.372, 3.312]
+        xy1: [16.512, 3.216]
+      VDD1_2:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [17.372, 3.12]
+        xy1: [16.512, 3.024]
+      VDD1_3:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [17.372, 2.928]
+        xy1: [16.512, 2.832]
+      VSS0_0:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [0.0, 0.72]
+        xy1: [0.688, 0.816]
+      VSS0_1:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [0.0, 0.912]
+        xy1: [0.688, 1.008]
+      VSS0_2:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [0.0, 1.104]
+        xy1: [0.688, 1.2]
+      VSS0_3:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [0.0, 1.296]
+        xy1: [0.688, 1.392]
+      VSS1_0:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [17.372, 0.816]
+        xy1: [16.512, 0.72]
+      VSS1_1:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [17.372, 1.008]
+        xy1: [16.512, 0.912]
+      VSS1_2:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [17.372, 1.2]
+        xy1: [16.512, 1.104]
+      VSS1_3:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [17.372, 1.392]
+        xy1: [16.512, 1.296]
+    xy0: [0.0, -9.6]
+    xy1: [17.372, 4.32]
+  clk_dis_viadel_htree:
+    pins:
+      CLKCAL0<0>:
+        layer: [M2, pin]
+        netname: CLKCAL0<0>
+        xy0: [34.572, 3.824]
+        xy1: [34.744, 3.856]
+      CLKCAL0<1>:
+        layer: [M2, pin]
+        netname: CLKCAL0<1>
+        xy0: [34.572, 3.888]
+        xy1: [34.744, 3.92]
+      CLKCAL0<2>:
+        layer: [M2, pin]
+        netname: CLKCAL0<2>
+        xy0: [34.572, 3.952]
+        xy1: [34.744, 3.984]
+      CLKCAL0<3>:
+        layer: [M2, pin]
+        netname: CLKCAL0<3>
+        xy0: [34.572, 4.016]
+        xy1: [34.744, 4.048]
+      CLKCAL0<4>:
+        layer: [M2, pin]
+        netname: CLKCAL0<4>
+        xy0: [34.572, 4.08]
+        xy1: [34.744, 4.112]
+      CLKCAL1<0>:
+        layer: [M2, pin]
+        netname: CLKCAL1<0>
+        xy0: [34.572, 4.144]
+        xy1: [34.744, 4.176]
+      CLKCAL1<1>:
+        layer: [M2, pin]
+        netname: CLKCAL1<1>
+        xy0: [34.572, 4.208]
+        xy1: [34.744, 4.24]
+      CLKCAL1<2>:
+        layer: [M2, pin]
+        netname: CLKCAL1<2>
+        xy0: [34.572, 4.272]
+        xy1: [34.744, 4.304]
+      CLKCAL1<3>:
+        layer: [M2, pin]
+        netname: CLKCAL1<3>
+        xy0: [34.572, 4.336]
+        xy1: [34.744, 4.368]
+      CLKCAL1<4>:
+        layer: [M2, pin]
+        netname: CLKCAL1<4>
+        xy0: [34.572, 4.4]
+        xy1: [34.744, 4.432]
+      CLKIN_0:
+        layer: [M5, pin]
+        netname: CLKIN
+        xy0: [16.238, 8.704]
+        xy1: [16.27, 8.832]
+      CLKIN_1:
+        layer: [M5, pin]
+        netname: CLKIN
+        xy0: [16.41, 8.704]
+        xy1: [16.442, 8.832]
+      CLKIN_10:
+        layer: [M5, pin]
+        netname: CLKIN
+        xy0: [17.958, 8.704]
+        xy1: [17.99, 8.832]
+      CLKIN_11:
+        layer: [M5, pin]
+        netname: CLKIN
+        xy0: [18.13, 8.704]
+        xy1: [18.162, 8.832]
+      CLKIN_2:
+        layer: [M5, pin]
+        netname: CLKIN
+        xy0: [16.582, 8.704]
+        xy1: [16.614, 8.832]
+      CLKIN_3:
+        layer: [M5, pin]
+        netname: CLKIN
+        xy0: [16.754, 8.704]
+        xy1: [16.786, 8.832]
+      CLKIN_4:
+        layer: [M5, pin]
+        netname: CLKIN
+        xy0: [16.926, 8.704]
+        xy1: [16.958, 8.832]
+      CLKIN_5:
+        layer: [M5, pin]
+        netname: CLKIN
+        xy0: [17.098, 8.704]
+        xy1: [17.13, 8.832]
+      CLKIN_6:
+        layer: [M5, pin]
+        netname: CLKIN
+        xy0: [17.27, 8.704]
+        xy1: [17.302, 8.832]
+      CLKIN_7:
+        layer: [M5, pin]
+        netname: CLKIN
+        xy0: [17.442, 8.704]
+        xy1: [17.474, 8.832]
+      CLKIN_8:
+        layer: [M5, pin]
+        netname: CLKIN
+        xy0: [17.614, 8.704]
+        xy1: [17.646, 8.832]
+      CLKIN_9:
+        layer: [M5, pin]
+        netname: CLKIN
+        xy0: [17.786, 8.704]
+        xy1: [17.818, 8.832]
+      CLKIP_0:
+        layer: [M5, pin]
+        netname: CLKIP
+        xy0: [15.894, 8.704]
+        xy1: [15.926, 8.832]
+      CLKIP_1:
+        layer: [M5, pin]
+        netname: CLKIP
+        xy0: [15.722, 8.704]
+        xy1: [15.754, 8.832]
+      CLKIP_10:
+        layer: [M5, pin]
+        netname: CLKIP
+        xy0: [14.174, 8.704]
+        xy1: [14.206, 8.832]
+      CLKIP_11:
+        layer: [M5, pin]
+        netname: CLKIP
+        xy0: [14.002, 8.704]
+        xy1: [14.034, 8.832]
+      CLKIP_2:
+        layer: [M5, pin]
+        netname: CLKIP
+        xy0: [15.55, 8.704]
+        xy1: [15.582, 8.832]
+      CLKIP_3:
+        layer: [M5, pin]
+        netname: CLKIP
+        xy0: [15.378, 8.704]
+        xy1: [15.41, 8.832]
+      CLKIP_4:
+        layer: [M5, pin]
+        netname: CLKIP
+        xy0: [15.206, 8.704]
+        xy1: [15.238, 8.832]
+      CLKIP_5:
+        layer: [M5, pin]
+        netname: CLKIP
+        xy0: [15.034, 8.704]
+        xy1: [15.066, 8.832]
+      CLKIP_6:
+        layer: [M5, pin]
+        netname: CLKIP
+        xy0: [14.862, 8.704]
+        xy1: [14.894, 8.832]
+      CLKIP_7:
+        layer: [M5, pin]
+        netname: CLKIP
+        xy0: [14.69, 8.704]
+        xy1: [14.722, 8.832]
+      CLKIP_8:
+        layer: [M5, pin]
+        netname: CLKIP
+        xy0: [14.518, 8.704]
+        xy1: [14.55, 8.832]
+      CLKIP_9:
+        layer: [M5, pin]
+        netname: CLKIP
+        xy0: [14.346, 8.704]
+        xy1: [14.378, 8.832]
+      CLKO0<0>:
+        layer: [M5, pin]
+        netname: CLKO<0>
+        xy0: [8.498, -19.968]
+        xy1: [8.53, -19.84]
+      CLKO0<1>:
+        layer: [M5, pin]
+        netname: CLKO<0>
+        xy0: [8.67, -19.968]
+        xy1: [8.702, -19.84]
+      CLKO0<2>:
+        layer: [M5, pin]
+        netname: CLKO<0>
+        xy0: [8.842, -19.968]
+        xy1: [8.874, -19.84]
+      CLKO0<3>:
+        layer: [M5, pin]
+        netname: CLKO<0>
+        xy0: [9.014, -19.968]
+        xy1: [9.046, -19.84]
+      CLKO1<0>:
+        layer: [M5, pin]
+        netname: CLKO<1>
+        xy0: [25.87, -19.968]
+        xy1: [25.902, -19.84]
+      CLKO1<1>:
+        layer: [M5, pin]
+        netname: CLKO<1>
+        xy0: [26.042, -19.968]
+        xy1: [26.074, -19.84]
+      CLKO1<2>:
+        layer: [M5, pin]
+        netname: CLKO<1>
+        xy0: [26.214, -19.968]
+        xy1: [26.246, -19.84]
+      CLKO1<3>:
+        layer: [M5, pin]
+        netname: CLKO<1>
+        xy0: [26.386, -19.968]
+        xy1: [26.418, -19.84]
+      DATAO<0>:
+        layer: [M3, pin]
+        netname: DATAO<0>
+        xy0: [9.874, 2.88]
+        xy1: [9.906, 2.944]
+      DATAO<1>:
+        layer: [M3, pin]
+        netname: DATAO<1>
+        xy0: [27.246, 2.88]
+        xy1: [27.278, 2.944]
+      RSTN:
+        layer: [M2, pin]
+        netname: RSTN
+        xy0: [0.0, 2.352]
+        xy1: [0.172, 2.384]
+      RSTP:
+        layer: [M2, pin]
+        netname: RSTP
+        xy0: [0.0, 2.288]
+        xy1: [0.172, 2.32]
+      VDD0_0_0:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [0.0, 3.408]
+        xy1: [0.688, 3.504]
+      VDD0_0_1:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [0.0, 3.216]
+        xy1: [0.688, 3.312]
+      VDD0_0_2:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [0.0, 3.024]
+        xy1: [0.688, 3.12]
+      VDD0_0_3:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [0.0, 2.832]
+        xy1: [0.688, 2.928]
+      VDD0_1_0:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [17.372, 3.408]
+        xy1: [18.06, 3.504]
+      VDD0_1_1:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [17.372, 3.216]
+        xy1: [18.06, 3.312]
+      VDD0_1_2:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [17.372, 3.024]
+        xy1: [18.06, 3.12]
+      VDD0_1_3:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [17.372, 2.832]
+        xy1: [18.06, 2.928]
+      VDD1_0_0:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [17.372, 3.504]
+        xy1: [16.512, 3.408]
+      VDD1_0_1:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [17.372, 3.312]
+        xy1: [16.512, 3.216]
+      VDD1_0_2:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [17.372, 3.12]
+        xy1: [16.512, 3.024]
+      VDD1_0_3:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [17.372, 2.928]
+        xy1: [16.512, 2.832]
+      VDD1_1_0:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [34.744, 3.504]
+        xy1: [33.884, 3.408]
+      VDD1_1_1:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [34.744, 3.312]
+        xy1: [33.884, 3.216]
+      VDD1_1_2:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [34.744, 3.12]
+        xy1: [33.884, 3.024]
+      VDD1_1_3:
+        layer: [M4, pin]
+        netname: VDD
+        xy0: [34.744, 2.928]
+        xy1: [33.884, 2.832]
+      VSS0_0_0:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [0.0, 0.72]
+        xy1: [0.688, 0.816]
+      VSS0_0_1:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [0.0, 0.912]
+        xy1: [0.688, 1.008]
+      VSS0_0_2:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [0.0, 1.104]
+        xy1: [0.688, 1.2]
+      VSS0_0_3:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [0.0, 1.296]
+        xy1: [0.688, 1.392]
+      VSS0_1_0:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [17.372, 0.72]
+        xy1: [18.06, 0.816]
+      VSS0_1_1:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [17.372, 0.912]
+        xy1: [18.06, 1.008]
+      VSS0_1_2:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [17.372, 1.104]
+        xy1: [18.06, 1.2]
+      VSS0_1_3:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [17.372, 1.296]
+        xy1: [18.06, 1.392]
+      VSS1_0_0:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [17.372, 0.816]
+        xy1: [16.512, 0.72]
+      VSS1_0_1:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [17.372, 1.008]
+        xy1: [16.512, 0.912]
+      VSS1_0_2:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [17.372, 1.2]
+        xy1: [16.512, 1.104]
+      VSS1_0_3:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [17.372, 1.392]
+        xy1: [16.512, 1.296]
+      VSS1_1_0:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [34.744, 0.816]
+        xy1: [33.884, 0.72]
+      VSS1_1_1:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [34.744, 1.008]
+        xy1: [33.884, 0.912]
+      VSS1_1_2:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [34.744, 1.2]
+        xy1: [33.884, 1.104]
+      VSS1_1_3:
+        layer: [M4, pin]
+        netname: VSS
+        xy0: [34.744, 1.392]
+        xy1: [33.884, 1.296]
+    xy0: [0.0, -9.6]
+    xy1: [34.744, 4.32]

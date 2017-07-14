@@ -13,7 +13,7 @@ n_bit_cal: 9
 #effective sampling rate
 fsamp: 4.0e+9
 #interleaving ratio
-n_interleave: 8 
+n_interleave: 4 
 #minimum cap size (set by process and template)
 c_unit: 0.205e-15       
 #ground cap size (for noise calculations)
