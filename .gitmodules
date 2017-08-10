@@ -4,3 +4,6 @@
 [submodule "laygo"]
 	path = laygo
 	url = git@github.com:ucb-art/laygo.git
+[submodule "BAG2_TEMPLATES_EC"]
+	path = BAG2_TEMPLATES_EC
+	url = git@github.com:pkerichang/BAG2_TEMPLATES_EC.git
