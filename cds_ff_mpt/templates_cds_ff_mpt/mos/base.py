@@ -101,7 +101,7 @@ class MOSTechCDSFFMPT(MOSTech):
         # enclosure of CPO over PO
         cpo_po_ency=34,
         # maximum space between OD in fin pitch.
-        od_sp_nfin_max=16,
+        od_sp_nfin_max=11,
         # minimum number of fins in OD
         od_nfin_min=2,
         # maximum number of fins in OD
@@ -777,11 +777,11 @@ class MOSTechCDSFFMPT(MOSTech):
         imp_od_ency = cls.tech_constants['imp_od_ency']
         md_h_min = cls.tech_constants['md_h_min']
         cpo_h = cls.tech_constants['cpo_h']
+        md_w = cls.tech_constants['md_w']
 
         mos_constants = cls.get_mos_tech_constants(lch_unit)
         m1_w = mos_constants['mos_conn_w']
         sd_pitch = mos_constants['sd_pitch']
-        md_w = mos_constants['md_w']
 
         fin_p2 = fin_p // 2
         fin_h2 = fin_h // 2
@@ -872,7 +872,7 @@ class MOSTechCDSFFMPT(MOSTech):
             adj_row_list = []
             adj_edgel_infos = []
             adj_edger_infos = []
-            od_x_list = (0, fg)
+            od_x_list = [(0, fg)]
             # add OD and CPO layout information, also calculate fill
             num_dod = len(od_fin_list)
             if num_dod == 1:
@@ -1214,7 +1214,7 @@ class MOSTechCDSFFMPT(MOSTech):
         fin_p = cls.tech_constants['fin_pitch']
         cpo_po_ency = cls.tech_constants['cpo_po_ency']
         md_w = cls.tech_constants['md_w']
-        cpo_h_mid = cls.tech_constants['cpo_h']
+        cpo_h = cls.tech_constants['cpo_h']
 
         fin_p2 = fin_p // 2
         fin_h2 = fin_h // 2
@@ -1224,13 +1224,11 @@ class MOSTechCDSFFMPT(MOSTech):
 
         lr_edge_info = EdgeInfo(od_type='sub')
         if is_end:
-            cpo_h = cls.tech_constants['cpo_h_end']
-
             # step 1: figure out Y coordinates of CPO
             blk_pitch = lcm([blk_pitch, fin_p])
             # first assume top Y coordinate is 0
             arr_yt = 0
-            cpo_bot_yt = arr_yt + cpo_h_mid // 2
+            cpo_bot_yt = arr_yt + cpo_h // 2
             cpo_bot_yb = cpo_bot_yt - cpo_h
             finbound_yb = arr_yt - fin_p2 - fin_h2
             min_yb = min(finbound_yb, cpo_bot_yb)
@@ -1911,8 +1909,9 @@ class MOSTechCDSFFMPT(MOSTech):
             m3_warrs.append(template.add_wires(3, tr_idx, m_yb, m_yt, unit_mode=True))
 
         for (m2_xl, m2_xr), m2_yc in ((m2b_x, bot_yc), (m2t_x, top_yc)):
-            m2_yb = m2_yc - m2_h // 2
-            m2_yt = m2_yb + m2_h
-            template.add_rect('M2', BBox(m2_xl, m2_yb, m2_xr, m2_yt, res, unit_mode=True))
+            if m2_xl is not None and m2_xr is not None:
+                m2_yb = m2_yc - m2_h // 2
+                m2_yt = m2_yb + m2_h
+                template.add_rect('M2', BBox(m2_xl, m2_yb, m2_xr, m2_yt, res, unit_mode=True))
 
         return m1_warrs, m3_warrs

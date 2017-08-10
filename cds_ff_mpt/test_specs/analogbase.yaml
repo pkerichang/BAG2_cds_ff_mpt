@@ -2,7 +2,7 @@ routing_grid:
   layers: [4, 5, 6, 7]
   spaces: [0.084, 0.100, 0.084, 0.100]
   widths: [0.060, 0.080, 0.060, 0.080]
-  bot_dir: 'y'
+  bot_dir: 'x'
 
 params:
   lch: !!float 18e-9
