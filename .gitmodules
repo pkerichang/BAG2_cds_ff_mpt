@@ -7,3 +7,6 @@
 [submodule "BAG2_TEMPLATES_EC"]
 	path = BAG2_TEMPLATES_EC
 	url = git@github.com:pkerichang/BAG2_TEMPLATES_EC.git
+[submodule "XBase_cds_ff_mpt"]
+	path = XBase_cds_ff_mpt
+	url = git@github.com:pkerichang/XBase_cds_ff_mpt.git
