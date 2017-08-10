@@ -1,3 +1,5 @@
+# the Technology class.
+class: "templates_cds_ff_mpt.tech.TechInfoCDSFFMPT"
 
 # layout related parameters
 layout:
@@ -7,22 +9,12 @@ layout:
     dc_temp: !!int 70
     # RMS current allowable temperature increase
     rms_dt: !!int 10
-  # AnalogBase technology parameters.
+  # AnalogBase parameters
   analog_base:
-    # minimum number of separator fingers required.
+    # minimum number of fingers separation.
     min_fg_sep: 2
-    # True if floating dummy transistors in AnalogBase is allowed.
+    mconn_diff_mode: False
     floating_dummy: False
-    # True if AnalogMosConn supports diffpair mode.
-    mconn_diff_mode: True
-    # True if dummy transistor exists
-    dummy_exist: True
-  # AnalogRes technology parameters
-  analog_res:
-    # resistor array routing grid
-    grid_layers:
-      - [2, 0.094, 0.146, "x"]
-      - [3, 0.080, 0.100, "y"]
 
 # transistor technology parameters
 mos:

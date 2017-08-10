@@ -1,0 +1,19 @@
+routing_grid:
+  layers: [4, 5, 6, 7]
+  spaces: [0.084, 0.100, 0.084, 0.100]
+  widths: [0.060, 0.080, 0.060, 0.080]
+  bot_dir: 'y'
+
+params:
+  lch: !!float 18e-9
+  fg_tot: 20
+  ptap_w: 8
+  ntap_w: 6
+  w_dict: {load: 4, in: 2, tail: 6}
+  th_dict: {load: lvt, in: svt, tail: hvt}
+  fg_dict: {load: 8, in: 4, tail: 8}
+  nduml: 4
+  ndumr: 4
+  min_fg_sep: 4
+  guard_ring_nf: 0
+  hm_width: 1
