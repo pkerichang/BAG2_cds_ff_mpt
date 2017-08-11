@@ -36,5 +36,4 @@ DEFINE laygo_working ./laygo_working
 DEFINE cds_ff_mpt_logic_templates /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/cds_ff_mpt_logic_templates
 DEFINE demo_1 ./demo_1
 DEFINE adc_sar_generated /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/adc_sar_generated
-DEFINE adc_sar_generated /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/adc_sar_generated
 DEFINE clk_dis_generated /tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/clk_dis_generated
