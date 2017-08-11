@@ -129,6 +129,8 @@ class MOSTechCDSFFMPT(MOSTech):
         mx_spy_min=64,
         # M1 dummy horizontal connection height
         m1_dum_h=40,
+        # drain/source M2 vertical spacing
+        m2_spy_ds=48,
     )
 
     @classmethod
@@ -175,13 +177,13 @@ class MOSTechCDSFFMPT(MOSTech):
             # gate via width
             w=[32, 32, 32],
             # bottom metal horizontal enclosure
-            bot_encx=[18, 4, 40],
+            bot_encx=[18, 4, 34],
             # bottom metal vertical enclosure
-            bot_ency=[4, 40, 0],
+            bot_ency=[4, 40, 2],
             # top metal horizontal enclosure
-            top_encx=[4, 40, 4],
+            top_encx=[4, 34, 4],
             # top metal vertical enclosure
-            top_ency=[40, 0, 40],
+            top_ency=[40, 2, 40],
         )
 
         mx_area_min = cls.tech_constants['mx_area_min']
@@ -229,6 +231,7 @@ class MOSTechCDSFFMPT(MOSTech):
         v0_sp = cls.tech_constants['v0_sp']
         md_w = cls.tech_constants['md_w']
         vx_sp = cls.tech_constants['vx_sp']
+        m2_spy_ds = cls.tech_constants['m2_spy_ds']
 
         v0_h = via_info['h'][0]
         v0_md_ency = via_info['bot_ency'][0]
@@ -246,7 +249,8 @@ class MOSTechCDSFFMPT(MOSTech):
         v1_m1_ency = via_info['bot_ency'][1]
         v1_m2_ency = via_info['top_ency'][1]
         m2_h = v1_h + 2 * v1_m2_ency
-        m1_h = max(m1_h, 2 * v1_m1_ency + 2 * v1_h + vx_sp)
+
+        m1_h = max(m1_h, 2 * v1_m1_ency + 2 * v1_h + 2 * v1_m2_ency + m2_spy_ds)
 
         # make sure M1 passes minimum area rule
         mx_h_min = -(-mx_area_min // md_w)  # type: int
@@ -1849,7 +1853,7 @@ class MOSTechCDSFFMPT(MOSTech):
 
         s_x_list = list(range(0, num_seg * wire_pitch + 1, 2 * wire_pitch))
         d_x_list = list(range(wire_pitch, num_seg * wire_pitch + 1, 2 * wire_pitch))
-        sd_yc = 0
+        sd_yc = (od_yb + od_yt) // 2
         if diode_conn:
             if fg == 1:
                 raise ValueError('1 finger transistor connection not supported.')
@@ -1858,13 +1862,13 @@ class MOSTechCDSFFMPT(MOSTech):
             dloc = 2 - sloc
 
             # draw source
-            _, sarr = cls._draw_ds_via(template, wire_pitch, sd_yc, num_seg, ds_via_info, sloc, sdir,
+            _, sarr = cls._draw_ds_via(template, wire_pitch, 0, num_seg, ds_via_info, sloc, sdir,
                                        s_x_list, s_x_list)
             # draw drain
-            m1d, darr = cls._draw_ds_via(template, wire_pitch, sd_yc, num_seg, ds_via_info, dloc, ddir,
+            m1d, darr = cls._draw_ds_via(template, wire_pitch, 0, num_seg, ds_via_info, dloc, ddir,
                                          d_x_list, d_x_list)
             # draw gate
-            m1g, _ = cls._draw_g_via(template, lch_unit, fg, sd_pitch, gate_yc, g_via_info, [],
+            m1g, _ = cls._draw_g_via(template, lch_unit, fg, sd_pitch, gate_yc - sd_yc, g_via_info, [],
                                      gate_ext_mode=gate_ext_mode)
             m1_yt = m1d[0].upper
             m1_yb = m1g[0].lower
@@ -1895,13 +1899,13 @@ class MOSTechCDSFFMPT(MOSTech):
                     g_x_list = [0, 2 * wire_pitch]
 
             # draw gate
-            _, garr = cls._draw_g_via(template, lch_unit, fg, sd_pitch, gate_yc, g_via_info,
+            _, garr = cls._draw_g_via(template, lch_unit, fg, sd_pitch, gate_yc - sd_yc, g_via_info,
                                       g_x_list, gate_ext_mode=gate_ext_mode)
             # draw source
-            _, sarr = cls._draw_ds_via(template, wire_pitch, sd_yc, num_seg, ds_via_info, sloc, sdir,
+            _, sarr = cls._draw_ds_via(template, wire_pitch, 0, num_seg, ds_via_info, sloc, sdir,
                                        s_x_list, s_x_list)
             # draw drain
-            _, darr = cls._draw_ds_via(template, wire_pitch, sd_yc, num_seg, ds_via_info, dloc, ddir,
+            _, darr = cls._draw_ds_via(template, wire_pitch, 0, num_seg, ds_via_info, dloc, ddir,
                                        d_x_list, d_x_list)
 
             template.add_pin('s', _to_warr(sarr), show=False)
@@ -1943,9 +1947,9 @@ class MOSTechCDSFFMPT(MOSTech):
         ds_x_list = list(range(ds_x_start, ds_x_stop + 1, sd_pitch))
 
         # draw gate
-        m1g, _ = cls._draw_g_via(template, lch_unit, fg, sd_pitch, gate_yc, g_via_info, [])
+        m1g, _ = cls._draw_g_via(template, lch_unit, fg, sd_pitch, gate_yc - sd_yc, g_via_info, [])
         # draw drain/source
-        m1d, _ = cls._draw_ds_via(template, sd_pitch, sd_yc, fg, ds_via_info, 1, 1, ds_x_list, [], draw_m2=False)
+        m1d, _ = cls._draw_ds_via(template, sd_pitch, 0, fg, ds_via_info, 1, 1, ds_x_list, [], draw_m2=False)
 
         # connect gate and drain/source together
         res = template.grid.resolution
@@ -2016,7 +2020,7 @@ class MOSTechCDSFFMPT(MOSTech):
         tot_fg = 0
         m1_warrs = []
         for num_fg in gate_fg_list:
-            via_xoff = dx + tot_fg * sd_pitch + sd_pitch // 2
+            via_xoff = dx + (tot_fg + 1) * sd_pitch
             cur_xc = dx + tot_fg * sd_pitch + num_fg * sd_pitch // 2
             # draw MP
             mp_w = (num_fg - 1) * sd_pitch - lch_unit + 2 * mp_po_ovl
@@ -2041,7 +2045,7 @@ class MOSTechCDSFFMPT(MOSTech):
 
         # fix M2 area rule
         m2_xc = (m2_xl + m2_xr) // 2
-        m2_xl = min(m2_xl, m2_xc - m2_w_min)
+        m2_xl = min(m2_xl, m2_xc - m2_w_min // 2)
         m2_xl = max(dx, m2_xl)
         m2_xr = max(m2_xr, m2_xl + m2_w_min)
         if m3_x_list:
