@@ -488,7 +488,7 @@ class MOSTechCDSFFMPT(MOSTech):
         # step 3: compute gate M2/M3 locations
         g_m2_yt = g_m1_yc + gv1_h // 2 + g_m2_ency
         g_m2_yb = g_m2_yt - g_m2_h
-        g_m2_yc = (g_m2_yb + g_m2_yt)
+        g_m2_yc = (g_m2_yb + g_m2_yt) // 2
         g_m3_yt = g_m2_yc + g_m3_h // 2
         g_m3_yb = g_m3_yt - g_m3_h
 
@@ -575,7 +575,7 @@ class MOSTechCDSFFMPT(MOSTech):
             g_conn_y=(g_m3_yb, g_m3_yt),
             d_conn_y=(d_m3_yb, d_m3_yt),
             s_conn_y=(s_m3_yb, s_m3_yt),
-            g_loc=[[g_m1_yb, g_m1_yt], [g_m2_yb, g_m2_yt], [g_m3_yb, g_m3_yt]],
+            gate_yc=g_m2_yc,
             m3_w=m3_w,
             sd_pitch=sd_pitch,
             num_sd_per_track=1,
@@ -1767,7 +1767,7 @@ class MOSTechCDSFFMPT(MOSTech):
                     # find X coordinates
                     m3_x_list = [sd_pitch2 * v for v in sorted(phtr_set)]
 
-                m1_warrs, m3_warrs = cls._draw_ds_via(template, sd_pitch, od_yc, fg, via_info, 0, 1,
+                m1_warrs, m3_warrs = cls._draw_ds_via(template, sd_pitch, od_yc, fg, via_info, 1, 1,
                                                       m1_x_list, m3_x_list, xshift=xshift)
                 template.add_pin(port_name, m1_warrs, show=False)
                 template.add_pin(port_name, m3_warrs, show=False)
@@ -1817,6 +1817,203 @@ class MOSTechCDSFFMPT(MOSTech):
         return has_od
 
     @classmethod
+    def draw_mos_connection(cls, template, mos_info, sdir, ddir, gate_pref_loc, gate_ext_mode,
+                            min_ds_cap, is_diff, diode_conn, options):
+        # type: (TemplateBase, Dict[str, Any], int, int, str, int, bool, bool, bool, Dict[str, Any]) -> None
+
+        # NOTE: ignore min_ds_cap.
+        if is_diff:
+            raise ValueError('differential connection not supported yet.')
+
+        fin_h = cls.tech_constants['fin_h']
+        fin_pitch = cls.tech_constants['fin_pitch']
+
+        gate_yc = mos_info['gate_yc']
+        layout_info = mos_info['layout_info']
+        lch_unit = layout_info['lch_unit']
+        fg = layout_info['fg']
+        sd_pitch = layout_info['sd_pitch']
+        od_yb, od_yt = layout_info['row_info_list'][0].od_y
+
+        w = (od_yt - od_yb - fin_h) // fin_pitch + 1
+        ds_via_info = cls.get_ds_via_info(lch_unit, w)
+
+        g_via_info = cls.get_gate_via_info(lch_unit)
+
+        stack = options.get('stack', 1)
+        wire_pitch = stack * sd_pitch
+        if fg % stack != 0:
+            raise ValueError('AnalogMosConn: stack = %d must evenly divides fg = %d' % (stack, fg))
+        num_seg = fg // stack
+
+        s_x_list = list(range(0, num_seg * wire_pitch + 1, 2 * wire_pitch))
+        d_x_list = list(range(wire_pitch, num_seg * wire_pitch + 1, 2 * wire_pitch))
+        sd_yc = 0
+        if diode_conn:
+            if fg == 1:
+                raise ValueError('1 finger transistor connection not supported.')
+
+            sloc = 0 if sdir <= 1 else 2
+            dloc = 2 - sloc
+
+            # draw source
+            _, sarr = cls._draw_ds_via(template, wire_pitch, sd_yc, num_seg, ds_via_info, sloc, sdir,
+                                       s_x_list, s_x_list)
+            # draw drain
+            m1d, darr = cls._draw_ds_via(template, wire_pitch, sd_yc, num_seg, ds_via_info, dloc, ddir,
+                                         d_x_list, d_x_list)
+            # draw gate
+            m1g, _ = cls._draw_g_via(template, lch_unit, fg, sd_pitch, gate_yc, g_via_info, [],
+                                     gate_ext_mode=gate_ext_mode)
+            m1_yt = m1d[0].upper
+            m1_yb = m1g[0].lower
+            template.add_wires(1, m1d[0].track_id.base_index, m1_yb, m1_yt, num=len(m1d), pitch=2 * stack)
+            template.add_pin('g', _to_warr(darr), show=False)
+            template.add_pin('d', _to_warr(darr), show=False)
+            template.add_pin('s', _to_warr(sarr), show=False)
+        else:
+            # determine gate location
+            if sdir == 0:
+                gloc = 'd'
+            elif ddir == 0:
+                gloc = 's'
+            else:
+                gloc = gate_pref_loc
+
+            if (gloc == 's' and num_seg == 2) or gloc == 'd':
+                sloc, dloc = 0, 2
+            else:
+                sloc, dloc = 2, 0
+
+            if gloc == 'd':
+                g_x_list = list(range(wire_pitch, num_seg * wire_pitch, 2 * wire_pitch))
+            else:
+                if num_seg != 2:
+                    g_x_list = list(range(2 * wire_pitch, num_seg * wire_pitch, 2 * wire_pitch))
+                else:
+                    g_x_list = [0, 2 * wire_pitch]
+
+            # draw gate
+            _, garr = cls._draw_g_via(template, lch_unit, fg, sd_pitch, gate_yc, g_via_info,
+                                      g_x_list, gate_ext_mode=gate_ext_mode)
+            # draw source
+            _, sarr = cls._draw_ds_via(template, wire_pitch, sd_yc, num_seg, ds_via_info, sloc, sdir,
+                                       s_x_list, s_x_list)
+            # draw drain
+            _, darr = cls._draw_ds_via(template, wire_pitch, sd_yc, num_seg, ds_via_info, dloc, ddir,
+                                       d_x_list, d_x_list)
+
+            template.add_pin('s', _to_warr(sarr), show=False)
+            template.add_pin('d', _to_warr(darr), show=False)
+            template.add_pin('g', _to_warr(garr), show=False)
+
+    @classmethod
+    def _draw_g_via(cls, template, lch_unit, fg, sd_pitch, gate_yc, via_info, m3_x_list,
+                    gate_ext_mode=0, dx=0):
+
+        res = cls.tech_constants['resolution']
+        mp_po_ovl = cls.tech_constants['mp_po_ovl']
+        mp_h = cls.tech_constants['mp_h']
+        mx_area_min = cls.tech_constants['mx_area_min']
+
+        w_list = via_info['w']
+        h_list = via_info['h']
+        bot_encx = via_info['bot_encx']
+        top_encx = via_info['top_encx']
+        bot_ency = via_info['bot_ency']
+        top_ency = via_info['top_ency']
+        m1_h = via_info['m1_h']
+        m2_h = via_info['m2_h']
+        m3_h = via_info['m3_h']
+
+        m1_top_ency = top_ency[0]
+        v0_h = h_list[0]
+        m2_top_encx = top_encx[1]
+        v1_w = w_list[1]
+
+        m1_yt = gate_yc + v0_h // 2 + m1_top_ency
+        m1_yb = m1_yt - m1_h
+
+        # compute minimum M2 width from area rule, make sure it's even.
+        m2_w_min = -(-mx_area_min // (2 * m2_h)) * 2
+        m2_yb = gate_yc - m2_h // 2
+        m2_yt = m2_yb + m2_h
+
+        if fg % 2 == 0:
+            gate_fg_list = [2] * (fg // 2)
+        else:
+            if fg == 1:
+                raise ValueError('cannot connect 1 finger transistor')
+            if fg <= 5:
+                gate_fg_list = [fg]
+            else:
+                num_mp_half = (fg - 3) // 2
+                gate_fg_list = [2] * num_mp_half
+                gate_fg_list.append(3)
+                gate_fg_list.extend((2 for _ in range(num_mp_half)))
+
+        m2_xl = m2_xr = dx + fg * sd_pitch // 2
+        # extend gate in left/right direction with M2 if necessary.
+        if gate_ext_mode % 2 == 1:
+            m2_xl = dx
+        if gate_ext_mode // 2 == 1:
+            m2_xr = dx + fg * sd_pitch
+
+        # connect gate to M2.
+        v0_enc1 = [bot_encx[0], bot_encx[0], bot_ency[0], bot_ency[0]]
+        v0_enc2 = [top_encx[0], top_encx[0], top_ency[0], top_ency[0]]
+        v1_enc1 = [bot_encx[1], bot_encx[1], bot_ency[1], bot_ency[1]]
+        v1_enc2 = [top_encx[1], top_encx[1], top_ency[1], top_ency[1]]
+        tot_fg = 0
+        m1_warrs = []
+        for num_fg in gate_fg_list:
+            via_xoff = dx + tot_fg * sd_pitch + sd_pitch // 2
+            cur_xc = dx + tot_fg * sd_pitch + num_fg * sd_pitch // 2
+            # draw MP
+            mp_w = (num_fg - 1) * sd_pitch - lch_unit + 2 * mp_po_ovl
+            mp_xl = cur_xc - mp_w // 2
+            mp_xr = mp_xl + mp_w
+            mp_yb = gate_yc - mp_h // 2
+            mp_yt = mp_yb + mp_h
+            template.add_rect(('LiPo', 'drawing'), BBox(mp_xl, mp_yb, mp_xr, mp_yt, res, unit_mode=True))
+            # draw V0, M1, and V1
+            for idx in range(num_fg - 1):
+                via_xc = via_xoff + idx * sd_pitch
+                vloc = [via_xc, gate_yc]
+                cur_tidx = template.grid.coord_to_track(1, via_xc, unit_mode=True)
+                template.add_via_primitive('M1_LiPo', vloc, enc1=v0_enc1, enc2=v0_enc2, unit_mode=True)
+                m1_warrs.append(template.add_wires(1, cur_tidx, m1_yb, m1_yt, unit_mode=True))
+                if m3_x_list:
+                    template.add_via_primitive('M2_M1', vloc, enc1=v1_enc1, enc2=v1_enc2, unit_mode=True)
+
+            m2_xl = min(via_xoff - v1_w // 2 - m2_top_encx, m2_xl)
+            m2_xr = max(via_xoff + (num_fg - 2) * sd_pitch + v1_w // 2 + m2_top_encx, m2_xr)
+            tot_fg += num_fg
+
+        # fix M2 area rule
+        m2_xc = (m2_xl + m2_xr) // 2
+        m2_xl = min(m2_xl, m2_xc - m2_w_min)
+        m2_xl = max(dx, m2_xl)
+        m2_xr = max(m2_xr, m2_xl + m2_w_min)
+        if m3_x_list:
+            template.add_rect('M2', BBox(m2_xl, m2_yb, m2_xr, m2_yt, res, unit_mode=True))
+
+        # connect gate to M3
+        m3_warrs = []
+        v2_h = h_list[2]
+        v2_enc1 = [bot_encx[2], bot_encx[2], bot_ency[2], bot_ency[2]]
+        v2_enc2 = [top_encx[2], top_encx[2], top_ency[2], top_ency[2]]
+        m3_yt = gate_yc + v2_h // 2 + v2_enc2[2]
+        m3_yb = m3_yt - m3_h
+        for xc in m3_x_list:
+            template.add_via_primitive('M3_M2', [xc, gate_yc], enc1=v2_enc1, enc2=v2_enc2,
+                                       cut_height=v2_h, unit_mode=True)
+            tr_idx = template.grid.coord_to_track(3, xc, unit_mode=True)
+            m3_warrs.append(template.add_wires(3, tr_idx, m3_yb, m3_yt, unit_mode=True))
+
+        return m1_warrs, m3_warrs
+
+    @classmethod
     def _draw_ds_via(cls, template, wire_pitch, od_yc, num_seg, via_info, m2_loc, m3_dir,
                      m1_x_list, m3_x_list, xshift=0):
         # Note: m2_x_list is guaranteed to contain m3_x_list
@@ -1844,9 +2041,9 @@ class MOSTechCDSFFMPT(MOSTech):
         # find M2 location
         m1_yb = od_yc - m1_h // 2
         m1_yt = m1_yb + m1_h
-        if m2_loc < 0:
+        if m2_loc == 0:
             via_yc = m1_yb + m1_bot_ency + v1_h // 2
-        elif m2_loc == 0:
+        elif m2_loc == 1:
             via_yc = od_yc
         else:
             via_yc = m1_yt - m1_bot_ency - v1_h // 2
