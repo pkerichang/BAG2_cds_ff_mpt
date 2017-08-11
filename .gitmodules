@@ -1,9 +1,9 @@
 [submodule "BAG_framework"]
 	path = BAG_framework
-	url = git@github.com:pkerichang/BAG_framework.git
+	url = git@github.com:ucb-art/BAG_framework.git
 [submodule "laygo"]
 	path = laygo
 	url = git@github.com:ucb-art/laygo.git
 [submodule "BAG2_TEMPLATES_EC"]
 	path = BAG2_TEMPLATES_EC
-	url = git@github.com:pkerichang/BAG2_TEMPLATES_EC.git
+	url = git@github.com:ucb-art/BAG2_TEMPLATES_EC.git
