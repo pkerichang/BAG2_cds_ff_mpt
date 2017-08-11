@@ -1644,26 +1644,34 @@ class MOSTechCDSFFMPT(MOSTech):
                     po_xr = po_xl + lch_unit
                     if po_on_od[idx]:
                         cur_od_type = od_type
+                        is_edge = False
                     else:
                         if idx == 0:
                             cur_od_type = left_blk_info.od_type
+                            is_edge = True
                         elif idx == fg - 1:
                             cur_od_type = right_blk_info.od_type
+                            is_edge = True
                         else:
                             cur_od_type = None
+                            is_edge = False
 
-                    lay = ('Poly', 'drawing') if (cur_od_type == 'mos' or cur_od_type == 'sub') else po_dum_lay
+                    if is_edge and cur_od_type is not None:
+                        lay = ('Poly', 'edge')
+                    elif cur_od_type == 'mos' or cur_od_type == 'sub':
+                        lay = ('Poly', 'drawing')
+                    else:
+                        lay = ('Poly', 'dummy')
                     template.add_rect(lay, BBox(po_xl, po_yb, po_xr, po_yt, res, unit_mode=True))
 
             # draw MD if it's physical
             if md_yt > md_yb and fg > 0:
                 md_range = range(1, fg) if blk_type == 'gr_sub' else range(fg + 1)
                 for idx in md_range:
-                    if 0 < idx < fg:
-                        md_xl = arr_xl + idx * sd_pitch - md_w // 2
-                        md_xr = md_xl + md_w
-                        if md_on_od[idx]:
-                            template.add_rect(md_lay, BBox(md_xl, md_yb, md_xr, md_yt, res, unit_mode=True))
+                    md_xl = arr_xl + idx * sd_pitch - md_w // 2
+                    md_xr = md_xl + md_w
+                    if md_on_od[idx]:
+                        template.add_rect(md_lay, BBox(md_xl, md_yb, md_xr, md_yt, res, unit_mode=True))
 
         # draw other layers
         for imp_lay, xl, yb, yt in lay_info_list:
