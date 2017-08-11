@@ -30,7 +30,6 @@ from builtins import *
 from abs_templates_ec.analog_mos.core import MOSTech
 
 from typing import Dict, Any, Union, List, Optional
-from itertools import chain
 from collections import namedtuple
 
 from bag.math import lcm
@@ -128,6 +127,8 @@ class MOSTechCDSFFMPT(MOSTech):
         m1_fill_lmax=400,
         # minimum M1X line-end spacing
         mx_spy_min=64,
+        # M1 dummy horizontal connection height
+        m1_dum_h=40,
     )
 
     @classmethod
@@ -234,7 +235,7 @@ class MOSTechCDSFFMPT(MOSTech):
         v0_m1_ency = via_info['top_ency'][0]
         od_h = (w - 1) * fin_p + fin_h
         md_h = max(od_h + 2 * md_od_exty, md_h_min)
-        num_v0 = (md_h - v0_md_ency * 2 - v0_sp) // (v0_sp + v0_h)
+        num_v0 = (md_h - v0_md_ency * 2 + v0_sp) // (v0_sp + v0_h)
 
         # M1 height based on V0 enclosure
         v0_harr = num_v0 * (v0_h + v0_sp) - v0_sp
@@ -1908,6 +1909,54 @@ class MOSTechCDSFFMPT(MOSTech):
             template.add_pin('g', _to_warr(garr), show=False)
 
     @classmethod
+    def draw_dum_connection(cls, template, mos_info, edge_mode, gate_tracks, options):
+        # type: (TemplateBase, Dict[str, Any], int, List[int], Dict[str, Any]) -> None
+
+        fin_h = cls.tech_constants['fin_h']
+        fin_pitch = cls.tech_constants['fin_pitch']
+        m1_dum_h = cls.tech_constants['m1_dum_h']
+
+        gate_yc = mos_info['gate_yc']
+        layout_info = mos_info['layout_info']
+        lch_unit = layout_info['lch_unit']
+        fg = layout_info['fg']
+        sd_pitch = layout_info['sd_pitch']
+        od_yb, od_yt = layout_info['row_info_list'][0].od_y
+
+        sd_yc = (od_yb + od_yt) // 2
+        w = (od_yt - od_yb - fin_h) // fin_pitch + 1
+        ds_via_info = cls.get_ds_via_info(lch_unit, w)
+
+        g_via_info = cls.get_gate_via_info(lch_unit)
+
+        left_edge = edge_mode % 2 == 1
+        right_edge = edge_mode // 2 == 1
+        if left_edge:
+            ds_x_start = 0
+        else:
+            ds_x_start = sd_pitch
+        if right_edge:
+            ds_x_stop = fg * sd_pitch
+        else:
+            ds_x_stop = (fg - 1) * sd_pitch
+
+        ds_x_list = list(range(ds_x_start, ds_x_stop + 1, sd_pitch))
+
+        # draw gate
+        m1g, _ = cls._draw_g_via(template, lch_unit, fg, sd_pitch, gate_yc, g_via_info, [])
+        # draw drain/source
+        m1d, _ = cls._draw_ds_via(template, sd_pitch, sd_yc, fg, ds_via_info, 1, 1, ds_x_list, [], draw_m2=False)
+
+        # connect gate and drain/source together
+        res = template.grid.resolution
+        m1_yb = int(round(m1g[0].lower / res))
+        m1_yt = m1_yb + m1_dum_h
+        template.connect_wires(m1g + m1d, lower=m1_yb, unit_mode=True)
+        template.add_rect('M1', BBox(ds_x_start, m1_yb, ds_x_stop, m1_yt, res, unit_mode=True))
+
+        template.add_pin('dummy', m1g, show=False)
+
+    @classmethod
     def _draw_g_via(cls, template, lch_unit, fg, sd_pitch, gate_yc, via_info, m3_x_list,
                     gate_ext_mode=0, dx=0):
 
@@ -2015,9 +2064,7 @@ class MOSTechCDSFFMPT(MOSTech):
 
     @classmethod
     def _draw_ds_via(cls, template, wire_pitch, od_yc, num_seg, via_info, m2_loc, m3_dir,
-                     m1_x_list, m3_x_list, xshift=0):
-        # Note: m2_x_list is guaranteed to contain m3_x_list
-
+                     m1_x_list, m3_x_list, xshift=0, draw_m2=True):
         res = cls.tech_constants['resolution']
         v0_sp = cls.tech_constants['v0_sp']
 
@@ -2057,10 +2104,11 @@ class MOSTechCDSFFMPT(MOSTech):
             tidx = template.grid.coord_to_track(1, xloc, unit_mode=True)
             cur_warr = template.add_wires(1, tidx, m1_yb, m1_yt, unit_mode=True)
             m1_warrs.append(cur_warr)
-            template.add_via_primitive('M2_M1', [xloc, via_yc], cut_height=v1_h, enc1=v1_enc1,
-                                       enc2=v1_enc2, unit_mode=True)
-            m2_xl = xloc if m2_xl is None else min(xloc, m2_xl)
-            m2_xr = xloc if m2_xr is None else max(xloc, m2_xr)
+            if draw_m2:
+                template.add_via_primitive('M2_M1', [xloc, via_yc], cut_height=v1_h, enc1=v1_enc1,
+                                           enc2=v1_enc2, unit_mode=True)
+                m2_xl = xloc if m2_xl is None else min(xloc, m2_xl)
+                m2_xr = xloc if m2_xr is None else max(xloc, m2_xr)
 
         # draw via to M3 and add metal/ports
         v2_enc1 = [m2_bot_encx, m2_bot_encx, m2_bot_ency, m2_bot_ency]
