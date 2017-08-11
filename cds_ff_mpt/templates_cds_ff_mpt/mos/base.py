@@ -1747,40 +1747,27 @@ class MOSTechCDSFFMPT(MOSTech):
 
                 via_info = cls.get_ds_via_info(lch_unit, w, compact=is_guardring)
 
-                # find X locations of M2/M3.
+                # find X locations of M1/M3.
+                # we can export all dummy tracks.
+                m1_x_list = [idx * sd_pitch for idx in range(fg + 1)]
                 if dummy_only:
                     # find X locations to draw vias
-                    m1_x_list = [sd_pitch2 * int(2 * v + 1) for v in dum_tracks]
                     m3_x_list = []
                 else:
-                    # first, figure out port/dummy tracks
-                    # since dummy tracks are on M2, to lower parasitics, we try to draw only as many dummy tracks
-                    # as necessary. Also, every port track is also a dummy track (because to get to M3 we must
-                    # get to M2).  With these constraints, our track selection algorithm is as follows:
-                    # 1. for every dummy track, if its not adjacent to any port tracks, add it to port tracks (this
-                    #    improves dummy connection resistance to supply).
-                    # 2. Try to add as many unused tracks to port tracks as possible, while making sure we don't end
-                    #    up with adjacent port tracks.  This improves substrate connection resistance to supply.
-                    # 3. now, M2 tracks is the union of dummy tracks and port tracks, M3 tracks is port tracks.
+                    # first, figure out port/dummy tracks.
+                    # Try to add as many unused tracks to port tracks as possible, while making sure we don't end
+                    # up with adjacent port tracks.  This improves substrate connection resistance to supply.
 
                     # use half track indices so we won't have rounding errors.
                     phtr_set = set((int(2 * v + 1) for v in port_tracks))
-                    dhtr_set = set((int(2 * v + 1) for v in dum_tracks))
-                    # add as many dummy tracks as possible to port tracks
-                    for d in dhtr_set:
-                        if d + 2 not in phtr_set and d - 2 not in phtr_set:
-                            phtr_set.add(d)
                     # add as many unused tracks as possible to port tracks
                     for htr in range(0, 2 * fg + 1, 2):
                         if htr + 2 not in phtr_set and htr - 2 not in phtr_set:
                             phtr_set.add(htr)
-                    # add all port sets to dummy set
-                    dhtr_set.update(phtr_set)
                     # find X coordinates
-                    m1_x_list = [sd_pitch2 * v for v in sorted(dhtr_set)]
                     m3_x_list = [sd_pitch2 * v for v in sorted(phtr_set)]
 
-                m1_warrs, m3_warrs = cls._draw_ds_via(template, sd_pitch, od_yc, fg, via_info, True, 1, 1,
+                m1_warrs, m3_warrs = cls._draw_ds_via(template, sd_pitch, od_yc, fg, via_info, 0, 1,
                                                       m1_x_list, m3_x_list, xshift=xshift)
                 template.add_pin(port_name, m1_warrs, show=False)
                 template.add_pin(port_name, m3_warrs, show=False)
@@ -1810,18 +1797,16 @@ class MOSTechCDSFFMPT(MOSTech):
                     m1_yt = mp_yc + gm1_delta
                     mp_y_list.append((mp_yb, mp_yt))
 
-                    # draw MP
-                    for fgl in range(0, fg + 1, 2):
-                        mp_xl = xshift + fgl * sd_pitch - sd_pitch // 2 + lch_unit // 2 - mp_po_ovl
-                        mp_xr = xshift + (fgl + 2) * sd_pitch + sd_pitch // 2 - lch_unit // 2 + mp_po_ovl
-                        for mp_yb, mp_yt in mp_y_list:
-                            template.add_rect('LiPo', BBox(mp_xl, mp_yb, mp_xr, mp_yt, res, unit_mode=True))
-
-                    # draw M1 and VIA0
+                    # draw MP, M1, and VIA0
                     via_type = 'M1_LiPo'
+                    mp_dx = sd_pitch // 2 - lch_unit // 2 + mp_po_ovl
                     enc1 = [bot_encx, bot_encx, bot_ency, bot_ency]
                     enc2 = [top_encx, top_encx, top_ency, top_ency]
                     for idx in range(0, fg + 1, 2):
+                        mp_xl = xshift + idx * sd_pitch - mp_dx
+                        mp_xr = xshift + idx * sd_pitch + mp_dx
+                        for mp_yb, mp_yt in mp_y_list:
+                            template.add_rect('LiPo', BBox(mp_xl, mp_yb, mp_xr, mp_yt, res, unit_mode=True))
                         m1_xc = xshift + idx * sd_pitch
                         template.add_rect('M1', BBox(m1_xc - m1_w // 2, m1_yb, m1_xc + m1_w // 2, m1_yt, res,
                                                      unit_mode=True))
@@ -1832,7 +1817,7 @@ class MOSTechCDSFFMPT(MOSTech):
         return has_od
 
     @classmethod
-    def _draw_ds_via(cls, template, wire_pitch, od_yc, num_seg, via_info, sbot, sdir, ddir,
+    def _draw_ds_via(cls, template, wire_pitch, od_yc, num_seg, via_info, m2_loc, m3_dir,
                      m1_x_list, m3_x_list, xshift=0):
         # Note: m2_x_list is guaranteed to contain m3_x_list
 
@@ -1855,71 +1840,55 @@ class MOSTechCDSFFMPT(MOSTech):
         enc2 = [m1_encx, m1_encx, m1_ency, m1_ency]
         template.add_via_primitive(via_type, [xshift, od_yc], num_rows=nv0, sp_rows=v0_sp,
                                    enc1=enc1, enc2=enc2, nx=num_seg + 1, spx=wire_pitch, unit_mode=True)
-        # add M1
+
+        # find M2 location
         m1_yb = od_yc - m1_h // 2
         m1_yt = m1_yb + m1_h
+        if m2_loc < 0:
+            via_yc = m1_yb + m1_bot_ency + v1_h // 2
+        elif m2_loc == 0:
+            via_yc = od_yc
+        else:
+            via_yc = m1_yt - m1_bot_ency - v1_h // 2
+
+        # add M1 and M2
+        m2_xl, m2_xr = None, None
         m1_warrs = []
-        for idx in range(num_seg + 1):
-            m1_xc = xshift + idx * wire_pitch
-            tidx = template.grid.coord_to_nearest_track(1, m1_xc, unit_mode=True)
-            cur_warr = template.add_wires(1, tidx, m1_yb, m1_yt, unit_mode=True)
-            if m1_xc in m1_x_list:
-                m1_warrs.append(cur_warr)
-
-        bot_yc = m1_yb + m1_bot_ency + v1_h // 2
-        top_yc = m1_yt - m1_bot_ency - v1_h // 2
-
-        # draw via to M2/M3 and add metal/ports
         v1_enc1 = [m1_bot_encx, m1_bot_encx, m1_bot_ency, m1_bot_ency]
         v1_enc2 = [m2_encx, m2_encx, m2_ency, m2_ency]
+        for xloc in m1_x_list:
+            tidx = template.grid.coord_to_track(1, xloc, unit_mode=True)
+            cur_warr = template.add_wires(1, tidx, m1_yb, m1_yt, unit_mode=True)
+            m1_warrs.append(cur_warr)
+            template.add_via_primitive('M2_M1', [xloc, via_yc], cut_height=v1_h, enc1=v1_enc1,
+                                       enc2=v1_enc2, unit_mode=True)
+            m2_xl = xloc if m2_xl is None else min(xloc, m2_xl)
+            m2_xr = xloc if m2_xr is None else max(xloc, m2_xr)
+
+        # draw via to M3 and add metal/ports
         v2_enc1 = [m2_bot_encx, m2_bot_encx, m2_bot_ency, m2_bot_ency]
         v2_enc2 = [m3_encx, m3_encx, m3_ency, m3_ency]
         m3_warrs = []
-        m2b_x = [None, None]  # type: List[int]
-        m2t_x = [None, None]  # type: List[int]
         for xloc in m3_x_list:
-            parity = xloc // wire_pitch
-            if parity % 2 == 0:
-                vdir = sdir
-                if sbot:
-                    via_yc = bot_yc
-                    m2x_list = m2b_x
-                else:
-                    via_yc = top_yc
-                    m2x_list = m2t_x
-            else:
-                vdir = ddir
-                if sbot:
-                    via_yc = top_yc
-                    m2x_list = m2t_x
-                else:
-                    via_yc = bot_yc
-                    m2x_list = m2b_x
-            if vdir == 0:
-                m_yt = via_yc + v2_h // 2 + enc2[2]
+            if m3_dir == 0:
+                m_yt = via_yc + v2_h // 2 + v2_enc2[2]
                 m_yb = m_yt - m3_h
-            elif vdir == 2:
-                m_yb = via_yc - v2_h // 2 - enc2[3]
+            elif m3_dir == 2:
+                m_yb = via_yc - v2_h // 2 - v2_enc2[3]
                 m_yt = m_yb + m3_h
             else:
                 m_yb = via_yc - m3_h // 2
                 m_yt = m_yb + m3_h
 
             cur_xc = xshift + xloc
-            m2x_list[0] = cur_xc if m2x_list[0] is None else min(cur_xc, m2x_list[0])
-            m2x_list[1] = cur_xc if m2x_list[1] is None else max(cur_xc, m2x_list[1])
-
             loc = [cur_xc, via_yc]
-            template.add_via_primitive('M2_M1', loc, cut_height=v1_h, enc1=v1_enc1, enc2=v1_enc2, unit_mode=True)
             template.add_via_primitive('M3_M2', loc, cut_height=v2_h, enc1=v2_enc1, enc2=v2_enc2, unit_mode=True)
-
             tr_idx = template.grid.coord_to_track(3, cur_xc, unit_mode=True)
             m3_warrs.append(template.add_wires(3, tr_idx, m_yb, m_yt, unit_mode=True))
 
-        for (m2_xl, m2_xr), m2_yc in ((m2b_x, bot_yc), (m2t_x, top_yc)):
-            if m2_xl is not None and m2_xr is not None:
-                m2_yb = m2_yc - m2_h // 2
-                m2_yt = m2_yb + m2_h
-                template.add_rect('M2', BBox(m2_xl, m2_yb, m2_xr, m2_yt, res, unit_mode=True))
+        if m2_xl is not None and m2_xr is not None:
+            m2_yb = via_yc - m2_h // 2
+            m2_yt = m2_yb + m2_h
+            template.add_rect('M2', BBox(m2_xl, m2_yb, m2_xr, m2_yt, res, unit_mode=True))
 
         return m1_warrs, m3_warrs
