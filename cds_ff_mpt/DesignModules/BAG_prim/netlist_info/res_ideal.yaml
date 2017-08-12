@@ -2,4 +2,35 @@ lib_name: BAG_prim
 cell_name: res_ideal
 pins: [ "PLUS", "MINUS", "BULK" ]
 instances:
-  {}
+  R0:
+    lib_name: analogLib
+    cell_name: res
+    instpins:
+      MINUS:
+        direction: inputOutput
+        net_name: "MINUS"
+        num_bits: 1
+      PLUS:
+        direction: inputOutput
+        net_name: "PLUS"
+        num_bits: 1
+  PIN2:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
+  PIN1:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
+  PIN0:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
+  I0:
+    lib_name: basic
+    cell_name: noConn
+    instpins:
+      noConn:
+        direction: inputOutput
+        net_name: "BULK"
+        num_bits: 1

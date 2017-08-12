@@ -1,5 +1,5 @@
 lib_name: BAG_prim
-cell_name: nmos4_fast
+cell_name: nmos4_hvt
 pins: [ "G", "D", "S", "B" ]
 instances:
   PIN3:
@@ -20,7 +20,7 @@ instances:
     instpins: {}
   M0:
     lib_name: cds_ff_mpt
-    cell_name: n1lvt
+    cell_name: n1hvt
     instpins:
       D:
         direction: inputOutput
