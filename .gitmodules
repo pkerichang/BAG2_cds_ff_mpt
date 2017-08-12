@@ -10,3 +10,6 @@
 [submodule "bag_oa"]
 	path = bag_oa
 	url = git@github.com:ucb-art/bag_oa.git
+[submodule "bag_testbenches_ec"]
+	path = bag_testbenches_ec
+	url = git@github.com:ucb-art/bag_testbenches_ec.git

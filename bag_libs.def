@@ -6,3 +6,4 @@ logic_templates laygo/generators/logic/BagModules
 adc_sar_templates BagModules
 clk_dis_templates BagModules
 cds_ff_mpt_microtemplates_dense BagModules
+bag_testbenches_ec $BAG_WORK_DIR/bag_testbenches_ec/BagModules
