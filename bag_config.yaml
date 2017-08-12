@@ -37,7 +37,7 @@ database:
     # config view global libraries
     config_libs: "cds_ff_mpt analogLib basic"
     # config view cellviews
-    config_views: "spectre calibre schematic veriloga"
+    config_views: "spectre schematic av_extracted veriloga"
     # config view stop cellviews
     config_stops: "spectre veriloga"
     # default simulation environment name
@@ -49,19 +49,33 @@ database:
   # configurations used to create a Checker object to run LVS/RCX
   checker:
     # the Checker class.
-    checker_cls: "bag.verification.calibre.Calibre"
+    checker_cls: "bag.verification.pvs.PVS"
     # LVS run directory
-    lvs_run_dir: "${BAG_WORK_DIR}/calibre_run/lvs_run_dir"
-    # RCX run directory
-    rcx_run_dir: "${BAG_WORK_DIR}/calibre_run/rcx_run_dir"
+    lvs_run_dir: "${BAG_WORK_DIR}/pvs_run/lvs_run_dir"
     # LVS runset
-    lvs_runset: "${BAG_TECH_CONFIG_DIR}/lvs_runset"
+    lvs_runset: "${BAG_TECH_CONFIG_DIR}/pvs_setup/pvslvsctl"
+    # LVS rule file
+    lvs_rule_file : "${BAG_TECH_CONFIG_DIR}/pvs_setup/pvs_rules"
     # RCX runset
-    rcx_runset: "${BAG_TECH_CONFIG_DIR}/rcx_runset"
+    rcx_runset: "${BAG_TECH_CONFIG_DIR}/pvs_setup/qrc_options.yaml"
     # source.added location
-    source_added_file: "${BAG_TECH_CONFIG_DIR}/calibre_rcx_setup/source.added"
-    # RCX mode
-    rcx_mode: 'calibre'
+    source_added_file: "${BAG_TECH_CONFIG_DIR}/pvs_setup/source.added"
+    # maximum number of LVS/RCX processes BAG can launch.
+    max_workers: 4
+    # default RC extraction parameters
+    rcx_params:
+      distributed_processing:
+        # number of CPUs to use
+        multi_cpu: 6
+      extract:
+        # extraction type.
+        type: "rc_coupled"
+      capacitance:
+        # substrate name for capacitance extraction
+        ground_net: "VSS"
+      process_technology:
+        # QRC technology library file
+        technology_library_file: "${BAG_TECH_CONFIG_DIR}/pvs_setup/pvtech.lib"
   # calibreview generation setting
   calibreview:
     # the calibreview cell map file.
@@ -73,6 +87,8 @@ database:
 simulation:
   # python class that talks with the simulator
   class: "bag.interface.ocean.OceanInterface"
+  # maximum number of Ocean processes BAG can launch.
+  max_workers: 3
   # file to load at simulator startup.
   init_file: ""
   # testbench view name
