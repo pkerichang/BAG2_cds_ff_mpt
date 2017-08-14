@@ -13,3 +13,6 @@
 [submodule "bag_testbenches_ec"]
 	path = bag_testbenches_ec
 	url = git@github.com:ucb-art/bag_testbenches_ec.git
+[submodule "BAG_XBase_demo"]
+	path = BAG_XBase_demo
+	url = git@github.com:ucb-art/BAG_XBase_demo.git

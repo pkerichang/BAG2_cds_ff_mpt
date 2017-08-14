@@ -9,12 +9,6 @@ DEFINE     cds_ff_mpt   $BAG_WORK_DIR/PDK/cds_ff_mpt
 #BAG base libraries
 DEFINE     BAG_prim     $BAG_TECH_CONFIG_DIR/BAG_prim
 
-#BAG example libraries
-DEFINE demo_templates $BAG_FRAMEWORK/tutorial/demo_templates
-DEFINE demo_testbenches $BAG_FRAMEWORK/tutorial/demo_testbenches
-
-DEFINE bag_testbenches_ec $BAG_WORK_DIR/bag_testbenches_ec/bag_testbenches_ec
-
 #primitive templates
 DEFINE cds_ff_mpt_microtemplates_dense $BAG_WORK_DIR/cds_ff_mpt_microtemplates_dense
 
@@ -29,3 +23,9 @@ DEFINE adc_sar_testbenches $BAG_WORK_DIR/adc_sar_testbenches
 #working libraries
 DEFINE laygo_working $BAG_WORK_DIR/laygo_working
 
+# BAG Eric Chang testbench libraries
+DEFINE bag_testbenches_ec $BAG_WORK_DIR/bag_testbenches_ec/bag_testbenches_ec
+
+#BAG demo libraries
+DEFINE demo_templates $BAG_WORK_DIR/BAG_XBase_demo/demo_templates
+DEFINE demo_testbenches $BAG_WORK_DIR/BAG_XBase_demo/demo_testbenches
