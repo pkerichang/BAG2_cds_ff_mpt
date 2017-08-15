@@ -55,9 +55,9 @@ amp_cs:
         ibias: !!float 150e-6
         vdd: !!float 1.0
         vinac: !!float 1.0
-        vindc: !!float 0.5
+        vindc: !!float 0.56
         fstart: !!float 1e6
-        fstop: !!float 10e9
+        fstop: !!float 100e9
         fndec: 20
         tsim: !!float 2e-9
         tstep: !!float 1e-12
