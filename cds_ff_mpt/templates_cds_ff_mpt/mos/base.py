@@ -1956,7 +1956,8 @@ class MOSTechCDSFFMPT(MOSTech):
         m1_yb = int(round(m1g[0].lower / res))
         m1_yt = m1_yb + m1_dum_h
         template.connect_wires(m1g + m1d, lower=m1_yb, unit_mode=True)
-        template.add_rect('M1', BBox(ds_x_start, m1_yb, ds_x_stop, m1_yt, res, unit_mode=True))
+        if ds_x_stop > ds_x_start:
+            template.add_rect('M1', BBox(ds_x_start, m1_yb, ds_x_stop, m1_yt, res, unit_mode=True))
 
         template.add_pin('dummy', m1g, show=False)
 
@@ -2071,6 +2072,7 @@ class MOSTechCDSFFMPT(MOSTech):
                      m1_x_list, m3_x_list, xshift=0, draw_m2=True):
         res = cls.tech_constants['resolution']
         v0_sp = cls.tech_constants['v0_sp']
+        mx_area_min = cls.tech_constants['mx_area_min']
 
         nv0 = via_info['num_v0']
         m1_h = via_info['m1_h']
@@ -2136,6 +2138,12 @@ class MOSTechCDSFFMPT(MOSTech):
             m3_warrs.append(template.add_wires(3, tr_idx, m_yb, m_yt, unit_mode=True))
 
         if m2_xl is not None and m2_xr is not None:
+            # fix M2 area rule
+            m2_w_min = -(-mx_area_min // (2 * m2_h)) * 2
+            m2_xc = (m2_xl + m2_xr) // 2
+            m2_xl = min(m2_xl, m2_xc - m2_w_min // 2)
+            m2_xr = max(m2_xr, m2_xl + m2_w_min)
+
             m2_yb = via_yc - m2_h // 2
             m2_yt = m2_yb + m2_h
             template.add_rect('M2', BBox(m2_xl, m2_yb, m2_xr, m2_yt, res, unit_mode=True))
