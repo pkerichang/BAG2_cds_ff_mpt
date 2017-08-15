@@ -62,3 +62,60 @@ amp_cs:
         tsim: !!float 2e-9
         tstep: !!float 1e-12
         cload: !!float 40e-15
+
+amp_sf:
+  data_dir: 'demo_data'
+  impl_lib: 'DEMO_AMP_SF'
+  sch_lib: 'demo_templates'
+  sch_cell: 'amp_sf_soln'
+  gen_cell: 'AMP_SF'
+  layout_package: 'xbase_demo.demo_layout.core'
+  layout_class: 'AmpSFSoln'
+  layout_params:
+    lch: !!float 18e-9
+    ptap_w: 6
+    ntap_w: 6
+    ndum: 4
+    w_dict: {amp: 4, bias: 4}
+    intent_dict: {amp: 'lvt', bias: 'lvt'}
+    fg_dict: {amp: 16, bias: 12, ref: 2}
+    tr_widths:
+      vin: {4: 1}
+      vout: {4: 2}
+      ibias: {4: 2}
+      VDD: {4: 2}
+    show_pins: True
+
+  testbenches:
+    tb_dc:
+      tb_lib: 'bag_testbenches_ec'
+      tb_cell: 'amp_tb_dc'
+      sch_params:
+        ibias_dict:
+          ibias: ['VDD', 'ibias', 'ibias']
+      tb_params:
+        gain_fb: !!float -200
+        ibias: !!float 80e-6
+        vdd: !!float 1.0
+        voutref: !!float 0.5
+        vout_start: !!float 0.15
+        vout_stop: !!float 0.5
+        vout_num: 100
+    tb_ac_tran:
+      tb_lib: 'bag_testbenches_ec'
+      tb_cell: 'amp_tb_ac_tran'
+      sch_params:
+        ibias_dict:
+          ibias: ['VDD', 'ibias', 'ibias']
+        tran_fname: 'stimuli/step.data'
+      tb_params:
+        ibias: !!float 80e-6
+        vdd: !!float 1.0
+        vinac: !!float 1.0
+        vindc: !!float 0.7
+        fstart: !!float 1e6
+        fstop: !!float 100e9
+        fndec: 20
+        tsim: !!float 2e-9
+        tstep: !!float 1e-12
+        cload: !!float 40e-15
