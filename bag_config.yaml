@@ -59,7 +59,7 @@ database:
     # RCX runset
     rcx_runset: "${BAG_TECH_CONFIG_DIR}/pvs_setup/qrc_options.yaml"
     # source.added location
-    source_added_file: "${BAG_TECH_CONFIG_DIR}/pvs_setup/source.added"
+    source_added_file: ""
     # maximum number of LVS/RCX processes BAG can launch.
     max_workers: 4
     # default RC extraction parameters
