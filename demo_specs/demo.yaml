@@ -22,11 +22,7 @@ amp_cs:
     ndum: 4
     w_dict: {amp: 4, load: 4}
     intent_dict: {amp: 'lvt', load: 'lvt'}
-    fg_dict: {amp: 16, load: 12, ref: 2}
-    tr_widths:
-      vin: {4: 1}
-      vout: {4: 2}
-      ibias: {4: 2}
+    fg_dict: {amp: 16, load: 12}
     show_pins: True
 
   testbenches:
@@ -34,12 +30,12 @@ amp_cs:
       tb_lib: 'bag_testbenches_ec'
       tb_cell: 'amp_tb_dc'
       sch_params:
-        ibias_dict:
-          ibias: ['ibias', 'VSS', 'ibias']
-        dut_conns: {ibias: 'ibias'}
+        dut_conns: {vbias: 'vbias'}
+        vbias_dict:
+          vbias: ['vbias', 'VSS', 'vbias']
       tb_params:
         gain_fb: !!float 200
-        ibias: !!float 150e-6
+        vbias: !!float 0.185
         vdd: !!float 1.0
         voutref: !!float 0.5
         vout_start: !!float 0.1
@@ -49,12 +45,12 @@ amp_cs:
       tb_lib: 'bag_testbenches_ec'
       tb_cell: 'amp_tb_ac_tran'
       sch_params:
-        ibias_dict:
-          ibias: ['ibias', 'VSS', 'ibias']
-        dut_conns: {ibias: 'ibias'}
+        dut_conns: {vbias: 'vbias'}
+        vbias_dict:
+          vbias: ['vbias', 'VSS', 'vbias']
         tran_fname: 'stimuli/step.data'
       tb_params:
-        ibias: !!float 150e-6
+        vbias: !!float 0.185
         vdd: !!float 1.0
         vinac: !!float 1.0
         vindc: !!float 0.56
@@ -80,12 +76,7 @@ amp_sf:
     ndum: 4
     w_dict: {amp: 4, bias: 4}
     intent_dict: {amp: 'lvt', bias: 'lvt'}
-    fg_dict: {amp: 16, bias: 12, ref: 2}
-    tr_widths:
-      vin: {4: 1}
-      vout: {4: 2}
-      ibias: {4: 2}
-      VDD: {4: 2}
+    fg_dict: {amp: 16, bias: 12}
     show_pins: True
 
   testbenches:
@@ -93,12 +84,12 @@ amp_sf:
       tb_lib: 'bag_testbenches_ec'
       tb_cell: 'amp_tb_dc'
       sch_params:
-        ibias_dict:
-          ibias: ['VDD', 'ibias', 'ibias']
-        dut_conns: {ibias: 'ibias'}
+        dut_conns: {vbias: 'vbias'}
+        vbias_dict:
+          vbias: ['vbias', 'VSS', 'vbias']
       tb_params:
         gain_fb: !!float -200
-        ibias: !!float 80e-6
+        vbias: !!float 0.54
         vdd: !!float 1.0
         voutref: !!float 0.5
         vout_start: !!float 0.15
@@ -108,12 +99,12 @@ amp_sf:
       tb_lib: 'bag_testbenches_ec'
       tb_cell: 'amp_tb_ac_tran'
       sch_params:
-        ibias_dict:
-          ibias: ['VDD', 'ibias', 'ibias']
-        dut_conns: {ibias: 'ibias'}
+        dut_conns: {vbias: 'vbias'}
+        vbias_dict:
+          vbias: ['vbias', 'VSS', 'vbias']
         tran_fname: 'stimuli/step.data'
       tb_params:
-        ibias: !!float 80e-6
+        vbias: !!float 0.54
         vdd: !!float 1.0
         vinac: !!float 1.0
         vindc: !!float 0.7
@@ -140,7 +131,7 @@ amp_chain:
       ndum: 4
       w_dict: {amp: 4, load: 4}
       intent_dict: {amp: 'lvt', load: 'lvt'}
-      fg_dict: {amp: 16, load: 12, ref: 2}
+      fg_dict: {amp: 16, load: 12}
     sf_params:
       lch: !!float 18e-9
       ptap_w: 6
@@ -148,26 +139,21 @@ amp_chain:
       ndum: 4
       w_dict: {amp: 4, bias: 4}
       intent_dict: {amp: 'lvt', bias: 'lvt'}
-      fg_dict: {amp: 16, bias: 12, ref: 2}
-    tr_widths:
-      vin: {4: 1, 5: 1}
-      vout: {4: 2}
-      ibias: {4: 2}
-      VDD: {4: 2, 5: 2, 6: 2}
+      fg_dict: {amp: 16, bias: 12}
     show_pins: True
   testbenches:
     tb_dc:
       tb_lib: 'bag_testbenches_ec'
       tb_cell: 'amp_tb_dc'
       sch_params:
-        ibias_dict:
-          ib1: ['ib1', 'VSS', 'ib1']
-          ib2: ['VDD', 'ib2', 'ib2']
-        dut_conns: {ib1: 'ib1', ib2: 'ib2', vmid: 'vmid'}
+        dut_conns: {vb1: 'vb1', vb2: 'vb2', vmid: 'vmid'}
+        vbias_dict:
+          vb1: ['vb1', 'VSS', 'vb1']
+          vb2: ['vb2', 'VSS', 'vb2']
       tb_params:
         gain_fb: !!float 200
-        ib1: !!float 150e-6
-        ib2: !!float 80e-6
+        vb1: !!float 0.185
+        vb2: !!float 0.54
         vdd: !!float 1.0
         voutref: !!float 0.5
         vout_start: !!float 0.15
@@ -177,14 +163,14 @@ amp_chain:
       tb_lib: 'bag_testbenches_ec'
       tb_cell: 'amp_tb_ac_tran'
       sch_params:
-        ibias_dict:
-          ib1: ['ib1', 'VSS', 'ib1']
-          ib2: ['VDD', 'ib2', 'ib2']
-        dut_conns: {ib1: 'ib1', ib2: 'ib2', vmid: 'vmid'}
+        dut_conns: {vb1: 'vb1', vb2: 'vb2', vmid: 'vmid'}
+        vbias_dict:
+          vb1: ['vb1', 'VSS', 'vb1']
+          vb2: ['vb2', 'VSS', 'vb2']
         tran_fname: 'stimuli/step.data'
       tb_params:
-        ib1: !!float 150e-6
-        ib2: !!float 80e-6
+        vb1: !!float 0.185
+        vb2: !!float 0.54
         vdd: !!float 1.0
         vinac: !!float 1.0
         vindc: !!float 0.56
