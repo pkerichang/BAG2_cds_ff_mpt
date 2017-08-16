@@ -36,6 +36,7 @@ amp_cs:
       sch_params:
         ibias_dict:
           ibias: ['ibias', 'VSS', 'ibias']
+        dut_conns: {ibias: 'ibias'}
       tb_params:
         gain_fb: !!float 200
         ibias: !!float 150e-6
@@ -50,6 +51,7 @@ amp_cs:
       sch_params:
         ibias_dict:
           ibias: ['ibias', 'VSS', 'ibias']
+        dut_conns: {ibias: 'ibias'}
         tran_fname: 'stimuli/step.data'
       tb_params:
         ibias: !!float 150e-6
@@ -93,6 +95,7 @@ amp_sf:
       sch_params:
         ibias_dict:
           ibias: ['VDD', 'ibias', 'ibias']
+        dut_conns: {ibias: 'ibias'}
       tb_params:
         gain_fb: !!float -200
         ibias: !!float 80e-6
@@ -107,6 +110,7 @@ amp_sf:
       sch_params:
         ibias_dict:
           ibias: ['VDD', 'ibias', 'ibias']
+        dut_conns: {ibias: 'ibias'}
         tran_fname: 'stimuli/step.data'
       tb_params:
         ibias: !!float 80e-6
@@ -159,14 +163,15 @@ amp_chain:
         ibias_dict:
           ib1: ['ib1', 'VSS', 'ib1']
           ib2: ['VDD', 'ib2', 'ib2']
+        dut_conns: {ib1: 'ib1', ib2: 'ib2', vmid: 'vmid'}
       tb_params:
-        gain_fb: !!float -200
+        gain_fb: !!float 200
         ib1: !!float 150e-6
         ib2: !!float 80e-6
         vdd: !!float 1.0
         voutref: !!float 0.5
         vout_start: !!float 0.15
-        vout_stop: !!float 0.5
+        vout_stop: !!float 0.4
         vout_num: 100
     tb_ac_tran:
       tb_lib: 'bag_testbenches_ec'
@@ -175,6 +180,7 @@ amp_chain:
         ibias_dict:
           ib1: ['ib1', 'VSS', 'ib1']
           ib2: ['VDD', 'ib2', 'ib2']
+        dut_conns: {ib1: 'ib1', ib2: 'ib2', vmid: 'vmid'}
         tran_fname: 'stimuli/step.data'
       tb_params:
         ib1: !!float 150e-6
