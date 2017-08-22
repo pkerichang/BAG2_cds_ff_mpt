@@ -29,8 +29,11 @@ set path = ( $path \
      )
 
 # add open access
-setenv OAHOME /tools/projects/eeis/BAG_2.0/oa_dist
-setenv OALIB  ${OAHOME}/lib/linux_rhel50_gcc44x_64/opt
+setenv OAROOT /tools/projects/eeis/BAG_2.0/oa_dist
+setenv OA_LINK_DIR  ${OAHOME}/lib/linux_rhel50_gcc44x_64/opt
+setenv OA_INCLUDE_DIR  ${OAHOME}/include/oa
+setenv OALIB ${OA_LINK_DIR}
+
 if ($?LD_LIBRARY_PATH) then
     setenv LD_LIBRARY_PATH "${OALIB}:${LD_LIBRARY_PATH}"
 else
