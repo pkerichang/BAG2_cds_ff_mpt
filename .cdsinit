@@ -65,7 +65,7 @@ editor = "/tools/projects/erichang/programs/core/bin/emacs"
 
 envLoadFile( "./.cdsenv" ) 
 
-envSetVal("asimenv.startup" "projectDir" 'string sprintf( nil "/tools/scratch/%s/simulation" getShellEnvVar( "USER" ) ) )
+envSetVal("asimenv.startup" "projectDir" 'string sprintf( nil "%s/simulation" getShellEnvVar( "BAG_WORK_DIR" ) ) )
 
 
 ; setup calibre/virtuoso interface
