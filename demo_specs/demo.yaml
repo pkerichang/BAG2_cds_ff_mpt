@@ -35,6 +35,8 @@ amp_cs:
           vbias: ['vbias', 'VSS', 'vbias']
       tb_params:
         gain_fb: !!float 200
+        vimax: !!float 1.0
+        vimin: !!float 0.0
         vbias: !!float 0.185
         vdd: !!float 1.0
         voutref: !!float 0.5
@@ -89,6 +91,8 @@ amp_sf:
           vbias: ['vbias', 'VSS', 'vbias']
       tb_params:
         gain_fb: !!float -200
+        vimax: !!float 1.0
+        vimin: !!float 0.0
         vbias: !!float 0.54
         vdd: !!float 1.0
         voutref: !!float 0.5
@@ -152,6 +156,8 @@ amp_chain:
           vb2: ['vb2', 'VSS', 'vb2']
       tb_params:
         gain_fb: !!float 200
+        vimax: !!float 1.0
+        vimin: !!float 0.0
         vb1: !!float 0.185
         vb2: !!float 0.54
         vdd: !!float 1.0
