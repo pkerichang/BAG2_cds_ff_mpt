@@ -67,10 +67,10 @@ amp_sf:
   data_dir: 'demo_data'
   impl_lib: 'DEMO_AMP_SF'
   sch_lib: 'demo_templates'
-  sch_cell: 'amp_sf_soln'
+  sch_cell: 'amp_sf'
   gen_cell: 'AMP_SF'
   layout_package: 'xbase_demo.demo_layout.core'
-  layout_class: 'AmpSFSoln'
+  layout_class: 'AmpSF'
   layout_params:
     lch: !!float 18e-9
     ptap_w: 6
@@ -123,10 +123,10 @@ amp_chain:
   data_dir: 'demo_data'
   impl_lib: 'DEMO_AMP_CHAIN'
   sch_lib: 'demo_templates'
-  sch_cell: 'amp_chain_soln'
+  sch_cell: 'amp_chain'
   gen_cell: 'AMP_CHAIN'
   layout_package: 'xbase_demo.demo_layout.core'
-  layout_class: 'AmpChainSoln'
+  layout_class: 'AmpChain'
   layout_params:
     cs_params:
       lch: !!float 18e-9
