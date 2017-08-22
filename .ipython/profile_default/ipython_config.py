@@ -189,7 +189,7 @@ c.InteractiveShellApp.extensions = ['autoreload']
 #c.InteractiveShell.color_info = True
 
 ## Set the color scheme (NoColor, Neutral, Linux, or LightBG).
-c.InteractiveShell.colors = 'Linux'
+c.InteractiveShell.colors = 'LightBG'
 
 ## 
 #c.InteractiveShell.debug = False
@@ -311,7 +311,7 @@ c.TerminalInteractiveShell.editor = 'gvim'
 #  lovelace, xcode, vim, autumn, vs, rrt, native, perldoc, borland, tango, emacs,
 #  friendly, monokai, paraiso-dark, colorful, murphy, bw, pastie, algol_nu,
 #  paraiso-light, trac, default, algol, fruity
-c.TerminalInteractiveShell.highlighting_style = 'paraiso-dark'
+c.TerminalInteractiveShell.highlighting_style = 'default'
 
 ## Override highlighting format for specific tokens
 #c.TerminalInteractiveShell.highlighting_style_overrides = {}
