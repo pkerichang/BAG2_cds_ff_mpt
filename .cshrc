@@ -19,8 +19,7 @@ setenv QRC_HOME      /tools/cadence/EXT/EXT151
 setenv IUSHOME      /tools/cadence/INCISIV/INCISIVE152
 setenv AMSHOME      $IUSHOME
 
-set path = ( 
-    ${MMSIM_HOME}/tools/bin \
+set path = ( ${MMSIM_HOME}/tools/bin \
     ${CDS_INST_DIR}/tools/bin \
     ${CDS_INST_DIR}/tools/dfII/bin \
     ${CDS_INST_DIR}/tools/plot/bin \
