@@ -1,18 +1,18 @@
 [submodule "BAG_framework"]
 	path = BAG_framework
-	url = git@github.com:ucb-art/BAG_framework.git
+	url = http://github.com/ucb-art/BAG_framework.git
 [submodule "laygo"]
 	path = laygo
-	url = git@github.com:ucb-art/laygo.git
+	url = http://github.com/ucb-art/laygo.git
 [submodule "BAG2_TEMPLATES_EC"]
 	path = BAG2_TEMPLATES_EC
-	url = git@github.com:ucb-art/BAG2_TEMPLATES_EC.git
+	url = http://github.com/ucb-art/BAG2_TEMPLATES_EC.git
 [submodule "bag_oa"]
 	path = bag_oa
-	url = git@github.com:ucb-art/bag_oa.git
+	url = http://github.com/ucb-art/bag_oa.git
 [submodule "bag_testbenches_ec"]
 	path = bag_testbenches_ec
-	url = git@github.com:ucb-art/bag_testbenches_ec.git
+	url = http://github.com/ucb-art/bag_testbenches_ec.git
 [submodule "BAG_XBase_demo"]
 	path = BAG_XBase_demo
-	url = git@github.com:ucb-art/BAG_XBase_demo.git
+	url = http://github.com/ucb-art/BAG_XBase_demo.git
