@@ -69,6 +69,7 @@ class adc_sar_templates__sarclkgen_static(Module):
         self.parameters['fo'] = fo
         self.parameters['ndelay'] = ndelay
         self.parameters['device_intent'] = device_intent
+
         self.instances['IINV0'].design(lch=lch, pw=pw, nw=nw, m=1, device_intent=device_intent)
         self.instances['IINV1'].design(lch=lch, pw=pw, nw=nw, m=1, device_intent=device_intent)
         self.instances['IINV2'].design(lch=lch, pw=pw, nw=nw, m=1, device_intent=device_intent)

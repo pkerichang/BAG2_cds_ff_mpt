@@ -68,6 +68,7 @@ class adc_sar_templates__sarclkdelayslice_compact(Module):
         self.parameters['m'] = m
         self.parameters['ndelay'] = ndelay
         self.parameters['device_intent'] = device_intent
+
         #array generation
         name_list=[]
         term_list=[]
@@ -86,9 +87,6 @@ class adc_sar_templates__sarclkdelayslice_compact(Module):
         for i in range(ndelay):
             self.instances['IINVDA0'][i].design(lch=lch, pw=pw, nw=nw, m=m, device_intent=device_intent)
             self.instances['IINVDB0'][i].design(lch=lch, pw=pw, nw=nw, m=m, device_intent=device_intent)
-
-        #self.instances['IINV11'].design(lch=lch, pw=pw, nw=nw, m=m, device_intent=device_intent)
-        #self.instances['IINV12'].design(lch=lch, pw=pw, nw=nw, m=m, device_intent=device_intent)
         self.instances['IINVSEL0'].design(lch=lch, pw=pw, nw=nw, m=m, device_intent=device_intent)
         self.instances['IMUX0'].design(lch=lch, pw=pw, nw=nw, m=1, device_intent=device_intent)
 

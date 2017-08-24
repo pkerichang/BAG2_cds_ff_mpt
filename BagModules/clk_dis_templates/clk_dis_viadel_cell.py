@@ -84,6 +84,9 @@ class clk_dis_templates__clk_dis_viadel_cell(Module):
         #self.instances['I2'].design(num_bits=num_bits)
 
         self.reconnect_instance_terminal('I0', 'CAL<%d:0>'%(num_bits-1), 'CAL<%d:0>'%(num_bits-1))
+        self.reconnect_instance_terminal('I0', 'CAPSW<%d:0>'%(num_bits-1), 'CAPSW<%d:0>'%(num_bits-1))
+        self.reconnect_instance_terminal('I1', 'I<%d:0>'%(num_bits-1), 'CAPSW<%d:0>'%(num_bits-1))
+        self.reconnect_instance_terminal('I2', 'I<%d:0>'%(num_bits-1), 'CAPSW<%d:0>'%(num_bits-1))
         
         self.rename_pin('CAL','CAL<%d:0>'%(num_bits-1))
 

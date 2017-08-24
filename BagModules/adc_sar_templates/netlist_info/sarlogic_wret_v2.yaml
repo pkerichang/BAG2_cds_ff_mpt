@@ -66,6 +66,22 @@ instances:
         direction: input
         net_name: "RST"
         num_bits: 1
+  PIN3:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN2:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN8:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN9:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
   ILATCH0:
     lib_name: logic_templates
     cell_name: latch_2ck
@@ -118,6 +134,30 @@ instances:
         direction: input
         net_name: "LDPOB"
         num_bits: 1
+  PIN16:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}
+  PIN13:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}
+  PIN15:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}
+  PIN14:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}
+  PIN12:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
+  PIN11:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
   IBUF0:
     lib_name: logic_templates
     cell_name: inv

@@ -8,7 +8,7 @@ instances:
     instpins:
       CAPSW:
         direction: output
-        net_name: "net1"
+        net_name: "CAPSW"
         num_bits: 1
       VSS:
         direction: inputOutput
@@ -56,7 +56,7 @@ instances:
         num_bits: 1
       I:
         direction: input
-        net_name: "net1"
+        net_name: "CAPSW"
         num_bits: 1
   I1:
     lib_name: clk_dis_templates
@@ -68,5 +68,41 @@ instances:
         num_bits: 1
       I:
         direction: input
-        net_name: "net1"
+        net_name: "CAPSW"
         num_bits: 1
+  PIN4:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN3:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN2:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN1:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN0:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN6:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
+  PIN5:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
+  PIN8:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}
+  PIN7:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}

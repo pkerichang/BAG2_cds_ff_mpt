@@ -30,6 +30,30 @@ instances:
         direction: input
         net_name: "RST"
         num_bits: 1
+  I16:
+    lib_name: basic
+    cell_name: noConn
+    instpins:
+      noConn:
+        direction: inputOutput
+        net_name: "RST_DLY"
+        num_bits: 1
+  I17<1:0>:
+    lib_name: basic
+    cell_name: noConn
+    instpins:
+      noConn:
+        direction: inputOutput
+        net_name: "CKDSEL1<1:0>"
+        num_bits: 2
+  I18<1:0>:
+    lib_name: basic
+    cell_name: noConn
+    instpins:
+      noConn:
+        direction: inputOutput
+        net_name: "CKDSEL0<1:0>"
+        num_bits: 2
   ICKGEN0:
     lib_name: adc_sar_templates
     cell_name: sarclkgen_static
@@ -158,3 +182,79 @@ instances:
         direction: input
         net_name: "RST"
         num_bits: 1
+  PIN21:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN6:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN5:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN2:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN1:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN0:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN18:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}
+  PIN17:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}
+  PIN16:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}
+  PIN15:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}
+  PIN14:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}
+  PIN13:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}
+  PIN12:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}
+  PIN11:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}
+  PIN25:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}
+  PIN22:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}
+  PIN24:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}
+  PIN20:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
+  PIN19:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}

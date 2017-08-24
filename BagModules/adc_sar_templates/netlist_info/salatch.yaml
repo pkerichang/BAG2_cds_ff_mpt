@@ -262,6 +262,14 @@ instances:
         direction: inputOutput
         net_name: "INP"
         num_bits: 1
+  PIN8:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
+  PIN0:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
   IBUFP0:
     lib_name: BAG_prim
     cell_name: pmos4_fast
@@ -442,3 +450,31 @@ instances:
         direction: inputOutput
         net_name: "OM"
         num_bits: 1
+  PIN5:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN2:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN1:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN10:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}
+  PIN9:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}
+  PIN7:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}
+  PIN6:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}

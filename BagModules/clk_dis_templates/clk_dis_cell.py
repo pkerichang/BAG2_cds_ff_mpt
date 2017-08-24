@@ -73,8 +73,6 @@ class clk_dis_templates__clk_dis_cell(Module):
         self.parameters['m_capsw'] = m_capsw
         self.parameters['num_bits'] = num_bits
         self.parameters['device_intent'] = device_intent
-        #self.reconnect_instance_terminal('I4', 'EN', 'CAL<%d:0>'%(num_bits-1))
-        #self.reconnect_instance_terminal('I4', 'VO', 'CAPSW<%d:0>'%(num_bits-1))
 
         self.instances['I0'].design(lch=lch, pw=pw, nw=nw, m=m_dff, device_intent=device_intent)    #dff
         self.instances['I1'].design(lch=lch, pw=pw, nw=nw, m=m_inv1, device_intent=device_intent)   #inverter1
@@ -82,6 +80,8 @@ class clk_dis_templates__clk_dis_cell(Module):
         self.instances['I3'].design(lch=lch, pw=pw, nw=nw, m=m_tgate, n=n_pd, device_intent=device_intent)  #tgate       
         self.instances['I4'].design(num_bits=num_bits, lch=lch, pw=pw, nw=nw, m=m_capsw, device_intent=device_intent)   #cap switch
         
+        self.reconnect_instance_terminal('I4', 'EN<%d:0>'%(num_bits-1), 'CAL<%d:0>'%(num_bits-1))
+        self.reconnect_instance_terminal('I4', 'VO<%d:0>'%(num_bits-1), 'CAPSW<%d:0>'%(num_bits-1))
         self.rename_pin('CAL','CAL<%d:0>'%(num_bits-1))
         self.rename_pin('CAPSW','CAPSW<%d:0>'%(num_bits-1))
 

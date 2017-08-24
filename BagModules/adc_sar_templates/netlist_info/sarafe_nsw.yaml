@@ -2,6 +2,38 @@ lib_name: adc_sar_templates
 cell_name: sarafe_nsw
 pins: [ "INM", "OSM", "CLKB", "VDD", "VSS", "VREF<2:0>", "ENL0<2:0>", "ENR0<2:0>", "OUTM", "INP", "OSP", "VOL", "OUTP", "VOR" ]
 instances:
+  PIN3:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN1:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN23:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN8:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN7:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN4:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN2:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN0:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
   ICAPM0:
     lib_name: adc_sar_templates
     cell_name: capdac
@@ -82,6 +114,46 @@ instances:
         direction: output
         net_name: "INTP"
         num_bits: 1
+  PIN6:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
+  PIN5:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
+  I6:
+    lib_name: basic
+    cell_name: noConn
+    instpins:
+      noConn:
+        direction: inputOutput
+        net_name: "INTP"
+        num_bits: 1
+  I5:
+    lib_name: basic
+    cell_name: noConn
+    instpins:
+      noConn:
+        direction: inputOutput
+        net_name: "INTM"
+        num_bits: 1
+  PIN24:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}
+  PIN25:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}
+  PIN26:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}
+  PIN28:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}
   ICDRVM0:
     lib_name: adc_sar_templates
     cell_name: capdrv_nsw_array

@@ -46,3 +46,43 @@ instances:
         direction: input
         net_name: "SB<0>"
         num_bits: 1
+  PIN3:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN2:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN1:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN0:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN9:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
+  PIN8:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
+  PIN12:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}
+  PIN11:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}
+  PIN10:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}
+  PIN13:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}

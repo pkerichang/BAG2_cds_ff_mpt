@@ -2,6 +2,14 @@ lib_name: adc_sar_templates
 cell_name: space_dcap_nmos
 pins: [ "VDD", "VSS" ]
 instances:
+  PIN1:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
+  PIN0:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
   IDCAP0:
     lib_name: logic_templates
     cell_name: dcap

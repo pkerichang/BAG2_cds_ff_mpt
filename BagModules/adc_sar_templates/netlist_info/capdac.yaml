@@ -2,6 +2,14 @@ lib_name: adc_sar_templates
 cell_name: capdac
 pins: [ "I_C0", "O", "I" ]
 instances:
+  PIN1:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN0:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
   C0:
     lib_name: cds_ff_mpt_microtemplates_dense
     cell_name: momcap_center_1x
@@ -26,3 +34,7 @@ instances:
         direction: inputOutput
         net_name: "O"
         num_bits: 1
+  PIN3:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}

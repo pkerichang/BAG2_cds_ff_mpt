@@ -1,6 +1,6 @@
 lib_name: clk_dis_templates
 cell_name: clk_dis_viadel
-pins: [ "CAL0", "CAL1", "CAL6", "RSTN", "DATAO", "VDD", "VSS", "CLKI", "CLKO", "CAL2", "CAL3", "CAL4", "CAL5", "CAL7", "RSTP" ]
+pins: [ "CAL0", "RSTN", "DATAO", "VDD", "VSS", "CLKI", "CLKO", "RSTP" ]
 instances:
   I0:
     lib_name: clk_dis_templates
@@ -24,7 +24,7 @@ instances:
         num_bits: 1
       CAL:
         direction: input
-        net_name: "CAL"
+        net_name: "CAL0"
         num_bits: 1
       CLKI:
         direction: input
@@ -42,3 +42,35 @@ instances:
         direction: input
         net_name: "ST"
         num_bits: 1
+  PIN18:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN7:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN4:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN2:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN8:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
+  PIN9:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
+  PIN6:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
+  PIN0:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}

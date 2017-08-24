@@ -2,8 +2,12 @@ lib_name: clk_dis_templates
 cell_name: capdac
 pins: [ "O", "I" ]
 instances:
+  PIN0:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
   CDAC:
-    lib_name: tsmcN16_microtemplates_dense
+    lib_name: cds_ff_mpt_microtemplates_dense
     cell_name: momcap_center_1x
     instpins:
       BOTTOM:
@@ -14,3 +18,7 @@ instances:
         direction: inputOutput
         net_name: "O"
         num_bits: 1
+  PIN3:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}

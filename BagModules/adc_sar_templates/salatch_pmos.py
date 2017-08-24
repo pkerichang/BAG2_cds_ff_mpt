@@ -74,7 +74,8 @@ class adc_sar_templates__salatch_pmos(Module):
         m_sa=m
         m_in=int(m_sa/2) #using nf=2 devices
         m_ofst=1
-        m_clkh = max(1, m_in-1)
+        m_clkh=m_in
+        #m_clkh = max(1, m_in-1)
         m_rstn = int(m_rst/2)
         m_buf = int(m_buf/2)
         m_rgnn = int(m_rgnn/2)

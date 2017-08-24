@@ -1,6 +1,6 @@
 lib_name: clk_dis_templates
 cell_name: clk_dis_viadel_htree
-pins: [ "CAL7", "CAL6", "CAL5", "CAL4", "CAL3", "CAL2", "CAL1", "CAL0", "CLKO", "DATAO", "RSTN", "VSS", "VDD", "CLKIN", "CLKIP", "RSTP" ]
+pins: [ "CAL0", "CLKO", "DATAO", "RSTN", "VSS", "VDD", "CLKIN", "CLKIP", "RSTP" ]
 instances:
   I0:
     lib_name: clk_dis_templates
@@ -22,30 +22,6 @@ instances:
         direction: input
         net_name: "CAL0"
         num_bits: 1
-      CAL1:
-        direction: input
-        net_name: "CAL1"
-        num_bits: 1
-      CAL2:
-        direction: input
-        net_name: "CAL2"
-        num_bits: 1
-      CAL3:
-        direction: input
-        net_name: "CAL3"
-        num_bits: 1
-      CAL4:
-        direction: input
-        net_name: "CAL4"
-        num_bits: 1
-      CAL5:
-        direction: input
-        net_name: "CAL5"
-        num_bits: 1
-      CAL7:
-        direction: input
-        net_name: "CAL7"
-        num_bits: 1
       VSS:
         direction: inputOutput
         net_name: "VSS"
@@ -58,11 +34,59 @@ instances:
         direction: output
         net_name: "CLKO"
         num_bits: 1
-      CAL6:
-        direction: input
-        net_name: "CAL6"
-        num_bits: 1
       CLKI:
         direction: input
-        net_name: "net2"
+        net_name: "CLKIN"
+        num_bits: 1
+  PIN5:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN1:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN4:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN7:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN2:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN0:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}
+  PIN3:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
+  PIN6:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
+  PIN9:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
+  I2:
+    lib_name: basic
+    cell_name: noConn
+    instpins:
+      noConn:
+        direction: inputOutput
+        net_name: "CLKIN"
+        num_bits: 1
+  I1:
+    lib_name: basic
+    cell_name: noConn
+    instpins:
+      noConn:
+        direction: inputOutput
+        net_name: "CLKIP"
         num_bits: 1

@@ -80,23 +80,29 @@ class adc_sar_templates__sarafe_nsw(Module):
         self.instances['ICAPP0'].design(num_bits=num_bits, c_m=c_m, rdx_array=rdx_array)
         self.instances['ICAPM0'].design(num_bits=num_bits, c_m=c_m, rdx_array=rdx_array)
         #VOL/VOR
-        self.reconnect_instance_terminal(inst_name='ICAPP0', term_name='I', net_name='VOL<%d:0>'%(num_bits-1))
-        self.reconnect_instance_terminal(inst_name='ICAPM0', term_name='I', net_name='VOR<%d:0>'%(num_bits-1))
-        self.reconnect_instance_terminal(inst_name='ICDRVP0', term_name='VO', net_name='VOL<%d:0>'%(num_bits-1))
-        self.reconnect_instance_terminal(inst_name='ICDRVM0', term_name='VO', net_name='VOR<%d:0>'%(num_bits-1))
+        self.reconnect_instance_terminal(inst_name='ICAPP0', term_name='I<%d:0>'%(num_bits-1), net_name='VOL<%d:0>'%(num_bits-1))
+        self.reconnect_instance_terminal(inst_name='ICAPM0', term_name='I<%d:0>'%(num_bits-1), net_name='VOR<%d:0>'%(num_bits-1))
+        self.reconnect_instance_terminal(inst_name='ICDRVP0', term_name='VO<%d:0>'%(num_bits-1), net_name='VOL<%d:0>'%(num_bits-1))
+        self.reconnect_instance_terminal(inst_name='ICDRVM0', term_name='VO<%d:0>'%(num_bits-1), net_name='VOR<%d:0>'%(num_bits-1))
         self.rename_pin('VOL', 'VOL<%d:0>'%(num_bits-1))
         self.rename_pin('VOR', 'VOR<%d:0>'%(num_bits-1))
         #EN
+        pin_en=','.join(['EN%d<2:0>'%i for i in range(num_bits)])
+        pin_enl=','.join(['ENL%d<2:0>'%i for i in range(num_bits)])
+        pin_enr=','.join(['ENR%d<2:0>'%i for i in range(num_bits)])
+        '''
         pin_enl=''
         pin_enr=''
         for i in range(num_bits):
+            pin_en=pin_en+'EN%d<2:0>'%i
             pin_enl=pin_enl+'ENL%d<2:0>'%i
             pin_enr=pin_enr+'ENR%d<2:0>'%i
             if i<num_bits-1:
                 pin_enl=pin_enl+','
                 pin_enr=pin_enr+','
-        self.reconnect_instance_terminal(inst_name='ICDRVP0', term_name='EN<2:0>', net_name=pin_enl)
-        self.reconnect_instance_terminal(inst_name='ICDRVM0', term_name='EN<2:0>', net_name=pin_enr)
+        '''
+        self.reconnect_instance_terminal(inst_name='ICDRVP0', term_name=pin_en, net_name=pin_enl)
+        self.reconnect_instance_terminal(inst_name='ICDRVM0', term_name=pin_en, net_name=pin_enr)
         self.rename_pin('ENL0<2:0>', pin_enl)
         self.rename_pin('ENR0<2:0>', pin_enr)
 

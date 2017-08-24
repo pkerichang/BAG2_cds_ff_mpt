@@ -120,7 +120,7 @@ class clk_dis_templates__clk_dis_viadel(Module):
                     RST_pin = 'RSTN'
 
 
-            term_list.append({'DATAI': DATAI_pin, 'DATAO':DATAO_pin, 'ST':ST_pin, 'RST':RST_pin, 'CLKI':CLKI_pin, 'CLKO':CLKO_pin, 'CAL':CAL_pin, 'VSS':VSS_pin, 'VDD':VDD_pin})
+            term_list.append({'DATAI': DATAI_pin, 'DATAO':DATAO_pin, 'ST':ST_pin, 'RST':RST_pin, 'CLKI':CLKI_pin, 'CLKO':CLKO_pin, 'CAL<%d:0>'%(num_bits-1):CAL_pin, 'VSS':VSS_pin, 'VDD':VDD_pin})
             name_list.append('I%d'%i)
 
         #print(term_list)
@@ -138,8 +138,13 @@ class clk_dis_templates__clk_dis_viadel(Module):
         self.rename_pin('CLKO','CLKO<%d:0>'%(num_ways-1))
         self.rename_pin('DATAO','DATAO<%d:0>'%(num_ways-1))
 
+        #for i in range(num_ways):
+        #    self.rename_pin('CAL'+str(i),'CLKCAL'+str(i)+'<%d:0>'%(num_bits-1))
+        cal_pn=''
         for i in range(num_ways):
-            self.rename_pin('CAL'+str(i),'CLKCAL'+str(i)+'<%d:0>'%(num_bits-1))
+            cal_pn+='CLKCAL'+str(i)+'<%d:0>,'%(num_bits-1)
+        cal_pn=cal_pn[:-1]
+        self.rename_pin('CAL0', cal_pn)
 
 
     def get_layout_params(self, **kwargs):

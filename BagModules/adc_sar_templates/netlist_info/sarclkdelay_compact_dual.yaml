@@ -2,6 +2,26 @@ lib_name: adc_sar_templates
 cell_name: sarclkdelay_compact_dual
 pins: [ "ENB", "I", "O", "VSS", "VDD", "SEL<2:0>", "SHORTB" ]
 instances:
+  PIN6:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN5:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN0:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN4:
+    lib_name: basic
+    cell_name: ipin
+    instpins: {}
+  PIN7:
+    lib_name: basic
+    cell_name: opin
+    instpins: {}
   I0:
     lib_name: adc_sar_templates
     cell_name: sarclkdelayslice_compact
@@ -50,6 +70,14 @@ instances:
         direction: input
         net_name: "SEL<1>"
         num_bits: 1
+  PIN2:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
+  PIN3:
+    lib_name: basic
+    cell_name: iopin
+    instpins: {}
   IMUX0:
     lib_name: logic_templates
     cell_name: mux2to1

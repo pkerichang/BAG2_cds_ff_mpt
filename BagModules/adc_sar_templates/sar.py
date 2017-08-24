@@ -84,8 +84,15 @@ class adc_sar_templates__sar(Module):
         self.instances['IAFE0'].design(lch=lch, pw=pw, nw=nw, sa_m=sa_m, sa_m_rst=sa_m_rst, sa_m_rgnn=sa_m_rgnn, sa_m_buf=sa_m_buf, drv_m_list=drv_m_list, num_bits=num_bits-1, c_m=c_m, rdx_array=rdx_array, device_intent=device_intent)
         self.instances['IABE0'].design(lch=lch, pw=pw, nw=nw, ckgen_m=ckgen_m, ckgen_fo=ckgen_fo, ckgen_ndelay=ckgen_ndelay, logic_m=logic_m, fsm_m=fsm_m, ret_m=ret_m, ret_fo=ret_fo, num_bits=num_bits, device_intent=device_intent)
         #rewiring
-        self.reconnect_instance_terminal(inst_name='IAFE0', term_name='VOL', net_name='VOL<%d:0>'%(num_bits-2))
-        self.reconnect_instance_terminal(inst_name='IAFE0', term_name='VOR', net_name='VOR<%d:0>'%(num_bits-2))
+        self.reconnect_instance_terminal(inst_name='IAFE0', term_name='VOL<%d:0>'%(num_bits-2), net_name='VOL<%d:0>'%(num_bits-2))
+        self.reconnect_instance_terminal(inst_name='IAFE0', term_name='VOR<%d:0>'%(num_bits-2), net_name='VOR<%d:0>'%(num_bits-2))
+        pin_enl_term=','.join(['ENL%d<2:0>'%(i) for i in range(num_bits-1)])
+        pin_enr_term=','.join(['ENR%d<2:0>'%(i) for i in range(num_bits-1)])
+        pin_enl=','.join(['ZM<%d>,ZMID<%d>,ZP<%d>'%(i,i,i) for i in range(1, num_bits)])
+        pin_enr=','.join(['ZP<%d>,ZMID<%d>,ZM<%d>'%(i,i,i) for i in range(1, num_bits)])
+        self.reconnect_instance_terminal(inst_name='IAFE0', term_name=pin_enl_term, net_name=pin_enl)
+        self.reconnect_instance_terminal(inst_name='IAFE0', term_name=pin_enr_term, net_name=pin_enr)
+        '''
         pin_enl=''
         pin_enr=''
         for i in range(1, num_bits):
@@ -96,11 +103,12 @@ class adc_sar_templates__sar(Module):
                 pin_enr=pin_enr+','
         self.reconnect_instance_terminal(inst_name='IAFE0', term_name='ENL0<2:0>', net_name=pin_enl)
         self.reconnect_instance_terminal(inst_name='IAFE0', term_name='ENR0<2:0>', net_name=pin_enr)
-        self.reconnect_instance_terminal(inst_name='IABE0', term_name='ZP<0>', net_name='ZP<%d:0>'%(num_bits-1))
-        self.reconnect_instance_terminal(inst_name='IABE0', term_name='ZMID<0>', net_name='ZMID<%d:0>'%(num_bits-1))
-        self.reconnect_instance_terminal(inst_name='IABE0', term_name='ZM<0>', net_name='ZM<%d:0>'%(num_bits-1))
-        self.reconnect_instance_terminal(inst_name='IABE0', term_name='ADCOUT<0>', net_name='ADCOUT<%d:0>'%(num_bits-1))
-        self.reconnect_instance_terminal(inst_name='IABE0', term_name='SB<0>', net_name='SB<%d:0>'%(num_bits-1))
+        '''
+        self.reconnect_instance_terminal(inst_name='IABE0', term_name='ZP<%d:0>'%(num_bits-1), net_name='ZP<%d:0>'%(num_bits-1))
+        self.reconnect_instance_terminal(inst_name='IABE0', term_name='ZMID<%d:0>'%(num_bits-1), net_name='ZMID<%d:0>'%(num_bits-1))
+        self.reconnect_instance_terminal(inst_name='IABE0', term_name='ZM<%d:0>'%(num_bits-1), net_name='ZM<%d:0>'%(num_bits-1))
+        self.reconnect_instance_terminal(inst_name='IABE0', term_name='ADCOUT<%d:0>'%(num_bits-1), net_name='ADCOUT<%d:0>'%(num_bits-1))
+        self.reconnect_instance_terminal(inst_name='IABE0', term_name='SB<%d:0>'%(num_bits-1), net_name='SB<%d:0>'%(num_bits-1))
         #rename pins
         self.rename_pin('VOL<0>', 'VOL<%d:0>'%(num_bits-2))
         self.rename_pin('VOR<0>', 'VOR<%d:0>'%(num_bits-2))
