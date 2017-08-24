@@ -22,6 +22,7 @@ BAGTMP
 
 # generated files/directories
 adc_sar_generated
+laygo_working
 tsmcN16_logic_templates
 calibre_run
 gen_libs
