@@ -14,6 +14,7 @@ IPOPT.out
 # misc BAG files
 BAG_server_port.txt
 BAG_sim_server_port.txt
+BAGTMP
 
 # misc configuration/history files
 .ipython
@@ -82,6 +83,7 @@ map
 netlist
 svdb
 si.env
+simulation
 
 # Packages #
 ############
