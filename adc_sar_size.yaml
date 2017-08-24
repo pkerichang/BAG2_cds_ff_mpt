@@ -1,17 +1,17 @@
 adc_retimer: {m: 2}
-capdac: {c_m: 2, num_bits_horizontal: 2, num_bits_vertical: 6}
+capdac: {c_m: 1, num_bits_horizontal: 2, num_bits_vertical: 6, num_space_right: 3}
 capdrv:
   m_list: [2, 2, 2, 2, 2, 2, 4, 8]
   space_offset: 0
 dcap2_m: 19
 device_intent: ulvt
-lch: 1.6e-08
-m_dcap2: 19
+lch: 1.8e-08
+m_dcap2: 21
 num_space_samp: 38
 num_space_sar: 52
 nw: 4
 pw: 4
-salatch: {m: 12, m_buf: 12, m_rgnn: 12, m_rst: 6}
+salatch: {m: 12, m_buf: 12, m_rgnn: 12, m_rst: 6, num_row_ptap: 2}
 salatch_preset:
   m: [4, 8, 12, 16]
   m_buf: [4, 8, 12, 16]
