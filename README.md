@@ -8,22 +8,30 @@ and install it.
 2. Clone BAG2_cds_ff_mpt repo.
 
     ```
-    $ git clone git@github.com:ucb-art/BAG2_cds_ff_mpt.git
+    $ git clone https://github.com/ucb-art/BAG2_cds_ff_mpt.git
     ```
-    
-3. Update the PDK symbolic link to point the cds_ff_mpt installation path. 
-For BWRC users, the link is already set to point the correct path.
+3. (non-BWRC users) Update the following symbolic links to point to the cds_ff_mpt PDK installation location.
+   For BWRC useres, the links are already pointed to the correct path.
 
-4. Open following files and update path variables.
+   PDK -> point to cds_ff_mpt_v_0.3 folder
+   cds_ff_mpt/pvs_setup/pvs_rules -> point to cds_ff_mpt_v_0.3/pvs/pvsLVS.rul
 
-  * .cshrc
-  * .cshrc_bag
-  * cds.lib
-  * cds_ff_mpt/corners_setup.sdb
+4. (non-BWRC users) Update .cshrc to point to your tools locations.
+   The tools needed by this demo are:
 
-5. The BAG2_cds_ff_mpt repo has 2 submodules in it: BAG_framework and
-laygo. Let's update the submodules. Go into the BAG2_cds_ff_mpt
-directory and type this:
+   - Virtuoso ICADV 12.3 (or 12.1)
+   - PVS 15.1
+   - (Optional) OpenAccess 2.2
+   
+5. (non-BWRC users) Update .cshrc_bag to point to the Anaconda Python installation location used to
+   run BAG.  See BAG_framework documentation on how to install Anaconda Python for BAG.
+
+6. (non-BWRC users) Update cds.lib.core to point to avTech library.
+
+7. (non-BWRC users) Update cds_ff_mpt.corners_setup.sdb, which sets up model files and process corners for BAG,
+   to point to the correct model file location.
+
+8. Clone all dependent git submodules.  Run the following commands:
 
     ```
     $ git submodule init
