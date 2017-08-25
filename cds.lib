@@ -1,3 +1,1 @@
 INCLUDE $BAG_WORK_DIR/cds.lib.core
-DEFINE adc_sar_generated /tools/projects/jdhan/bag_work/BAG2_cds_ff_mpt/gen_libs/adc_sar_generated
-DEFINE cds_ff_mpt_logic_templates /tools/projects/jdhan/bag_work/BAG2_cds_ff_mpt/gen_libs/cds_ff_mpt_logic_templates
