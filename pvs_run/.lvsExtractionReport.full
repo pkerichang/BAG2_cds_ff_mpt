@@ -5,12 +5,12 @@
 			*****************************************************
 
 
-Report File Name         : sarsamp.rep
-ERC Summary File         : sarsamp.sum
-LVS Comparison Report    : sarsamp.rep.cls
-Layout Name              : /tools/projects/jdhan/bag_work/BAG2_cds_ff_mpt/pvs_run/sarsamp.gds ("sarsamp")
+Report File Name         : salatch_pmos.rep
+ERC Summary File         : salatch_pmos.sum
+LVS Comparison Report    : salatch_pmos.rep.cls
+Layout Name              : /tools/projects/jdhan/bag_work/BAG2_cds_ff_mpt/pvs_run/salatch_pmos.gds ("salatch_pmos")
 User Name                : jdhan
-Creation Time            : Thu Aug 24 21:06:26 2017
+Creation Time            : Thu Aug 24 21:55:57 2017
 Current directory        : /tools/projects/jdhan/bag_work/BAG2_cds_ff_mpt/pvs_run
 PVS Version              : 15.17-s604 Fri Jun 24 15:14:35 PDT 2016
 
@@ -23,67 +23,49 @@ PVS Version              : 15.17-s604 Fri Jun 24 15:14:35 PDT 2016
 
 
 
-Warnings and errors of connectivity for cell "nmos4_fast_tap"
--------------------------------------------------------------
-
-[WARN] Same label "VSS" for multiple nets, it is assigned to net 1 :
-    [1] Net 1 on layer 1022(M1_pin) at (0.258, 0.192)
-    [2] Net 3 on layer 1022(M1_pin) at (0.344, 0.192)
-
-
-Warnings and errors of connectivity for cell "pmos4_fast_tap"
--------------------------------------------------------------
-
-[WARN] Same label "VDD" for multiple nets, it is assigned to net 1 :
-    [1] Net 1 on layer 1022(M1_pin) at (0.258, 0.192)
-    [2] Net 2 on layer 1022(M1_pin) at (0.344, 0.192)
-
-
-Warnings and errors of connectivity for cell "sarsamp"
-------------------------------------------------------
-
-[WARN] Stamping conflict in SCONNECT(Multiple source nets stamp one target net)
-       Use LVS SOFTCHK or lvs_report_opt S statement to get detailed information.
-
 Clean cell list (added by extraction report parser )
  for cell "_gate_base_nf2"
  for cell "_nmos4_fast_base_nf1"
- for cell "_nmos4_fast_base_tap_base"
+ for cell "_nmos4_fast_base_tap_base3"
  for cell "_nmos4_fast_space_base_nf1"
  for cell "_pmos4_fast_base_nf1"
- for cell "_pmos4_fast_base_tap_base"
+ for cell "_pmos4_fast_base_tap_base3"
  for cell "_pmos4_fast_space_base_nf1"
  for cell "_sd_base"
- for cell "inv_16x"
- for cell "inv_24x"
- for cell "inv_32x"
- for cell "inv_8x"
  for cell "nmos4_fast_boundary"
  for cell "nmos4_fast_center_nf2"
  for cell "nmos4_fast_left"
  for cell "nmos4_fast_right"
- for cell "nmos4_fast_space_2x"
+ for cell "nmos4_fast_space"
+ for cell "nmos4_fast_space_nf2"
  for cell "nmos4_fast_space_nf4"
- for cell "nsw_wovdd_4x"
+ for cell "ntap_fast_boundary"
+ for cell "ntap_fast_center_nf1"
+ for cell "ntap_fast_left"
+ for cell "ntap_fast_right"
+ for cell "ntap_fast_space"
+ for cell "ntap_fast_space_nf2"
+ for cell "ntap_fast_space_nf4"
  for cell "pmos4_fast_boundary"
  for cell "pmos4_fast_center_nf2"
+ for cell "pmos4_fast_dmy_nf2"
  for cell "pmos4_fast_left"
  for cell "pmos4_fast_right"
- for cell "pmos4_fast_space_2x"
+ for cell "pmos4_fast_space"
+ for cell "pmos4_fast_space_nf2"
  for cell "pmos4_fast_space_nf4"
- for cell "space_2x"
- for cell "space_4x"
- for cell "space_wovdd_2x"
- for cell "space_wovdd_4x"
- for cell "tap"
- for cell "tap_wovdd"
+ for cell "ptap_fast_boundary"
+ for cell "ptap_fast_center_nf1"
+ for cell "ptap_fast_left"
+ for cell "ptap_fast_right"
+ for cell "ptap_fast_space"
+ for cell "ptap_fast_space_nf2"
+ for cell "ptap_fast_space_nf4"
+ for cell "salatch_pmos"
  for cell "via_M1_M2_0"
  for cell "via_M1_M2_1"
  for cell "via_M1_M2_2"
  for cell "via_M2_M3_0"
  for cell "via_M2_M3_1"
  for cell "via_M3_M4_0"
- for cell "via_M3_M4_1"
- for cell "via_M4_M5_1"
- for cell "via_M4_M5_2"
- for cell "via_M5_M6_2"
+ for cell "via_M4_M5_0"
