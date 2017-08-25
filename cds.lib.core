@@ -15,6 +15,9 @@ DEFINE cds_ff_mpt_microtemplates_dense $BAG_WORK_DIR/cds_ff_mpt_microtemplates_d
 #logic family
 DEFINE logic_templates $BAG_WORK_DIR/laygo/generators/logic/logic_templates
 
+#generated logic
+DEFINE cds_ff_mpt_logic_templates /tools/projects/jdhan/bag_work/BAG2_cds_ff_mpt/gen_libs/cds_ff_mpt_logic_templates
+
 #adc libs
 DEFINE adc_sar_templates $BAG_WORK_DIR/adc_sar_templates
 DEFINE clk_dis_templates $BAG_WORK_DIR/clk_dis_templates
