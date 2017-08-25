@@ -14,7 +14,6 @@ and install it.
    For BWRC useres, the links are already pointed to the correct path.
 
    PDK -> point to cds_ff_mpt_v_0.3 folder
-   cds_ff_mpt/pvs_setup/pvs_rules -> point to cds_ff_mpt_v_0.3/pvs/pvsLVS.rul
 
 4. (non-BWRC users) Update .cshrc to point to your tools locations.
    The tools needed by this demo are:
