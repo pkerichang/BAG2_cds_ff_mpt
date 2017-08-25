@@ -38,3 +38,44 @@ and install it.
     $ git submodule foreach git pull origin master
     ```
 
+## Running BAG
+
+Once you finish setting up the workspace, try to run the demo as follows:
+
+1. in the directory, run the following command
+
+   ```
+   $ source .cshrc
+   ```
+
+   to set up environment variables for running BAG/Virtuoso.  This needs to be done everytime you st   art a new terminal.
+
+2. start virtuoso
+
+   ```
+   $ virtuoso &
+   ```
+
+3. in virtuoso CIW window, run
+
+   ```
+   load("start_bag.il")
+   ```
+   
+4. in the terminal, run
+
+   ```
+   $ ./start_bag.sh
+   ```
+
+   this will start a IPython interactive session.
+
+5. in the IPython interpreter, run:
+
+   ```
+   In [1]: run -i BAG_XBase_demo/demo_scrpts/bootcamp_demo.py
+   ```
+
+   if everything works correctly, a DEMO_AMP_CS library will be generated with a schematic
+   and layout of a common-source amplifier, and two testbenches will be created.  3 plots
+   will also pop up displaying the testbench simulation results.
