@@ -10,7 +10,7 @@ ERC Summary File         : sar_wsamp.sum
 LVS Comparison Report    : sar_wsamp.rep.cls
 Layout Name              : /tools/projects/jdhan/bag_work/BAG2_cds_ff_mpt/pvs_run/sar_wsamp.gds ("sar_wsamp")
 User Name                : jdhan
-Creation Time            : Thu Aug 24 20:25:25 2017
+Creation Time            : Thu Aug 24 20:39:51 2017
 Current directory        : /tools/projects/jdhan/bag_work/BAG2_cds_ff_mpt/pvs_run
 PVS Version              : 15.17-s604 Fri Jun 24 15:14:35 PDT 2016
 
@@ -23,12 +23,12 @@ PVS Version              : 15.17-s604 Fri Jun 24 15:14:35 PDT 2016
 
 
 
-Warnings and errors of connectivity for cell "capdrv_nsw_8x"
+Warnings and errors of connectivity for cell "capdrv_nsw_4x"
 ------------------------------------------------------------
 
 [WARN] Same label "VSS" for multiple nets, it is assigned to net 8 :
-    [1] Net 8 on layer 1036(M2_pin) at (1.462, 0.000)
-    [2] Net 7 on layer 1036(M2_pin) at (1.462, 0.960)
+    [1] Net 8 on layer 1036(M2_pin) at (1.118, 0.000)
+    [2] Net 7 on layer 1036(M2_pin) at (1.118, 0.960)
 
 
 Warnings and errors of connectivity for cell "capdrv_nsw_2x"
@@ -39,12 +39,12 @@ Warnings and errors of connectivity for cell "capdrv_nsw_2x"
     [2] Net 8 on layer 1036(M2_pin) at (1.462, 0.960)
 
 
-Warnings and errors of connectivity for cell "capdrv_nsw_4x"
+Warnings and errors of connectivity for cell "capdrv_nsw_8x"
 ------------------------------------------------------------
 
 [WARN] Same label "VSS" for multiple nets, it is assigned to net 8 :
-    [1] Net 8 on layer 1036(M2_pin) at (1.118, 0.000)
-    [2] Net 7 on layer 1036(M2_pin) at (1.118, 0.960)
+    [1] Net 8 on layer 1036(M2_pin) at (1.462, 0.000)
+    [2] Net 7 on layer 1036(M2_pin) at (1.462, 0.960)
 
 
 Warnings and errors of connectivity for cell "capdrv_nsw_array"
@@ -75,19 +75,6 @@ Warnings and errors of connectivity for cell "salatch_pmos"
 
 Warnings and errors of connectivity for cell "sar_wsamp"
 --------------------------------------------------------
-
-[WARN] Different labels for net 5, it is assigned to "ZMID<2>":
-    [1] Label "ZMID<2>" on layer 1079(M5_pin) at (4.472, 14.656)
-    [2] Label "ZMID<8>" on layer 1079(M5_pin) at (4.214, 14.656)
-
-[WARN] Different labels for net 8, it is assigned to "SARCLK":
-    [1] Label "SARCLK" on layer 1066(M4_pin) at (16.254, 16.704)
-    [2] Label "ZMID<6>" on layer 1079(M5_pin) at (4.300, 14.656)
-    [3] Label "ZP<2>" on layer 1079(M5_pin) at (5.504, 14.656)
-
-[WARN] Different labels for net 9, it is assigned to "CKDSEL0<1>":
-    [1] Label "CKDSEL0<1>" on layer 1079(M5_pin) at (17.028, 0.192)
-    [2] Label "ZP<6>" on layer 1079(M5_pin) at (5.332, 14.656)
 
 [INFO] Virtually connected nets have been made but not reported.
        Use "virtual_connect -report yes" to report this information.
