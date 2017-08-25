@@ -331,7 +331,7 @@ cds_ff_mpt_microtemplates_dense:
     - [M5, drawing]
     xwidth: [0.096]
     xy0: [0.0, 0.0]
-    xy1: [0.172, 0.086]
+    xy1: [0.172, 0.064]
     ygrid: [0.0]
     ylayer:
     - [M6, drawing]

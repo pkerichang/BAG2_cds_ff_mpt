@@ -27,7 +27,7 @@ tsmcN16_logic_templates
 calibre_run
 gen_libs
 pvs_run
-#cds.lib
+cds.lib
 
 # cadence files
 .cadence

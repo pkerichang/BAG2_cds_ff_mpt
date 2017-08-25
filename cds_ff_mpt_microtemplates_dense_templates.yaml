@@ -95,10 +95,10 @@ cds_ff_mpt_microtemplates_dense:
         xy0: [0.128, 0.048]
         xy1: [1.076, 0.08]
       TOP:
-        layer: [M5, pin]
+        layer: [M6, pin]
         netname: TOP
-        xy0: [0.0, -0.016]
-        xy1: [1.29, 0.016]
+        xy0: [0.128, -0.016]
+        xy1: [1.076, 0.016]
     xy0: [0.0, 0.0]
     xy1: [1.29, 0.128]
   momcap_dmy_1x:

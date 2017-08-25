@@ -1,8 +1,0 @@
-CADENCE IHNL11146
-
-BAG_prim pmos4_fast schematic cds0
-BAG_prim nmos4_fast schematic cds1
-cds_ff_mpt_logic_templates tinv_small schematic cds2
-cds_ff_mpt_logic_templates inv schematic cds3
-cds_ff_mpt_logic_templates tinv schematic cds4
-cds_ff_mpt_logic_templates latch_2ck_2x schematic cds5
