@@ -1,7 +1,7 @@
 Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.01s.
 *INFO* (icLic-302) License Virtuoso_Schematic_Editor_XL ("Schematics XL") was used to run Schematics L.
 
-Running simulation in directory: "/tools/projects/jdhan/BAG/BAG2_cds_ff_mpt/pvs_run/".
+Running simulation in directory: "/tools/projects/jdhan/bag_work/BAG2_cds_ff_mpt/pvs_run/".
 
 Loading cds_ff_mpt/libInit.il ...
 	Loading cds_ff_mpt/loadCxt.ile ... done!
@@ -30,7 +30,7 @@ failed!
 done!
 Failed to load cds_ff_mpt/libInit.il successfully!Running Artist Hierarchical Netlisting ...
 Loading cdf.cxt 
-End netlisting Jun  1 20:55:20 2017
+End netlisting Aug 24 20:25:21 2017
 
 Running simin
 *INFO* (icLic-302) License Virtuoso_Schematic_Editor_XL ("Schematics XL") was used to run Schematics L.
@@ -39,8 +39,8 @@ Running runSim()...
 
 
 Running runsim with simulator: "auCdl"
-Begin simulation:    Jun  1 20:55:20 2017
+Begin simulation:    Aug 24 20:25:21 2017
 
 auCdl netlisting completed
-End simulation:      Jun  1 20:55:20 2017
+End simulation:      Aug 24 20:25:21 2017
 INFO (AUCDL-21): (Analog) CDL netlisting completed successfully.

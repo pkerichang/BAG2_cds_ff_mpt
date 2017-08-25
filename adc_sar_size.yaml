@@ -17,7 +17,7 @@ salatch_preset:
   m_buf: [4, 8, 12, 16]
   m_rgnn: [4, 8, 12, 16]
   m_rst: [2, 4, 6, 8]
-sarabe_m_space_left_4x: 0
+sarabe_m_space_left_4x: 2
 sarclkgen: {fo: 4, m: 2, ndelay: 1}
 sarfsm: {m: 2}
 sarlogic: {m: 4}
