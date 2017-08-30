@@ -100,7 +100,7 @@ simulation:
   # amount of time to wait for process cancellation to succeed.
   cancel_timeout_ms: 10000
   # True to show interactive log viewer.
-  show_log_viewer: True
+  show_log_viewer: False
   # ocean command settings
   kwargs:
     # the command to start
