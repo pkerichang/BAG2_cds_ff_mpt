@@ -34,8 +34,6 @@ c.InteractiveShellApp.exec_files = [
 ## lines of code to run at IPython startup.
 c.InteractiveShellApp.exec_lines = [
     'import numpy as np',
-    # disable inline plot in jupyter
-    '%matplotlib qt5',
     # deep autoreload submodules
     '%autoreload 2',
 ]
