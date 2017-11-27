@@ -13,3 +13,6 @@
 [submodule "BAG_XBase_demo"]
 	path = BAG_XBase_demo
 	url = https://github.com/ucb-art/BAG_XBase_demo.git
+[submodule "bag_serdes_ec"]
+	path = bag_serdes_ec
+	url = https://github.com/ucb-art/bag_serdes_ec.git
