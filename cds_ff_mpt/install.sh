@@ -18,6 +18,7 @@ ln_files=( "bag_config.yaml"
            ".cshrc"
            ".cshrc_bag"
            "display.drf"
+           "models"
            ".gitignore"
            "leBindKeys.il"
            "pvtech.lib" )
