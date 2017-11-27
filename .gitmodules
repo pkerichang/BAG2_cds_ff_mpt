@@ -7,9 +7,6 @@
 [submodule "BAG2_TEMPLATES_EC"]
 	path = BAG2_TEMPLATES_EC
 	url = https://github.com/ucb-art/BAG2_TEMPLATES_EC.git
-[submodule "bag_oa"]
-	path = bag_oa
-	url = https://github.com/ucb-art/bag_oa.git
 [submodule "bag_testbenches_ec"]
 	path = bag_testbenches_ec
 	url = https://github.com/ucb-art/bag_testbenches_ec.git
