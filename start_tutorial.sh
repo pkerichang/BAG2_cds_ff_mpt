@@ -1,3 +1,1 @@
-#!/usr/bin/env bash
-
-exec ${BAG_JUPYTER}
+cds_ff_mpt/workspace_setup/start_tutorial.sh
