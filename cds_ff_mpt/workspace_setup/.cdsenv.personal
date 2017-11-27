@@ -1,4 +1,0 @@
-; set default window size and location
-; schematic symWindowBBox string "((20 20) (1900 1060))"
-; schematic schWindowBBox string "((20 20) (1900 1060))"
-; layout leWindowBBox string "((20 20) (1900 1060))"
