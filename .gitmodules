@@ -16,3 +16,6 @@
 [submodule "bag_serdes_ec"]
 	path = bag_serdes_ec
 	url = https://github.com/ucb-art/bag_serdes_ec.git
+[submodule "cds_ff_mpt"]
+	path = cds_ff_mpt
+	url = https://github.com/ucb-art/cds_ff_mpt.git
